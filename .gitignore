@@ -1,0 +1,9 @@
+.DS_Store
+.ipynb_checkpoints
+__pycache__
+Data
+Figures_agg
+Figures_agg_scaled
+Fitted_models
+Tools.py~
+Trash

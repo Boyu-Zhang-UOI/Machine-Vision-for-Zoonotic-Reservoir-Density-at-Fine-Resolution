@@ -1,0 +1,7 @@
+\begin{tabular}{|c|c|c|c|}\hline%
+  \bfseries Site & \bfseries Mn Captures & \bfseries Trap-nights & \bfseries Visits \\ \hline \hline  
+  Bafodia & 230 & 2717 & 5 \\ 
+  Bantou & 182 & 4548 & 6 \\ 
+  Tanganya & 228 & 5758 & 5 \\ \hline 
+  \bfseries Total & 640 & 13023 & 16 \\ \hline 
+ \end{tabular}
