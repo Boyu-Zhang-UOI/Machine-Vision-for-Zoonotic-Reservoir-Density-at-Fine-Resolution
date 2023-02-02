@@ -1,7 +1,8 @@
 .DS_Store
 .ipynb_checkpoints
 __pycache__
-Data
+Data/Rasters
+Data/Trash
 Figures_agg
 Figures_agg_scaled
 Fitted_models
