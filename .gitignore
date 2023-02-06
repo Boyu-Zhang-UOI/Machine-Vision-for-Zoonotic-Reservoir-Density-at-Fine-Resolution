@@ -3,8 +3,8 @@
 __pycache__
 Data/Rasters
 Data/Trash
-Figures_agg
-Figures_agg_scaled
-Fitted_models
+/Figures_agg
+/Figures_agg_scaled
+/Fitted_models
 Tools.py~
 Trash
