@@ -1,4 +1,4 @@
-# Machine Vision for Understanding the Distribution of a Zoonotic Reservoir
+# A Machine Vision Pipeline for Predicting Zoonotic Reservoir Distribution
 
 This repository contains code, data, and figures that support:
 
