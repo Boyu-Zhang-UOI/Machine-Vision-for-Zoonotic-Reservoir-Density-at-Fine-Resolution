@@ -1,8 +1,8 @@
-library(ggplot2)
+library(tidyverse)
 library(stringr)
 library(ggh4x)
-source("Tools/Functions.r")
-dat = read.csv('../Figures_agg/pdp_info.csv')
+source("Rscripts/Tools/Functions.r")
+dat = read.csv('Figures_agg/pdp_info.csv')
 
 dat$radius = get.radii(dat$feature)
 dat$base_name = get.radii(dat$feature, ind = 1)
@@ -50,41 +50,47 @@ dat$fold = paste0(dat$train_site, ', ', dat$val_site)
 
 
 mask = dat$lc1 & dat$radius %in% c(50,100,500)
+
+#Here SLTA is Bafodia, GTA is Bantou, and GTB is Tanganya.
+dat <- dat |>  mutate(fold = gsub("Bafodia","SLTA",fold),
+                      fold = gsub("Bantou","GTA",fold),
+                      fold = gsub("Tanganya","GTB",fold))
+
 out = ggplot(dat[mask,],
        aes(x = value, y = average - mts,
            group = interaction(fold, feature),
-           color = fold))  + ylab('Effect on trap success prediction') + xlab('Value') + 
+           color = fold))  + ylab('Effect on trap success prediction') + xlab('Value') +
     geom_line() + scale_x_continuous(n.breaks = 3) +
     facet_grid2(cols = vars(name), rows = vars(radius), scales = 'free_x',
                              independent = 'x')
 out$labels$colour = 'Train site, val site'
 out
-ggsave('../Figures_agg/pdp_landcover1.png', width = 12, height = 6)
+ggsave('Figures_agg/pdp_landcover1.png', width = 12, height = 6)
 
 
 mask = dat$lc2 & dat$radius %in% c(50,100,500)
 out = ggplot(dat[mask,],
        aes(x = value, y = average - mts,
            group = interaction(fold, feature),
-           color = fold))  + ylab('Effect on trap success prediction') + xlab('Value') + 
+           color = fold))  + ylab('Effect on trap success prediction') + xlab('Value') +
     geom_line() + scale_x_continuous(n.breaks = 3) +
     facet_grid2(cols = vars(name), rows = vars(radius), scales = 'free_x',
                              independent = 'x')
 out$labels$colour = 'Train site, val site'
 out
-ggsave('../Figures_agg/pdp_landcover2.png', width = 8, height = 6)
+ggsave('Figures_agg/pdp_landcover2.png', width = 8, height = 6)
 
 mask = dat$base_name=='Frac_rice'
 out = ggplot(dat[mask,],
        aes(x = value, y = average - mts,
            group = interaction(fold, feature),
-           color = fold))  + ylab('Effect on trap success prediction') + xlab('Value') + 
+           color = fold))  + ylab('Effect on trap success prediction') + xlab('Value') +
     geom_line() + scale_x_continuous(n.breaks = 3) +
     facet_grid2(rows = vars(radius), scales = 'free_x',
                              independent = 'x')
 out$labels$colour = 'Train site, val site'
 out
-ggsave('../Figures_agg/pdp_landcover3.png', width = 7, height = 8)
+ggsave('Figures_agg/pdp_landcover3.png', width = 7, height = 8)
 
 
 
@@ -94,13 +100,13 @@ mask = dat$bu1
 out = ggplot(dat[mask,],
        aes(x = value, y = average - mts,
            group = interaction(train_site, val_site, test_site, feature),
-           color = fold)) + ylab('Effect on trap success prediction') + xlab('Value') + 
+           color = fold)) + ylab('Effect on trap success prediction') + xlab('Value') +
     geom_line() + scale_x_continuous(n.breaks = 3) +
     facet_grid2(cols = vars(name), rows = vars(radius), scales = 'free_x',
                               independent = 'x')
 out$labels$colour = 'Train site, val site'
 out
-ggsave('../Figures_agg/pdp_building1.png', width = 8, height = 8)
+ggsave('Figures_agg/pdp_building1.png', width = 8, height = 8)
 
 
 
@@ -108,24 +114,24 @@ mask = dat$bu3 & dat$radius %in% c(25,50,100,200)
 out = ggplot(dat[mask,],
        aes(x = value, y = average - mts,
            group = interaction(train_site, val_site, test_site, feature),
-           color = fold)) + ylab('Effect on trap success prediction') + xlab('Value') + 
+           color = fold)) + ylab('Effect on trap success prediction') + xlab('Value') +
     geom_line() + facet_grid2(cols = vars(name), rows = vars(radius), scales = 'free_x',
                               independent = 'x')
 out$labels$colour = 'Train site, val site'
 out
-ggsave('../Figures_agg/pdp_building2.png', width = 8, height = 8)
+ggsave('Figures_agg/pdp_building2.png', width = 8, height = 8)
 
 mask = dat$other
 out = ggplot(dat[mask,],
        aes(x = factor(value), y = average - mts,
            group = interaction(train_site, val_site, test_site, feature))) +
-    ylab('Effect on trap success prediction') + xlab('Value') + 
+    ylab('Effect on trap success prediction') + xlab('Value') +
     geom_point(aes(fill = fold), size = 5, alpha = 0.5, shape = 21) +
-    geom_line(alpha = 0.5) + #aes(color = fold)) + 
+    geom_line(alpha = 0.5) + #aes(color = fold)) +
     facet_grid2(cols = vars(name), scales = 'free_x',
                               independent = 'x')
 out$labels$colour = 'Train site, val site'
 out
-ggsave('../Figures_agg/pdp_other.png', width = 8, height = 4)
+ggsave('Figures_agg/pdp_other.png', width = 8, height = 4)
 
 
