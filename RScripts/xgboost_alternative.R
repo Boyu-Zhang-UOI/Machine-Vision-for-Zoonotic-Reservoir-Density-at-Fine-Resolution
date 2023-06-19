@@ -59,9 +59,10 @@ TVT_data <- map(TVT_plan, function(TVT) {
 # A latin hypercube is a way of constructing a random-ish grid of parameters that
 # ensures that any portion of space has a combination of parameters near it.
 # In other words random but also no holes. https://dials.tidymodels.org/reference/grid_max_entropy.html
-hyperparameters = dials::grid_latin_hypercube(dials::penalty(),
-                                              dials::mixture(), # relative amount of L1 and L2 penalties
-                                              size = 100)
+# hyperparameters = dials::grid_latin_hypercube(dials::mixture(), # relative amount of L1 and L2 penalties
+#                                               class_weight = dials::mixture(),
+#                                               original = T,
+#                                               size = 100)
 
 # Previously we ran 'reg:logistic' model for the xgboost model
 # Verify that this approach is correct.
@@ -203,6 +204,8 @@ predictors <- c("Night",
 #                 "sc_Density_Traditionals.1000",
 #                 "sc_Density_Buildings.1000")
 
+alphas = seq(0, 1, by=0.01)
+
 # Work on formula specifying with interactions.
 
 # Fit an elastic net model to each
@@ -215,50 +218,55 @@ predictors <- c("Night",
 elnet_val <- validate_elnet(TVT_data,
                             response,
                             predictors,
-                            hyperparameters)
+                            alphas)
 
-# Find the lowest mse for every train / validate combination.
+# The full hyperparameter search
+saveRDS(elnet_val,  h("data", "elnet_val.rds"))
+elnet_val <- readRDS(h("data", "elnet_val.rds"))
+
+# Average across jitters minimizing deviance against
+# the validation set
 elnet_best <- elnet_val |>
+  filter(comparison == "validate") |>
+  group_by(train, validate, jitter) |>
+  group_map(function(grp, grp_key) {
+    grp_key |> bind_cols(grp |> filter(deviance == min(deviance)))
+  }) |>
+  bind_rows() |>
   group_by(train, validate) |>
-  slice(which.min(validate_mae_mean)) |>
-  left_join(TVT_plan |> bind_rows()) # Add back in the testing site
+  summarize(penalty = mean(penalty, na.rm = T),
+            mixture = mean(mixture, na.rm = T)) |>
+  left_join(TVT_plan |> bind_rows())
 
-elnet_best
-
-# This contains the actual model objects for each jitter
+# Refit using just best hyperparameters found averaging
+# across jitters
 elnet_best_fits <- fit_best_elnet(TVT_data,
                                   response,
                                   predictors,
-                                  elnet_best)
+                                  elnet_best_deviance)
 
 saveRDS(elnet_best_fits,  h("data", "elnet_best_fits.rds"))
+elnet_best_fits <- readRDS(h("data", "elnet_best_fits.rds"))
 
-# This is a summary table averaging test_mae across all fits
-elnet_bestest <- elnet_best_fits |>
-  group_by(train, validate, test, .drop = F) |>
-  group_map(function(grp, grp_key) {
-    grp_key |> bind_cols(grp |> mutate(prop_Mn = mean(prop_Mn),
-                                       test_mae_mean = mean(test_mae),
-                                       test_mae_sd = sd(test_mae)) |>
-      select(-Jitter, -test_mae, -vi, -fit, -fit_X, -fit_Y, -fit_pred, -fit_TS_Mn) |> head(1))
-  }) |> bind_rows()
-
-# elnet_bestest
-elnet_bestest
-
-
-
-write_csv(elnet_bestest, h("data", "elnet.csv"))
 
 # Plot predictions
-TS_Mn <- elnet_best_fits$fit_TS_Mn |> unlist()
-TS_Mn_predicted <- elnet_best_fits$fit_pred |> unlist()
-plot(TS_Mn, TS_Mn_predicted)
+test <- elnet_best_fits |>
+  group_by(train, validate) |>
+  group_map(function(grp, grp_key) {
+    bind_cols(grp_key,
+              fit_TS_Mn = grp$fit_TS_Mn |> unlist(),
+              fit_pred = grp$fit_pred |> unlist())
+  }) |> bind_rows()
+
+
+ggplot(test, aes(x=fit_TS_Mn, y=fit_pred, sep="_")) +
+  facet_wrap(train ~ validate) +
+  geom_point()
 
 # overall VI is element-wise mean of vi column
 vi_dfr <- elnet_best_fits |> rowwise() |> mutate(vi = list(vi |> DALEX::model_parts() |> mutate(permutation = permutation + 10 * (Jitter - 1))))
 vi_list <- vi_dfr |> group_by(train, validate, test) |> group_split()
 vi <- map(vi_list, ~.x$vi |> bind_rows())
-ggsave("Figures/elnet_vi.png", vi[[3]] |> plot(show_boxplots = FALSE) + theme(plot.background = element_rect(fill = 'white')))
+ggsave("Figures/elnet_vi.png", vi[[3]] |> plot(show_boxplots = FALSE) + theme(plot.background = element_rect(fill = 'white')), width = 5.32, height = 10)
 
 

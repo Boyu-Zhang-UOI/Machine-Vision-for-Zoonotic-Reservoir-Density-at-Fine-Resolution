@@ -13,19 +13,26 @@
 validate_elnet <- function(TVT_data,
                            response,
                            predictors,
-                           hyperparameters) {
+                           alphas) {
 
   # Fit model for each TVT permutation in the plan
-  elnet_val <- TVT_data |> map_dfr(function(TVT) {
+  elnet_val <- map_dfr(1:length(TVT_data), function(tvt.x) {
+
+    TVT <- TVT_data[[tvt.x]]
 
     # glmnet can not handle na's
     TVT <- TVT |> drop_na()
 
     # Pmap is essentially a row-wise apply equivalent.
-    pmap_dfr(hyperparameters, function(penalty, mixture) {
+    map_dfr(alphas, function(mixture) {
+
+      print(paste("TVT:", tvt.x, "mixture:", mixture))
 
       TVT |> group_by(Jitter) |>
         group_map(function(jitter, jitter_key) {
+
+          class_ratio <- sum(jitter$TS_Mn > 0) / nrow(jitter)
+          jitter <- jitter |> mutate(class_weight = ifelse(TS_Mn > 0, 1-class_ratio, class_ratio))
 
           # Identify our training and validation villages for this run
           train <- jitter |> filter(Role == "train")
@@ -36,38 +43,44 @@ validate_elnet <- function(TVT_data,
           TVT_fit <- glmnet::glmnet(y = train |> select_at(response) |> as.matrix(),
                                     x = train |> select_at(predictors) |> as.matrix(),
                                     family = "binomial",
-                                    lambda = penalty,
-                                    alpha = mixture)
+                                    # lambda = penalty,
+                                    alpha = mixture,
+                                    weight = train |> pull(class_weight))
 
-          # Predict from the model using validation data.
-          # For some reason type = "response" here always
-          # produces output on the linear predictor scale. Inverse logit is required to get back to proportion.
-          TVT_pred <- glmnet::predict.glmnet(TVT_fit,
-                                             newx = validate |> select_at(predictors) |> as.matrix())
+          TVT_train <- glmnet::assess.glmnet(TVT_fit,
+                                             newy = train |> select_at(response) |> as.matrix(),
+                                             newx = train |> select_at(predictors) |> as.matrix(),
+                                             family = "binomial",
+                                             weight = train |> pull(class_weight)) |>
+            bind_rows() |>
+            mutate(penalty = TVT_fit$lambda,
+                   comparison = "train")
 
-          # Calculate MAE of predictions against validation village truth.
-          Ts_Mn <- validate |> pull(response[2]) / validate |> select_at(response) |> as.matrix() |> rowSums()
-          validate_mae <- mean(abs(exp(TVT_pred) / (1 + exp(TVT_pred)) - Ts_Mn ))
+          TVT_validate <- glmnet::assess.glmnet(TVT_fit,
+                                                newy = validate |> select_at(response) |> as.matrix(),
+                                                newx = validate |> select_at(predictors) |> as.matrix(),
+                                                family = "binomial",
+                                                weight = validate |> pull(class_weight)) |>
+            bind_rows() |>
+            mutate(penalty = TVT_fit$lambda,
+                   comparison = "validate")
 
-          # Return a dataframe row with name of train town, validation town, hyper-parameters tried and the mae
-          tibble(jitter = jitter_key,
-                 train = train$Site |> unique(),
-                 validate = validate$Site |> unique(),
-                 lambda = penalty,
-                 alpha = mixture,
-                 validate_mae = validate_mae)
-        }) |>
-        bind_rows() |>
-        group_by(train, validate, lambda, alpha) |>
-        summarize(validate_mae_mean = mean(validate_mae),
-                  validate_mae_sd = sd(validate_mae),
-                  .groups = "drop")
-      }) |> bind_rows()
-  })
+          TVT_best <- bind_rows(TVT_train, TVT_validate) |>
+            bind_cols(mixture = mixture) |>
+            mutate(jitter = jitter_key |> unlist(),
+                   train = train$Site |> unique(),
+                   validate = validate$Site |> unique()) |>
+            select(train,
+                   validate,
+                   jitter,
+                   penalty,
+                   mixture,
+                   everything())
+
+          TVT_best
+        })
+      })
+  }) |> bind_rows()
 
   return(elnet_val)
 }
-
-
-
-# Avg distance to rice between sites.
