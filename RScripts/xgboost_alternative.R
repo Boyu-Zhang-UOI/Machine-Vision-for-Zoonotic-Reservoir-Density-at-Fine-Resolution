@@ -2,6 +2,15 @@ library(tidyverse)
 library(glmnet)
 library(here)
 
+library(furrr)
+plan(multisession, workers = 6)
+
+#best so far: 1234567 (1 flat val and 1 flat test)
+#123456 class_ratio <- 0.5 also pretty good
+
+
+set.seed(123456)
+
 for (r_file in list.files("R", pattern = "\\.R$", recursive = TRUE, full.names = TRUE)) try(source(r_file))
 
 # Use relative paths so code will run on any computer
@@ -37,6 +46,8 @@ jittered_data <- get_grid(cleaned_data,
                           grid_size_degrees,
                           n_jitters = 5)
 
+write_csv(jittered_data, "Data/jittered_data.csv")
+
 # Villages
 villages <- c("Bafodia", "Bantou", "Tanganya")
 
@@ -51,29 +62,8 @@ TVT_data <- map(TVT_plan, function(TVT) {
   jittered_data |> rowwise() |> mutate(Role = names(which(Site == TVT)))
 })
 
-# We're going to use elastic net and the glmnet package.
-# First we need to set up a grid of hyper-parameters. These hyper-parameters
-# control the lambda (penalty) and alpha terms (L1,L2 mixing term).
-# alpha = 1 is lasso and alpha = 0 is ridge regression. Anything in-between is elastic.
-
-# A latin hypercube is a way of constructing a random-ish grid of parameters that
-# ensures that any portion of space has a combination of parameters near it.
-# In other words random but also no holes. https://dials.tidymodels.org/reference/grid_max_entropy.html
-# hyperparameters = dials::grid_latin_hypercube(dials::mixture(), # relative amount of L1 and L2 penalties
-#                                               class_weight = dials::mixture(),
-#                                               original = T,
-#                                               size = 100)
-
-# Previously we ran 'reg:logistic' model for the xgboost model
-# Verify that this approach is correct.
-# Yes it is but unlike xgboost glment doesn't handle proportions.
-# Instead we need a 2 column matrix response variable of `losses` vs
-# `wins`. This also means we don't need a weighting variable - that's only
-# necessary for proportions.
-
 # response <- c("TS_Mn")
 response <- c("Tot_Other", "Tot_Mn")
-weights <- "Tot_Traps"
 predictors <- c("Night",
                 "House",
                 "Frac_bare.25",
@@ -167,70 +157,30 @@ predictors <- c("Night",
                 "P11",
                 "P12")
 
-# predictors <- c("Density_Moderns.25",
-#                 "Density_Traditionals.25",
-#                 "Density_Buildings.25",
-#                 "Density_Moderns.50",
-#                 "Density_Traditionals.50",
-#                 "Density_Buildings.50",
-#                 "Density_Moderns.100",
-#                 "Density_Traditionals.100",
-#                 "Density_Buildings.100",
-#                 "Density_Moderns.200",
-#                 "Density_Traditionals.200",
-#                 "Density_Buildings.200",
-#                 "Density_Moderns.500",
-#                 "Density_Traditionals.500",
-#                 "Density_Buildings.500",
-#                 "Density_Moderns.1000",
-#                 "Density_Traditionals.1000",
-#                 "Density_Buildings.1000",
-#                 "sc_Density_Moderns.25",
-#                 "sc_Density_Traditionals.25",
-#                 "sc_Density_Buildings.25",
-#                 "sc_Density_Moderns.50",
-#                 "sc_Density_Traditionals.50",
-#                 "sc_Density_Buildings.50",
-#                 "sc_Density_Moderns.100",
-#                 "sc_Density_Traditionals.100",
-#                 "sc_Density_Buildings.100",
-#                 "sc_Density_Moderns.200",
-#                 "sc_Density_Traditionals.200",
-#                 "sc_Density_Buildings.200",
-#                 "sc_Density_Moderns.500",
-#                 "sc_Density_Traditionals.500",
-#                 "sc_Density_Buildings.500",
-#                 "sc_Density_Moderns.1000",
-#                 "sc_Density_Traditionals.1000",
-#                 "sc_Density_Buildings.1000")
-
+# Mixture hyper-parameter between ridge (0) and lasso (1)
 alphas = seq(0, 1, by=0.01)
-
-# Work on formula specifying with interactions.
 
 # Fit an elastic net model to each
 # permutation of training and validating villages
 # also perform a search for the best hyper-parameters
-# for each village. Then fit an elastic net regression
-# to the set of hyper-parameters for the given permutation.
-# Note: `validate_mae_mean` is the mean mae across jitters
-# for one set of hyperparameters + training and validating villages.
+# for each village calculating deviance, mae ect
+# against both training and validation villages
 elnet_val <- validate_elnet(TVT_data,
                             response,
                             predictors,
                             alphas)
 
-# The full hyperparameter search
+# Save the full hyperparameter search
 saveRDS(elnet_val,  h("data", "elnet_val.rds"))
 elnet_val <- readRDS(h("data", "elnet_val.rds"))
 
 # Average across jitters minimizing deviance against
-# the validation set
+# the validation village
 elnet_best <- elnet_val |>
   filter(comparison == "validate") |>
   group_by(train, validate, jitter) |>
   group_map(function(grp, grp_key) {
-    grp_key |> bind_cols(grp |> filter(deviance == min(deviance)))
+    grp_key |> bind_cols(grp |> filter(mae == min(mae)))
   }) |>
   bind_rows() |>
   group_by(train, validate) |>
@@ -238,35 +188,38 @@ elnet_best <- elnet_val |>
             mixture = mean(mixture, na.rm = T)) |>
   left_join(TVT_plan |> bind_rows())
 
-# Refit using just best hyperparameters found averaging
-# across jitters
+# Refit using just the best hyperparameters found above
 elnet_best_fits <- fit_best_elnet(TVT_data,
                                   response,
                                   predictors,
-                                  elnet_best_deviance)
+                                  elnet_best)
 
+# Save the best fit models. One for each train-validate-test
+# scenario.
 saveRDS(elnet_best_fits,  h("data", "elnet_best_fits.rds"))
 elnet_best_fits <- readRDS(h("data", "elnet_best_fits.rds"))
 
-
 # Plot predictions
 test <- elnet_best_fits |>
-  group_by(train, validate) |>
+  group_by(train, validate, test) |>
   group_map(function(grp, grp_key) {
     bind_cols(grp_key,
               fit_TS_Mn = grp$fit_TS_Mn |> unlist(),
               fit_pred = grp$fit_pred |> unlist())
-  }) |> bind_rows()
+  }) |> bind_rows() |>
+  mutate(train = paste("train:", train),
+         validate = paste("validate:", validate),
+         test = paste("test:", test))
 
-
+# Check predictions vs actual trapping success
 ggplot(test, aes(x=fit_TS_Mn, y=fit_pred, sep="_")) +
-  facet_wrap(train ~ validate) +
+  facet_wrap(train ~ validate, scales = "free") +
   geom_point()
 
-# overall VI is element-wise mean of vi column
-vi_dfr <- elnet_best_fits |> rowwise() |> mutate(vi = list(vi |> DALEX::model_parts() |> mutate(permutation = permutation + 10 * (Jitter - 1))))
-vi_list <- vi_dfr |> group_by(train, validate, test) |> group_split()
-vi <- map(vi_list, ~.x$vi |> bind_rows())
-ggsave("Figures/elnet_vi.png", vi[[3]] |> plot(show_boxplots = FALSE) + theme(plot.background = element_rect(fill = 'white')), width = 5.32, height = 10)
+# # overall VI is element-wise mean of vi column
+# vi_dfr <- elnet_best_fits |> rowwise() |> mutate(vi = list(vi |> DALEX::model_parts() |> mutate(permutation = permutation + 10 * (Jitter - 1))))
+# vi_list <- vi_dfr |> group_by(train, validate, test) |> group_split()
+# vi <- map(vi_list, ~.x$vi |> bind_rows())
+# ggsave("Figures/elnet_vi.png", vi[[3]] |> plot(show_boxplots = FALSE) + theme(plot.background = element_rect(fill = 'white')), width = 5.32, height = 10)
 
 

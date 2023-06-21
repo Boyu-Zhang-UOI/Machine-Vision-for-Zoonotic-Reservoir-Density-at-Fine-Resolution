@@ -3,8 +3,7 @@
 #' @param TVT_data # List of different data inputs
 #' @param response # Response column name
 #' @param predictors # Vector of predictor column names
-#' @param weight # Vector of weight column name
-#' @param hyperparameters # Dataframe with one column for penalyt and one for mixture
+#' @param alphas # vector of values setting ridge vs lasso mixture
 #'
 #' @return elnet # A dataframe row with name of train town, validation town, hyperparmeters tried and the mse
 #' @export
@@ -31,11 +30,14 @@ validate_elnet <- function(TVT_data,
       TVT |> group_by(Jitter) |>
         group_map(function(jitter, jitter_key) {
 
-          class_ratio <- sum(jitter$TS_Mn > 0) / nrow(jitter)
-          jitter <- jitter |> mutate(class_weight = ifelse(TS_Mn > 0, 1-class_ratio, class_ratio))
-
           # Identify our training and validation villages for this run
+
+          # Also correct for training class imbalance. Not sure this really does anything useful though...
           train <- jitter |> filter(Role == "train")
+          #class_ratio <- class_ratio <- sum(train$TS_Mn > 0) / nrow(train)
+          class_ratio <- 0.5
+          train <- train |> mutate(class_weight = ifelse(TS_Mn > 0, 1-class_ratio, class_ratio))
+
           validate <- jitter |> filter(Role == "validate")
 
           # Fit the model using x row of hyper-parameters object
@@ -50,8 +52,7 @@ validate_elnet <- function(TVT_data,
           TVT_train <- glmnet::assess.glmnet(TVT_fit,
                                              newy = train |> select_at(response) |> as.matrix(),
                                              newx = train |> select_at(predictors) |> as.matrix(),
-                                             family = "binomial",
-                                             weight = train |> pull(class_weight)) |>
+                                             family = "binomial") |>
             bind_rows() |>
             mutate(penalty = TVT_fit$lambda,
                    comparison = "train")
@@ -59,8 +60,7 @@ validate_elnet <- function(TVT_data,
           TVT_validate <- glmnet::assess.glmnet(TVT_fit,
                                                 newy = validate |> select_at(response) |> as.matrix(),
                                                 newx = validate |> select_at(predictors) |> as.matrix(),
-                                                family = "binomial",
-                                                weight = validate |> pull(class_weight)) |>
+                                                family = "binomial") |>
             bind_rows() |>
             mutate(penalty = TVT_fit$lambda,
                    comparison = "validate")

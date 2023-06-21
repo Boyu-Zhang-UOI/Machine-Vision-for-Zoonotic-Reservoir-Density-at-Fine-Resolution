@@ -22,9 +22,11 @@ fit_best_elnet <- function(TVT_data,
     TVT <- TVT |> drop_na()
 
     train_site <- TVT |> filter(Role == "train") |> pull(Site) |> unique()
+    validate_site <- TVT |> filter(Role == "validate") |> pull(Site) |> unique()
     test_site <- TVT |> filter(Role == "test") |> pull(Site) |> unique()
 
     best_params <- elnet_best |> filter(train == train_site,
+                                        validate == validate_site,
                                         test == test_site)
 
     jitter_fits <- TVT |> group_by(Jitter) |>
@@ -45,28 +47,42 @@ fit_best_elnet <- function(TVT_data,
                                   alpha = best_params |> pull(mixture),
                                   weight = train |> pull(class_weight))
 
+        TVT_train <- glmnet::assess.glmnet(TVT_fit,
+                                          newy = train |> select_at(response) |> as.matrix(),
+                                          newx = train |> select_at(predictors) |> as.matrix()) |>
+          bind_rows() %>%
+          setNames(paste(names(.), "train", sep="_"))
+
+        TVT_validate <- glmnet::assess.glmnet(TVT_fit,
+                                          newy = validate |> select_at(response) |> as.matrix(),
+                                          newx = validate |> select_at(predictors) |> as.matrix()) |>
+          bind_rows() %>%
+          setNames(paste(names(.), "validate", sep="_"))
+
         TVT_test <- glmnet::assess.glmnet(TVT_fit,
                                           newy = test |> select_at(response) |> as.matrix(),
-                                          newx = test |> select_at(predictors) |> as.matrix()) |> bind_rows()
+                                          newx = test |> select_at(predictors) |> as.matrix()) |>
+          bind_rows() %>%
+          setNames(paste(names(.), "test", sep="_"))
 
         vi_dropout_loss <- DALEX::explain(TVT_fit,
                                           data = test |> select_at(predictors) |> as.matrix(),
                                           y = test |> select_at(response) |> as.matrix())
 
         TVT_pred <- glmnet::predict.glmnet(TVT_fit,
-                                           newx = train |> select_at(predictors) |> as.matrix(),
+                                           newx = validate |> select_at(predictors) |> as.matrix(),
                                            family = "binomial",
                                            type = "link")
 
         TVT_pred <- exp(TVT_pred) / (1 + exp(TVT_pred))
 
-        plot(train |> pull(TS_Mn), TVT_pred)
-
         best_params |> bind_cols(jitter = jitter_key,
+                                 TVT_train,
+                                 TVT_validate,
                                  TVT_test,
                                  tibble(fit_Y = list(jitter |> select_at(response) |> as.matrix()),
                                         fit_X = list(jitter |> select_at(predictors)),
-                                        fit_TS_Mn = list(test |> pull("TS_Mn")),
+                                        fit_TS_Mn = list(validate |> pull("TS_Mn")),
                                         fit_pred = list(TVT_pred),
                                         vi = list(vi_dropout_loss),
                                         fit = list(TVT_fit)))
