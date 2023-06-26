@@ -69,12 +69,26 @@ fit_best_elnet <- function(TVT_data,
                                           data = test |> select_at(predictors) |> as.matrix(),
                                           y = test |> select_at(response) |> as.matrix())
 
-        TVT_pred <- glmnet::predict.glmnet(TVT_fit,
-                                           newx = validate |> select_at(predictors) |> as.matrix(),
+        TVT_pred_train <- glmnet::predict.glmnet(TVT_fit,
+                                           newx = train |> select_at(predictors) |> as.matrix(),
                                            family = "binomial",
                                            type = "link")
 
-        TVT_pred <- exp(TVT_pred) / (1 + exp(TVT_pred))
+        TVT_pred_train <- exp(TVT_pred_train) / (1 + exp(TVT_pred_train))
+
+        TVT_pred_validate <- glmnet::predict.glmnet(TVT_fit,
+                                                 newx = validate |> select_at(predictors) |> as.matrix(),
+                                                 family = "binomial",
+                                                 type = "link")
+
+        TVT_pred_validate <- exp(TVT_pred_validate) / (1 + exp(TVT_pred_validate))
+
+        TVT_pred_test <- glmnet::predict.glmnet(TVT_fit,
+                                                 newx = test |> select_at(predictors) |> as.matrix(),
+                                                 family = "binomial",
+                                                 type = "link")
+
+        TVT_pred_test <- exp(TVT_pred_test) / (1 + exp(TVT_pred_test))
 
         best_params |> bind_cols(jitter = jitter_key,
                                  TVT_train,
@@ -82,8 +96,10 @@ fit_best_elnet <- function(TVT_data,
                                  TVT_test,
                                  tibble(fit_Y = list(jitter |> select_at(response) |> as.matrix()),
                                         fit_X = list(jitter |> select_at(predictors)),
-                                        fit_TS_Mn = list(validate |> pull("TS_Mn")),
-                                        fit_pred = list(TVT_pred),
+                                        validate_TS_Mn = list(validate |> pull(TS_Mn)),
+                                        validate_preds = list(TVT_pred_validate),
+                                        test_TS_Mn = list(test |> pull(TS_Mn)),
+                                        test_preds = list(TVT_pred_test),
                                         vi = list(vi_dropout_loss),
                                         fit = list(TVT_fit)))
       }) |> bind_rows()

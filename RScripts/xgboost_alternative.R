@@ -196,25 +196,27 @@ elnet_best_fits <- fit_best_elnet(TVT_data,
 
 # Save the best fit models. One for each train-validate-test
 # scenario.
-saveRDS(elnet_best_fits,  h("data", "elnet_best_fits.rds"))
-elnet_best_fits <- readRDS(h("data", "elnet_best_fits.rds"))
+saveRDS(elnet_best_fits, h("Data/elnet_best_fits.rds"))
+elnet_best_fits <- readRDS(h("Data", "elnet_best_fits.rds"))
 
 # Plot predictions
 test <- elnet_best_fits |>
   group_by(train, validate, test) |>
   group_map(function(grp, grp_key) {
     bind_cols(grp_key,
-              fit_TS_Mn = grp$fit_TS_Mn |> unlist(),
-              fit_pred = grp$fit_pred |> unlist())
+              TS_Mn = grp$validate_TS_Mn |> unlist(),
+              fit_pred = grp$validate_preds |> unlist())
   }) |> bind_rows() |>
   mutate(train = paste("train:", train),
          validate = paste("validate:", validate),
          test = paste("test:", test))
 
 # Check predictions vs actual trapping success
-ggplot(test, aes(x=fit_TS_Mn, y=fit_pred, sep="_")) +
-  facet_wrap(train ~ validate, scales = "free") +
+ggplot(test, aes(x=TS_Mn, y=fit_pred, sep="_")) +
+  facet_wrap(train ~ validate) +
   geom_point()
+
+# Why x axis ranges not same for different TS_Mn test sites?
 
 # # overall VI is element-wise mean of vi column
 # vi_dfr <- elnet_best_fits |> rowwise() |> mutate(vi = list(vi |> DALEX::model_parts() |> mutate(permutation = permutation + 10 * (Jitter - 1))))
@@ -223,3 +225,6 @@ ggplot(test, aes(x=fit_TS_Mn, y=fit_pred, sep="_")) +
 # ggsave("Figures/elnet_vi.png", vi[[3]] |> plot(show_boxplots = FALSE) + theme(plot.background = element_rect(fill = 'white')), width = 5.32, height = 10)
 
 
+# Notes from convo w/ Evan.
+# Problem with test and validate and facet axis.
+# Add back in number of traps as weight. Sigh.
