@@ -68,7 +68,6 @@ map(sites, function(site_name) {
 
   land_cover_df <- land_cover_rast |>
     crop(site_extent) |>
-    # terra::which.max() |> # Choose band with highest type probability
     as.data.frame(xy = T) |>
     setNames(c("long","lat","z")) |>
     mutate(z = factor(z, levels = c(0:7)))
