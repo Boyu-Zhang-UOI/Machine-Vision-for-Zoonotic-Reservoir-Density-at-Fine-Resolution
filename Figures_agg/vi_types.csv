@@ -1,0 +1,93 @@
+Variable,Type,Range
+Density_Buildings.100,Building density,100
+Density_Buildings.1000,Building density,1000
+Density_Buildings.200,Building density,200
+Density_Buildings.25,Building density,25
+Density_Buildings.50,Building density,50
+Density_Buildings.500,Building density,500
+Density_Moderns.100,Building density,100
+Density_Moderns.1000,Building density,1000
+Density_Moderns.200,Building density,200
+Density_Moderns.25,Building density,25
+Density_Moderns.50,Building density,50
+Density_Moderns.500,Building density,500
+Density_Traditionals.100,Building density,100
+Density_Traditionals.1000,Building density,1000
+Density_Traditionals.200,Building density,200
+Density_Traditionals.25,Building density,25
+Density_Traditionals.50,Building density,50
+Density_Traditionals.500,Building density,500
+Frac_bare.100,Land cover,100
+Frac_bare.1000,Land cover,1000
+Frac_bare.200,Land cover,200
+Frac_bare.25,Land cover,25
+Frac_bare.50,Land cover,50
+Frac_bare.500,Land cover,500
+Frac_burn.100,Land cover,100
+Frac_burn.1000,Land cover,1000
+Frac_burn.200,Land cover,200
+Frac_burn.25,Land cover,25
+Frac_burn.50,Land cover,50
+Frac_burn.500,Land cover,500
+Frac_grass.100,Land cover,100
+Frac_grass.1000,Land cover,1000
+Frac_grass.200,Land cover,200
+Frac_grass.25,Land cover,25
+Frac_grass.50,Land cover,50
+Frac_grass.500,Land cover,500
+Frac_mound.100,Land cover,100
+Frac_mound.1000,Land cover,1000
+Frac_mound.200,Land cover,200
+Frac_mound.25,Land cover,25
+Frac_mound.50,Land cover,50
+Frac_mound.500,Land cover,500
+Frac_rice.100,Land cover,100
+Frac_rice.1000,Land cover,1000
+Frac_rice.200,Land cover,200
+Frac_rice.25,Land cover,25
+Frac_rice.50,Land cover,50
+Frac_rice.500,Land cover,500
+Frac_tree.100,Land cover,100
+Frac_tree.1000,Land cover,1000
+Frac_tree.200,Land cover,200
+Frac_tree.25,Land cover,25
+Frac_tree.50,Land cover,50
+Frac_tree.500,Land cover,500
+Frac_water.100,Land cover,100
+Frac_water.1000,Land cover,1000
+Frac_water.200,Land cover,200
+Frac_water.25,Land cover,25
+Frac_water.50,Land cover,50
+Frac_water.500,Land cover,500
+House,Inside outside,NA
+Night,Trap night,NA
+P1,Precip,NA
+P10,Precip,NA
+P11,Precip,NA
+P12,Precip,NA
+P2,Precip,NA
+P3,Precip,NA
+P4,Precip,NA
+P5,Precip,NA
+P6,Precip,NA
+P7,Precip,NA
+P8,Precip,NA
+P9,Precip,NA
+sc_Density_Buildings.100,Building density scaled,100
+sc_Density_Buildings.1000,Building density scaled,1000
+sc_Density_Buildings.200,Building density scaled,200
+sc_Density_Buildings.25,Building density scaled,25
+sc_Density_Buildings.50,Building density scaled,50
+sc_Density_Buildings.500,Building density scaled,500
+sc_Density_Moderns.100,Building density scaled,100
+sc_Density_Moderns.1000,Building density scaled,1000
+sc_Density_Moderns.200,Building density scaled,200
+sc_Density_Moderns.25,Building density scaled,25
+sc_Density_Moderns.50,Building density scaled,50
+sc_Density_Moderns.500,Building density scaled,500
+sc_Density_Traditionals.100,Building density scaled,100
+sc_Density_Traditionals.1000,Building density scaled,1000
+sc_Density_Traditionals.200,Building density scaled,200
+sc_Density_Traditionals.25,Building density scaled,25
+sc_Density_Traditionals.50,Building density scaled,50
+sc_Density_Traditionals.500,Building density scaled,500

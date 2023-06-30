@@ -12,47 +12,51 @@
 validate_elnet <- function(TVT_data,
                            response,
                            predictors,
-                           alphas) {
+                           alphas,
+                           n_workers = 1,
+                           weights = T) {
 
   # Fit model for each TVT permutation in the plan
   elnet_val <- map_dfr(1:length(TVT_data), function(tvt.x) {
 
     TVT <- TVT_data[[tvt.x]]
 
-    # glmnet can not handle na's
-    TVT <- TVT |> drop_na()
+    TVT_x <- TVT |> group_by(Jitter) |>
+      group_map(function(jitter, jitter_key) {
 
-    # Pmap is essentially a row-wise apply equivalent.
-    map_dfr(alphas, function(mixture) {
+        train <- jitter |> filter(Role == "train") |> select_at(c("Site", response, predictors, "Tot_Traps")) |> drop_na()
+        train <- train |> mutate(weights = Tot_Traps)
+        if(!weights) train <- train |> mutate(weights = 1)
 
-      print(paste("TVT:", tvt.x, "mixture:", mixture))
+        validate <- jitter |> filter(Role == "validate") |> select_at(c("Site", response, predictors, "Tot_Traps")) |> drop_na()
+        validate <- validate |> mutate(weights = Tot_Traps)
+        if(!weights) validate <- validate |> mutate(weights = 1)
 
-      TVT |> group_by(Jitter) |>
-        group_map(function(jitter, jitter_key) {
+        # Report progress
+        print(paste("TVT:", tvt.x, "jitter:", jitter_key))
 
-          # Identify our training and validation villages for this run
-
-          # Also correct for training class imbalance. Not sure this really does anything useful though...
-          train <- jitter |> filter(Role == "train")
-          #class_ratio <- class_ratio <- sum(train$TS_Mn > 0) / nrow(train)
-          class_ratio <- 0.5
-          train <- train |> mutate(class_weight = ifelse(TS_Mn > 0, 1-class_ratio, class_ratio))
-
-          validate <- jitter |> filter(Role == "validate")
+        bettermc::mclapply(alphas,
+                           mc.silent = F,
+                           mc.progress = T,
+                           mc.allow.fatal = T,
+                           mc.preschedule = F, # mc.preschedule = F is dynamic scheduling
+                           mc.cores = getOption("mc.cores", n_workers),
+                           function(mixture) {
 
           # Fit the model using x row of hyper-parameters object
-          # Sneaky trick to fit proportions. I'm pretty sure this works.
           TVT_fit <- glmnet::glmnet(y = train |> select_at(response) |> as.matrix(),
                                     x = train |> select_at(predictors) |> as.matrix(),
                                     family = "binomial",
-                                    # lambda = penalty,
+                                    nlambda = 200,
+                                    # lambda = seq(0,2,length.out = 100),
                                     alpha = mixture,
-                                    weight = train |> pull(class_weight))
+                                    weight = train |> pull(weights))
 
           TVT_train <- glmnet::assess.glmnet(TVT_fit,
                                              newy = train |> select_at(response) |> as.matrix(),
                                              newx = train |> select_at(predictors) |> as.matrix(),
-                                             family = "binomial") |>
+                                             family = "binomial",
+                                             weight = train |> pull(weights)) |>
             bind_rows() |>
             mutate(penalty = TVT_fit$lambda,
                    comparison = "train")
@@ -60,7 +64,8 @@ validate_elnet <- function(TVT_data,
           TVT_validate <- glmnet::assess.glmnet(TVT_fit,
                                                 newy = validate |> select_at(response) |> as.matrix(),
                                                 newx = validate |> select_at(predictors) |> as.matrix(),
-                                                family = "binomial") |>
+                                                family = "binomial",
+                                                weight = validate |> pull(weights)) |>
             bind_rows() |>
             mutate(penalty = TVT_fit$lambda,
                    comparison = "validate")
@@ -76,11 +81,9 @@ validate_elnet <- function(TVT_data,
                    penalty,
                    mixture,
                    everything())
-
           TVT_best
         })
-      })
-  }) |> bind_rows()
-
+      }) |> bind_rows()
+  })
   return(elnet_val)
 }

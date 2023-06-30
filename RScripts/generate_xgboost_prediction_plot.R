@@ -8,7 +8,9 @@ h <- here::here
 
 
 # Import data frame with predictions from the full XGBoost model
-d <- read_csv(h("Figures_agg_scaled/rank_curves_base_all_earlystopping100_whouse_wprec.csv"))
+d <- read_csv(h("Data/elnet_preds.csv"))
+
+d <- d |> rename(ji = Jiggle)
 
 # Verify that the dataset contains predictions from each train, validate, and
 # test town combination (only one model each, the full model)
@@ -48,7 +50,7 @@ d2 <- d %>%
 # Verify that the reported observed trap success is equal to the
 # reported Mastomys natalensis captures divided by reported trap totals,
 # accounting for rounding issues
-all.equal(d2$Tot_Mn/d2$TotTraps, d2$TS_Mn)
+# all.equal(d2$Tot_Mn/d2$TotTraps, d2$TS_Mn)
 
 # Plot of all predictions
 all <- d2 %>%
@@ -68,6 +70,8 @@ all <- d2 %>%
     axis.title.x = element_markdown(size = 16),
     axis.title.y = element_markdown(size = 16),
     plot.title = element_text(size = 18, face = "bold"),
+    plot.background = element_rect(fill = "white"),
+    panel.background = element_rect(fill = "white"),
     strip.background = element_rect(fill = "ghostwhite")
   )
 
@@ -90,6 +94,8 @@ outside <- d2 %>%
     axis.title.x = element_markdown(size = 16),
     axis.title.y = element_markdown(size = 16),
     plot.title = element_text(size = 18, face = "bold"),
+    plot.background = element_rect(fill = "white"),
+    panel.background = element_rect(fill = "white"),
     strip.background = element_rect(fill = "ghostwhite")
   )
 
@@ -112,11 +118,91 @@ in.house <- d2 %>%
     axis.title.x = element_markdown(size = 16),
     axis.title.y = element_markdown(size = 16),
     plot.title = element_text(size = 18, face = "bold"),
+    plot.background = element_rect(fill = "white"),
+    panel.background = element_rect(fill = "white"),
     strip.background = element_rect(fill = "ghostwhite")
   )
 
 # Save the full predictions figure
 ggsave(
   "Figures/xgboost_predictions.png", plot = all,
+  width = 3000, height = 2000, units = "px"
+)
+
+
+# Plot of all predictions
+all <- d2 %>%
+  ggplot(aes(x = TS_Mn, y = elnet_preds)) +
+  geom_point() +
+  ylim(-0.1, 1) +
+  ggtitle("Elastic Net Predictions") +
+  xlab("Observed *Mastomys natalensis* trap success") +
+  ylab("Predicted *Mastomys natalensis* trap success") +
+  facet_wrap(test_label ~ train_label, ncol = 3, dir = "v") +
+  stat_cor(
+    aes(label = after_stat(r.label)),
+    size = 6, method = "pearson"
+  ) +
+  theme_minimal() +
+  theme(
+    axis.title.x = element_markdown(size = 16),
+    axis.title.y = element_markdown(size = 16),
+    plot.title = element_text(size = 18, face = "bold"),
+    plot.background = element_rect(fill = "white"),
+    panel.background = element_rect(fill = "white"),
+    strip.background = element_rect(fill = "ghostwhite")
+  )
+
+# Plot of only outside of house predictions
+outside <- d2 %>%
+  filter(House == 0) %>%
+  ggplot(aes(x = TS_Mn, y = elnet_preds)) +
+  geom_point() +
+  ylim(-0.1, 1) +
+  ggtitle("Elastic Net Predictions - Outside of Houses Only") +
+  xlab("Observed *Mastomys natalensis* trap success") +
+  ylab("Predicted *Mastomys natalensis* trap success") +
+  facet_wrap(test_label ~ train_label, ncol = 3, dir = "v") +
+  stat_cor(
+    aes(label = after_stat(r.label)),
+    size = 6, method = "pearson"
+  ) +
+  theme_minimal() +
+  theme(
+    axis.title.x = element_markdown(size = 16),
+    axis.title.y = element_markdown(size = 16),
+    plot.title = element_text(size = 18, face = "bold"),
+    plot.background = element_rect(fill = "white"),
+    panel.background = element_rect(fill = "white"),
+    strip.background = element_rect(fill = "ghostwhite")
+  )
+
+# Plot of only inside of house predictions
+in.house <- d2 %>%
+  filter(House == 1) %>%
+  ggplot(aes(x = TS_Mn, y = elnet_preds)) +
+  geom_point() +
+  ylim(-0.1, 1) +
+  ggtitle("Elastic Net Predictions - Inside of Houses Only") +
+  xlab("Observed *Mastomys natalensis* trap success") +
+  ylab("Predicted *Mastomys natalensis* trap success") +
+  facet_wrap(test_label ~ train_labels, ncol = 3, dir = "v") +
+  stat_cor(
+    aes(label = after_stat(r.label)),
+    size = 6, method = "pearson"
+  ) +
+  theme_minimal() +
+  theme(
+    axis.title.x = element_markdown(size = 16),
+    axis.title.y = element_markdown(size = 16),
+    plot.title = element_text(size = 18, face = "bold"),
+    plot.background = element_rect(fill = "white"),
+    panel.background = element_rect(fill = "white"),
+    strip.background = element_rect(fill = "ghostwhite"),
+  )
+
+# Save the full predictions figure
+ggsave(
+  "Figures/enr_predictions.png", plot = all,
   width = 3000, height = 2000, units = "px"
 )

@@ -29,13 +29,12 @@ vi <- vi |> mutate(Type = ifelse(Type == "Inside outside", "Trap location", Type
 
 # Remove mean columns and standardize vi values
 # Mean in main sum in supplemental.
-vi_by_type <- vi |>
+vi_by_type <- vi |> mutate(Type = ifelse(Type == "Building density scaled", "Building density", Type)) |>
   filter(!is.na(validation)) |>
   group_by(Type) |>
-  summarize(vi = mean(vi)) |>
+  summarize(vi = sum(vi)) |>
   ungroup() |>
-  mutate(vi = vi / sum(vi),
-         Type = gsub("_", " ", Type),
+  mutate(Type = gsub("_", " ", Type),
          dummy = NA)
 
 type.plt <- vi_by_type |> ggplot(aes(x=reorder(Type, vi), y=vi)) +
@@ -51,13 +50,13 @@ type.plt <- vi_by_type |> ggplot(aes(x=reorder(Type, vi), y=vi)) +
   facet_wrap(~dummy, labeller=label_bquote("Predictor type")) +
   labs(title = "A",
        x = "",
-       y = "relative variable importance")
+       y = "feature importance")
 
 # Density range
 density.plt <- vi |> filter(Type == "Building density" & !is.na(Range) & !is.na(validation)) |>
   mutate(subtype = gsub("\\..*", "", gsub(".*_", "", Variable) |> tolower()),
-         dummy = NA,
-         vi = vi / sum(vi)) |>
+         dummy = NA) |>
+  group_by(Type, Range, subtype, dummy) |> summarize(vi = sum(vi)) |>
   ggplot(aes(x=reorder(Range, Range), y=vi, col=subtype, fill=subtype, group=Type)) +
   theme_ggdist() +
   geom_bar(stat = "identity", width=0.4) +
@@ -79,8 +78,7 @@ density.plt <- vi |> filter(Type == "Building density" & !is.na(Range) & !is.na(
 # Density subtype
 cover.plt <- vi |> filter(Type == "Land cover" & !is.na(Range) & !is.na(validation)) |>
   mutate(subtype = gsub("\\..*", "", gsub(".*_", "", Variable)),
-         dummy = NA,
-         vi = vi / sum(vi)) |>
+         dummy = NA) |>
   ggplot(aes(x=reorder(Range, Range), y=vi, col=subtype, fill=subtype, group=Type)) +
   theme_ggdist() +
   geom_bar(stat = "identity", width=0.4) +
@@ -97,7 +95,7 @@ cover.plt <- vi |> filter(Type == "Land cover" & !is.na(Range) & !is.na(validati
        fill = "",
        col = "",
        x = "",
-       y = "relative predictor importance")
+       y = "feature importance")
 
 # Precip
  precip.plt <- vi |> filter(Type == "Precip" & !is.na(validation)) |>
@@ -105,8 +103,7 @@ cover.plt <- vi |> filter(Type == "Land cover" & !is.na(Range) & !is.na(validati
    group_by(lag) |>
    summarize(vi = sum(vi)) |>
    ungroup() |>
-   mutate(vi = vi / sum(vi),
-          dummy = NA) |>
+   mutate(dummy = NA) |>
    ggplot(aes(x=lag, y=vi)) +
    facet_wrap(~dummy, labeller=label_bquote("Precipitation")) +
    theme_ggdist() +
@@ -117,13 +114,13 @@ cover.plt <- vi |> filter(Type == "Land cover" & !is.na(Range) & !is.na(validati
    geom_bar(stat = "identity", fill = "cornflowerblue", col="cornflowerblue") +
    labs(title = "C",
         x="Lag (months)",
-        y="relative variable importance") +
+        y="feature importance") +
    scale_x_reverse(breaks=12:1)
 
 plt <- ggarrange(type.plt, density.plt, ggarrange(nullGrob(), precip.plt, widths=c(0.22,0.78), nrow = 1), ggarrange(cover.plt, nullGrob(), widths=c(0.995, 0.05), nrow = 1), nrow = 2, ncol = 2)
 plt
 
-ggsave("vi_fig.png", plt, width = 12, height = 9)
+ggsave(h("Figures/vi_fig.png"), plt, width = 12, height = 9)
 
 
 rank_curves_by_visit_scaled <- read_csv(here("data", "rank_curves_by_visit_scaled.csv"))

@@ -15,6 +15,7 @@ get_grid <- function(cleaned_data,
                      grid_size_degrees,
                      n_jitters = 5) {
 
+
   # Jittering moves the boundaries of the 50 spatial blocks by
   # shifting each by a constant amount in the x and y direction.
   # The following produces 5 randomly shifted datasets as a list.
@@ -62,14 +63,16 @@ get_grid <- function(cleaned_data,
 
     # Just take the mean of every column not in the grouping variables
     # plus add in Tot_Mn and Tot_traps.
+
     cleaned_data_agg <- cleaned_data_gridded |>
-      select(-c(Longitude, Latitude, Trap_ID)) |>
       group_by(Site, House, Visit, Night, Boxi) |>
       summarize(Jitter = jitter,
-                Tot_Mn = sum(ifelse(Mna == 1, Trap.weight, 0)),
+                Tot_Mn = sum(Mna * Trap.weight),
                 Tot_Traps = sum(Trap.weight),
                 Tot_Other = Tot_Traps - Tot_Mn,
                 TS_Mn = Tot_Mn / Tot_Traps,
+                TS_Other = Tot_Other / Tot_Traps,
+                Date = min(Date),
                 across(where(is.numeric), ~mean(.x, na.rm=T)),
                 .groups = "drop")
   }) |> bind_rows()

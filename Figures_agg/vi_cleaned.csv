@@ -1,0 +1,645 @@
+"","Variable","training","validation","vi","Type","Range"
+"1","Density_Buildings.100","GTB","GTA",0.013262916,"Building density",100
+"2","Density_Buildings.100","GTB","SLTA",0.037305474,"Building density",100
+"3","Density_Buildings.100","GTA","GTB",0.070987694,"Building density",100
+"4","Density_Buildings.100","GTA","SLTA",0.022322083,"Building density",100
+"5","Density_Buildings.100","SLTA","GTB",0.012628086,"Building density",100
+"6","Density_Buildings.100","SLTA","GTA",0.009791777,"Building density",100
+"7","Density_Buildings.100","Mean",NA,0.0277163383333333,"Building density",100
+"8","Density_Buildings.1000","GTB","GTA",0,"Building density",1000
+"9","Density_Buildings.1000","GTB","SLTA",0.008614014,"Building density",1000
+"10","Density_Buildings.1000","GTA","GTB",0.0011371627,"Building density",1000
+"11","Density_Buildings.1000","GTA","SLTA",0.07782624,"Building density",1000
+"12","Density_Buildings.1000","SLTA","GTB",0.009591701,"Building density",1000
+"13","Density_Buildings.1000","SLTA","GTA",0.010257866,"Building density",1000
+"14","Density_Buildings.1000","Mean",NA,0.0179044972833333,"Building density",1000
+"15","Density_Buildings.200","GTB","GTA",0,"Building density",200
+"16","Density_Buildings.200","GTB","SLTA",0.025827074,"Building density",200
+"17","Density_Buildings.200","GTA","GTB",0.009125565,"Building density",200
+"18","Density_Buildings.200","GTA","SLTA",0.00834249,"Building density",200
+"19","Density_Buildings.200","SLTA","GTB",0.010256791,"Building density",200
+"20","Density_Buildings.200","SLTA","GTA",0.010611501,"Building density",200
+"21","Density_Buildings.200","Mean",NA,0.0106939035,"Building density",200
+"22","Density_Buildings.25","GTB","GTA",0.041747063,"Building density",25
+"23","Density_Buildings.25","GTB","SLTA",0.012337698,"Building density",25
+"24","Density_Buildings.25","GTA","GTB",0.005608133,"Building density",25
+"25","Density_Buildings.25","GTA","SLTA",0.046978727,"Building density",25
+"26","Density_Buildings.25","SLTA","GTB",0.01130037,"Building density",25
+"27","Density_Buildings.25","SLTA","GTA",0.012305375,"Building density",25
+"28","Density_Buildings.25","Mean",NA,0.0217128943333333,"Building density",25
+"29","Density_Buildings.50","GTB","GTA",0.038825285,"Building density",50
+"30","Density_Buildings.50","GTB","SLTA",0.010542919,"Building density",50
+"31","Density_Buildings.50","GTA","GTB",0.055629887,"Building density",50
+"32","Density_Buildings.50","GTA","SLTA",0.19706042,"Building density",50
+"33","Density_Buildings.50","SLTA","GTB",0.010527697,"Building density",50
+"34","Density_Buildings.50","SLTA","GTA",0.009850839,"Building density",50
+"35","Density_Buildings.50","Mean",NA,0.0537395078333333,"Building density",50
+"36","Density_Buildings.500","GTB","GTA",0.012388673,"Building density",500
+"37","Density_Buildings.500","GTB","SLTA",0.01838233,"Building density",500
+"38","Density_Buildings.500","GTA","GTB",0.003070956,"Building density",500
+"39","Density_Buildings.500","GTA","SLTA",0.071406715,"Building density",500
+"40","Density_Buildings.500","SLTA","GTB",0.009699069,"Building density",500
+"41","Density_Buildings.500","SLTA","GTA",0.0087016765,"Building density",500
+"42","Density_Buildings.500","Mean",NA,0.0206082365833333,"Building density",500
+"43","Density_Moderns.100","GTB","GTA",0.022751182,"Building density",100
+"44","Density_Moderns.100","GTB","SLTA",0,"Building density",100
+"45","Density_Moderns.100","GTA","GTB",0.010927941,"Building density",100
+"46","Density_Moderns.100","GTA","SLTA",0.01610754,"Building density",100
+"47","Density_Moderns.100","SLTA","GTB",0.009236094,"Building density",100
+"48","Density_Moderns.100","SLTA","GTA",0.009638411,"Building density",100
+"49","Density_Moderns.100","Mean",NA,0.011443528,"Building density",100
+"50","Density_Moderns.1000","GTB","GTA",0,"Building density",1000
+"51","Density_Moderns.1000","GTB","SLTA",0,"Building density",1000
+"52","Density_Moderns.1000","GTA","GTB",0,"Building density",1000
+"53","Density_Moderns.1000","GTA","SLTA",2.2690892e-06,"Building density",1000
+"54","Density_Moderns.1000","SLTA","GTB",0.009614023,"Building density",1000
+"55","Density_Moderns.1000","SLTA","GTA",0.009394639,"Building density",1000
+"56","Density_Moderns.1000","Mean",NA,0.00316848851486666,"Building density",1000
+"57","Density_Moderns.200","GTB","GTA",0.02429495,"Building density",200
+"58","Density_Moderns.200","GTB","SLTA",0.0130415335,"Building density",200
+"59","Density_Moderns.200","GTA","GTB",0.014230676,"Building density",200
+"60","Density_Moderns.200","GTA","SLTA",0.019920781,"Building density",200
+"61","Density_Moderns.200","SLTA","GTB",0.0092387255,"Building density",200
+"62","Density_Moderns.200","SLTA","GTA",0.010255219,"Building density",200
+"63","Density_Moderns.200","Mean",NA,0.0151636475,"Building density",200
+"64","Density_Moderns.25","GTB","GTA",0.0139485635,"Building density",25
+"65","Density_Moderns.25","GTB","SLTA",0.03273765,"Building density",25
+"66","Density_Moderns.25","GTA","GTB",0.0029436615,"Building density",25
+"67","Density_Moderns.25","GTA","SLTA",0.009742384,"Building density",25
+"68","Density_Moderns.25","SLTA","GTB",0.01598377,"Building density",25
+"69","Density_Moderns.25","SLTA","GTA",0.012449935,"Building density",25
+"70","Density_Moderns.25","Mean",NA,0.0146343273333333,"Building density",25
+"71","Density_Moderns.50","GTB","GTA",0.02061587,"Building density",50
+"72","Density_Moderns.50","GTB","SLTA",0.011415526,"Building density",50
+"73","Density_Moderns.50","GTA","GTB",0.0026132409,"Building density",50
+"74","Density_Moderns.50","GTA","SLTA",0,"Building density",50
+"75","Density_Moderns.50","SLTA","GTB",0.009308213,"Building density",50
+"76","Density_Moderns.50","SLTA","GTA",0.0105837155,"Building density",50
+"77","Density_Moderns.50","Mean",NA,0.00908942756666666,"Building density",50
+"78","Density_Moderns.500","GTB","GTA",0,"Building density",500
+"79","Density_Moderns.500","GTB","SLTA",0.02997829,"Building density",500
+"80","Density_Moderns.500","GTA","GTB",0.011350676,"Building density",500
+"81","Density_Moderns.500","GTA","SLTA",0,"Building density",500
+"82","Density_Moderns.500","SLTA","GTB",0.009305883,"Building density",500
+"83","Density_Moderns.500","SLTA","GTA",0.009835947,"Building density",500
+"84","Density_Moderns.500","Mean",NA,0.010078466,"Building density",500
+"85","Density_Traditionals.100","GTB","GTA",0.030188287,"Building density",100
+"86","Density_Traditionals.100","GTB","SLTA",0.0039091823,"Building density",100
+"87","Density_Traditionals.100","GTA","GTB",0.043961447,"Building density",100
+"88","Density_Traditionals.100","GTA","SLTA",0,"Building density",100
+"89","Density_Traditionals.100","SLTA","GTB",0.010378882,"Building density",100
+"90","Density_Traditionals.100","SLTA","GTA",0.011674885,"Building density",100
+"91","Density_Traditionals.100","Mean",NA,0.0166854472166667,"Building density",100
+"92","Density_Traditionals.1000","GTB","GTA",0.0028716666,"Building density",1000
+"93","Density_Traditionals.1000","GTB","SLTA",0.026757646,"Building density",1000
+"94","Density_Traditionals.1000","GTA","GTB",0.0018699277,"Building density",1000
+"95","Density_Traditionals.1000","GTA","SLTA",0,"Building density",1000
+"96","Density_Traditionals.1000","SLTA","GTB",0.00909505,"Building density",1000
+"97","Density_Traditionals.1000","SLTA","GTA",0.007909787,"Building density",1000
+"98","Density_Traditionals.1000","Mean",NA,0.00808401288333333,"Building density",1000
+"99","Density_Traditionals.200","GTB","GTA",0.027952855,"Building density",200
+"100","Density_Traditionals.200","GTB","SLTA",0.0070262644,"Building density",200
+"101","Density_Traditionals.200","GTA","GTB",0.04321467,"Building density",200
+"102","Density_Traditionals.200","GTA","SLTA",0,"Building density",200
+"103","Density_Traditionals.200","SLTA","GTB",0.011981245,"Building density",200
+"104","Density_Traditionals.200","SLTA","GTA",0.009934061,"Building density",200
+"105","Density_Traditionals.200","Mean",NA,0.0166848492333333,"Building density",200
+"106","Density_Traditionals.25","GTB","GTA",0.07187034,"Building density",25
+"107","Density_Traditionals.25","GTB","SLTA",0.031071262,"Building density",25
+"108","Density_Traditionals.25","GTA","GTB",0.0056447415,"Building density",25
+"109","Density_Traditionals.25","GTA","SLTA",0,"Building density",25
+"110","Density_Traditionals.25","SLTA","GTB",0.0051551573,"Building density",25
+"111","Density_Traditionals.25","SLTA","GTA",0.0047188266,"Building density",25
+"112","Density_Traditionals.25","Mean",NA,0.0197433879,"Building density",25
+"113","Density_Traditionals.50","GTB","GTA",0.054182287,"Building density",50
+"114","Density_Traditionals.50","GTB","SLTA",0.020023284,"Building density",50
+"115","Density_Traditionals.50","GTA","GTB",0.0456195,"Building density",50
+"116","Density_Traditionals.50","GTA","SLTA",0.0036177505,"Building density",50
+"117","Density_Traditionals.50","SLTA","GTB",0.008632881,"Building density",50
+"118","Density_Traditionals.50","SLTA","GTA",0.008340216,"Building density",50
+"119","Density_Traditionals.50","Mean",NA,0.0234026530833333,"Building density",50
+"120","Density_Traditionals.500","GTB","GTA",0,"Building density",500
+"121","Density_Traditionals.500","GTB","SLTA",0,"Building density",500
+"122","Density_Traditionals.500","GTA","GTB",0.0022944163,"Building density",500
+"123","Density_Traditionals.500","GTA","SLTA",8.478206e-05,"Building density",500
+"124","Density_Traditionals.500","SLTA","GTB",0.011298129,"Building density",500
+"125","Density_Traditionals.500","SLTA","GTA",0.010535857,"Building density",500
+"126","Density_Traditionals.500","Mean",NA,0.00403553072666666,"Building density",500
+"127","Frac_bare.100","GTB","GTA",0,"Land cover",100
+"128","Frac_bare.100","GTB","SLTA",0.007508118,"Land cover",100
+"129","Frac_bare.100","GTA","GTB",0.018091436,"Land cover",100
+"130","Frac_bare.100","GTA","SLTA",0.013319438,"Land cover",100
+"131","Frac_bare.100","SLTA","GTB",0.0082975505,"Land cover",100
+"132","Frac_bare.100","SLTA","GTA",0.009065323,"Land cover",100
+"133","Frac_bare.100","Mean",NA,0.00938031091666666,"Land cover",100
+"134","Frac_bare.1000","GTB","GTA",0.012661582,"Land cover",1000
+"135","Frac_bare.1000","GTB","SLTA",0.009344246,"Land cover",1000
+"136","Frac_bare.1000","GTA","GTB",0,"Land cover",1000
+"137","Frac_bare.1000","GTA","SLTA",0.008218973,"Land cover",1000
+"138","Frac_bare.1000","SLTA","GTB",0.007661846,"Land cover",1000
+"139","Frac_bare.1000","SLTA","GTA",0.007534146,"Land cover",1000
+"140","Frac_bare.1000","Mean",NA,0.00757013216666666,"Land cover",1000
+"141","Frac_bare.200","GTB","GTA",0,"Land cover",200
+"142","Frac_bare.200","GTB","SLTA",0.007566024,"Land cover",200
+"143","Frac_bare.200","GTA","GTB",0.002289032,"Land cover",200
+"144","Frac_bare.200","GTA","SLTA",0.016659906,"Land cover",200
+"145","Frac_bare.200","SLTA","GTB",0.008251363,"Land cover",200
+"146","Frac_bare.200","SLTA","GTA",0.008081458,"Land cover",200
+"147","Frac_bare.200","Mean",NA,0.00714129716666666,"Land cover",200
+"148","Frac_bare.25","GTB","GTA",0,"Land cover",25
+"149","Frac_bare.25","GTB","SLTA",0.0088449875,"Land cover",25
+"150","Frac_bare.25","GTA","GTB",0.0026043267,"Land cover",25
+"151","Frac_bare.25","GTA","SLTA",0.012807223,"Land cover",25
+"152","Frac_bare.25","SLTA","GTB",0.008713941,"Land cover",25
+"153","Frac_bare.25","SLTA","GTA",0.008069067,"Land cover",25
+"154","Frac_bare.25","Mean",NA,0.0068399242,"Land cover",25
+"155","Frac_bare.50","GTB","GTA",0,"Land cover",50
+"156","Frac_bare.50","GTB","SLTA",0.0063151834,"Land cover",50
+"157","Frac_bare.50","GTA","GTB",0.010541758,"Land cover",50
+"158","Frac_bare.50","GTA","SLTA",0.012137344,"Land cover",50
+"159","Frac_bare.50","SLTA","GTB",0.008138865,"Land cover",50
+"160","Frac_bare.50","SLTA","GTA",0.0080953175,"Land cover",50
+"161","Frac_bare.50","Mean",NA,0.00753807798333333,"Land cover",50
+"162","Frac_bare.500","GTB","GTA",0,"Land cover",500
+"163","Frac_bare.500","GTB","SLTA",0.009724986,"Land cover",500
+"164","Frac_bare.500","GTA","GTB",0.043271,"Land cover",500
+"165","Frac_bare.500","GTA","SLTA",0.012899783,"Land cover",500
+"166","Frac_bare.500","SLTA","GTB",0.00876937,"Land cover",500
+"167","Frac_bare.500","SLTA","GTA",0.0080491025,"Land cover",500
+"168","Frac_bare.500","Mean",NA,0.0137857069166667,"Land cover",500
+"169","Frac_burn.100","GTB","GTA",0,"Land cover",100
+"170","Frac_burn.100","GTB","SLTA",0.0013394596,"Land cover",100
+"171","Frac_burn.100","GTA","GTB",0.0021996372,"Land cover",100
+"172","Frac_burn.100","GTA","SLTA",0.022782343,"Land cover",100
+"173","Frac_burn.100","SLTA","GTB",0.012920998,"Land cover",100
+"174","Frac_burn.100","SLTA","GTA",0.01156785,"Land cover",100
+"175","Frac_burn.100","Mean",NA,0.0084683813,"Land cover",100
+"176","Frac_burn.1000","GTB","GTA",0,"Land cover",1000
+"177","Frac_burn.1000","GTB","SLTA",0.001964076,"Land cover",1000
+"178","Frac_burn.1000","GTA","GTB",0.008652357,"Land cover",1000
+"179","Frac_burn.1000","GTA","SLTA",0.015591059,"Land cover",1000
+"180","Frac_burn.1000","SLTA","GTB",0.008637867,"Land cover",1000
+"181","Frac_burn.1000","SLTA","GTA",0.008137397,"Land cover",1000
+"182","Frac_burn.1000","Mean",NA,0.00716379266666666,"Land cover",1000
+"183","Frac_burn.200","GTB","GTA",0,"Land cover",200
+"184","Frac_burn.200","GTB","SLTA",0,"Land cover",200
+"185","Frac_burn.200","GTA","GTB",0,"Land cover",200
+"186","Frac_burn.200","GTA","SLTA",0.0031795888,"Land cover",200
+"187","Frac_burn.200","SLTA","GTB",0.012230738,"Land cover",200
+"188","Frac_burn.200","SLTA","GTA",0.011391102,"Land cover",200
+"189","Frac_burn.200","Mean",NA,0.0044669048,"Land cover",200
+"190","Frac_burn.25","GTB","GTA",0,"Land cover",25
+"191","Frac_burn.25","GTB","SLTA",0,"Land cover",25
+"192","Frac_burn.25","GTA","GTB",0.000998364,"Land cover",25
+"193","Frac_burn.25","GTA","SLTA",0.010460566,"Land cover",25
+"194","Frac_burn.25","SLTA","GTB",0,"Land cover",25
+"195","Frac_burn.25","SLTA","GTA",0,"Land cover",25
+"196","Frac_burn.25","Mean",NA,0.00190982166666666,"Land cover",25
+"197","Frac_burn.50","GTB","GTA",0,"Land cover",50
+"198","Frac_burn.50","GTB","SLTA",0,"Land cover",50
+"199","Frac_burn.50","GTA","GTB",0.0012898393,"Land cover",50
+"200","Frac_burn.50","GTA","SLTA",0.013110413,"Land cover",50
+"201","Frac_burn.50","SLTA","GTB",0.010327035,"Land cover",50
+"202","Frac_burn.50","SLTA","GTA",0.010783281,"Land cover",50
+"203","Frac_burn.50","Mean",NA,0.00591842805,"Land cover",50
+"204","Frac_burn.500","GTB","GTA",0,"Land cover",500
+"205","Frac_burn.500","GTB","SLTA",0.00031358434,"Land cover",500
+"206","Frac_burn.500","GTA","GTB",0.003083651,"Land cover",500
+"207","Frac_burn.500","GTA","SLTA",0.0062753074,"Land cover",500
+"208","Frac_burn.500","SLTA","GTB",0.034268226,"Land cover",500
+"209","Frac_burn.500","SLTA","GTA",0.0349354,"Land cover",500
+"210","Frac_burn.500","Mean",NA,0.0131460281233333,"Land cover",500
+"211","Frac_grass.100","GTB","GTA",0.010246787,"Land cover",100
+"212","Frac_grass.100","GTB","SLTA",0.008842354,"Land cover",100
+"213","Frac_grass.100","GTA","GTB",0,"Land cover",100
+"214","Frac_grass.100","GTA","SLTA",0.0053087967,"Land cover",100
+"215","Frac_grass.100","SLTA","GTB",0.006821717,"Land cover",100
+"216","Frac_grass.100","SLTA","GTA",0.00646977,"Land cover",100
+"217","Frac_grass.100","Mean",NA,0.00628157078333333,"Land cover",100
+"218","Frac_grass.1000","GTB","GTA",0,"Land cover",1000
+"219","Frac_grass.1000","GTB","SLTA",0.007513467,"Land cover",1000
+"220","Frac_grass.1000","GTA","GTB",0,"Land cover",1000
+"221","Frac_grass.1000","GTA","SLTA",0.0035706242,"Land cover",1000
+"222","Frac_grass.1000","SLTA","GTB",0.010989511,"Land cover",1000
+"223","Frac_grass.1000","SLTA","GTA",0.009823794,"Land cover",1000
+"224","Frac_grass.1000","Mean",NA,0.00531623269999999,"Land cover",1000
+"225","Frac_grass.200","GTB","GTA",0,"Land cover",200
+"226","Frac_grass.200","GTB","SLTA",0.0051112836,"Land cover",200
+"227","Frac_grass.200","GTA","GTB",0,"Land cover",200
+"228","Frac_grass.200","GTA","SLTA",0.0065856962,"Land cover",200
+"229","Frac_grass.200","SLTA","GTB",0.0068926155,"Land cover",200
+"230","Frac_grass.200","SLTA","GTA",0.01667152,"Land cover",200
+"231","Frac_grass.200","Mean",NA,0.00587685255,"Land cover",200
+"232","Frac_grass.25","GTB","GTA",0,"Land cover",25
+"233","Frac_grass.25","GTB","SLTA",0.0023742954,"Land cover",25
+"234","Frac_grass.25","GTA","GTB",0,"Land cover",25
+"235","Frac_grass.25","GTA","SLTA",0.001966997,"Land cover",25
+"236","Frac_grass.25","SLTA","GTB",0.0075917765,"Land cover",25
+"237","Frac_grass.25","SLTA","GTA",0.0074842637,"Land cover",25
+"238","Frac_grass.25","Mean",NA,0.0032362221,"Land cover",25
+"239","Frac_grass.50","GTB","GTA",0.009184921,"Land cover",50
+"240","Frac_grass.50","GTB","SLTA",0.007662991,"Land cover",50
+"241","Frac_grass.50","GTA","GTB",0,"Land cover",50
+"242","Frac_grass.50","GTA","SLTA",0.002216876,"Land cover",50
+"243","Frac_grass.50","SLTA","GTB",0.008188961,"Land cover",50
+"244","Frac_grass.50","SLTA","GTA",0.0107089095,"Land cover",50
+"245","Frac_grass.50","Mean",NA,0.00632710975,"Land cover",50
+"246","Frac_grass.500","GTB","GTA",0.009965044,"Land cover",500
+"247","Frac_grass.500","GTB","SLTA",0.006642245,"Land cover",500
+"248","Frac_grass.500","GTA","GTB",0,"Land cover",500
+"249","Frac_grass.500","GTA","SLTA",0.0051511456,"Land cover",500
+"250","Frac_grass.500","SLTA","GTB",0.014121562,"Land cover",500
+"251","Frac_grass.500","SLTA","GTA",0.015014627,"Land cover",500
+"252","Frac_grass.500","Mean",NA,0.00848243726666666,"Land cover",500
+"253","Frac_mound.100","GTB","GTA",0,"Land cover",100
+"254","Frac_mound.100","GTB","SLTA",0.014149071,"Land cover",100
+"255","Frac_mound.100","GTA","GTB",0.0014811188,"Land cover",100
+"256","Frac_mound.100","GTA","SLTA",2.8950435e-05,"Land cover",100
+"257","Frac_mound.100","SLTA","GTB",0.01001401,"Land cover",100
+"258","Frac_mound.100","SLTA","GTA",0.010535045,"Land cover",100
+"259","Frac_mound.100","Mean",NA,0.00603469920583333,"Land cover",100
+"260","Frac_mound.1000","GTB","GTA",0,"Land cover",1000
+"261","Frac_mound.1000","GTB","SLTA",0.0047326963,"Land cover",1000
+"262","Frac_mound.1000","GTA","GTB",0.0024633096,"Land cover",1000
+"263","Frac_mound.1000","GTA","SLTA",0.013456814,"Land cover",1000
+"264","Frac_mound.1000","SLTA","GTB",0.010085017,"Land cover",1000
+"265","Frac_mound.1000","SLTA","GTA",0.011423022,"Land cover",1000
+"266","Frac_mound.1000","Mean",NA,0.00702680981666666,"Land cover",1000
+"267","Frac_mound.200","GTB","GTA",0.017920598,"Land cover",200
+"268","Frac_mound.200","GTB","SLTA",0.015252473,"Land cover",200
+"269","Frac_mound.200","GTA","GTB",0.003132756,"Land cover",200
+"270","Frac_mound.200","GTA","SLTA",0.056050368,"Land cover",200
+"271","Frac_mound.200","SLTA","GTB",0.010336788,"Land cover",200
+"272","Frac_mound.200","SLTA","GTA",0.01012043,"Land cover",200
+"273","Frac_mound.200","Mean",NA,0.0188022355,"Land cover",200
+"274","Frac_mound.25","GTB","GTA",0.0095634805,"Land cover",25
+"275","Frac_mound.25","GTB","SLTA",0.017913155,"Land cover",25
+"276","Frac_mound.25","GTA","GTB",0.0005985174,"Land cover",25
+"277","Frac_mound.25","GTA","SLTA",0.0094677685,"Land cover",25
+"278","Frac_mound.25","SLTA","GTB",0.009319661,"Land cover",25
+"279","Frac_mound.25","SLTA","GTA",0.009235255,"Land cover",25
+"280","Frac_mound.25","Mean",NA,0.00934963956666666,"Land cover",25
+"281","Frac_mound.50","GTB","GTA",0,"Land cover",50
+"282","Frac_mound.50","GTB","SLTA",0.015434508,"Land cover",50
+"283","Frac_mound.50","GTA","GTB",0.0011573066,"Land cover",50
+"284","Frac_mound.50","GTA","SLTA",0.005488671,"Land cover",50
+"285","Frac_mound.50","SLTA","GTB",0.009746003,"Land cover",50
+"286","Frac_mound.50","SLTA","GTA",0.0095061585,"Land cover",50
+"287","Frac_mound.50","Mean",NA,0.00688877451666666,"Land cover",50
+"288","Frac_mound.500","GTB","GTA",0.0024385224,"Land cover",500
+"289","Frac_mound.500","GTB","SLTA",0.0062126243,"Land cover",500
+"290","Frac_mound.500","GTA","GTB",0.004305301,"Land cover",500
+"291","Frac_mound.500","GTA","SLTA",0,"Land cover",500
+"292","Frac_mound.500","SLTA","GTB",0.0098197395,"Land cover",500
+"293","Frac_mound.500","SLTA","GTA",0.008624178,"Land cover",500
+"294","Frac_mound.500","Mean",NA,0.0052333942,"Land cover",500
+"295","Frac_rice.100","GTB","GTA",0.007860713,"Land cover",100
+"296","Frac_rice.100","GTB","SLTA",0.014683785,"Land cover",100
+"297","Frac_rice.100","GTA","GTB",0.002119611,"Land cover",100
+"298","Frac_rice.100","GTA","SLTA",0.009216097,"Land cover",100
+"299","Frac_rice.100","SLTA","GTB",0.008175415,"Land cover",100
+"300","Frac_rice.100","SLTA","GTA",0.007688208,"Land cover",100
+"301","Frac_rice.100","Mean",NA,0.00829063816666666,"Land cover",100
+"302","Frac_rice.1000","GTB","GTA",0,"Land cover",1000
+"303","Frac_rice.1000","GTB","SLTA",0.013839067,"Land cover",1000
+"304","Frac_rice.1000","GTA","GTB",0.0011124535,"Land cover",1000
+"305","Frac_rice.1000","GTA","SLTA",0.005194016,"Land cover",1000
+"306","Frac_rice.1000","SLTA","GTB",0.008725301,"Land cover",1000
+"307","Frac_rice.1000","SLTA","GTA",0.008823271,"Land cover",1000
+"308","Frac_rice.1000","Mean",NA,0.00628235141666666,"Land cover",1000
+"309","Frac_rice.200","GTB","GTA",0,"Land cover",200
+"310","Frac_rice.200","GTB","SLTA",0.010585166,"Land cover",200
+"311","Frac_rice.200","GTA","GTB",0,"Land cover",200
+"312","Frac_rice.200","GTA","SLTA",0.010547689,"Land cover",200
+"313","Frac_rice.200","SLTA","GTB",0.011355139,"Land cover",200
+"314","Frac_rice.200","SLTA","GTA",0.010989895,"Land cover",200
+"315","Frac_rice.200","Mean",NA,0.00724631483333333,"Land cover",200
+"316","Frac_rice.25","GTB","GTA",0.013281732,"Land cover",25
+"317","Frac_rice.25","GTB","SLTA",0.017130934,"Land cover",25
+"318","Frac_rice.25","GTA","GTB",0.0015455927,"Land cover",25
+"319","Frac_rice.25","GTA","SLTA",0.020622047,"Land cover",25
+"320","Frac_rice.25","SLTA","GTB",0.009455577,"Land cover",25
+"321","Frac_rice.25","SLTA","GTA",0.010061082,"Land cover",25
+"322","Frac_rice.25","Mean",NA,0.0120161607833333,"Land cover",25
+"323","Frac_rice.50","GTB","GTA",0.007222056,"Land cover",50
+"324","Frac_rice.50","GTB","SLTA",0.007331167,"Land cover",50
+"325","Frac_rice.50","GTA","GTB",0.0020644066,"Land cover",50
+"326","Frac_rice.50","GTA","SLTA",0.0036821628,"Land cover",50
+"327","Frac_rice.50","SLTA","GTB",0.0089169815,"Land cover",50
+"328","Frac_rice.50","SLTA","GTA",0.008739853,"Land cover",50
+"329","Frac_rice.50","Mean",NA,0.00632610448333333,"Land cover",50
+"330","Frac_rice.500","GTB","GTA",0,"Land cover",500
+"331","Frac_rice.500","GTB","SLTA",0.018018277,"Land cover",500
+"332","Frac_rice.500","GTA","GTB",0.0013117557,"Land cover",500
+"333","Frac_rice.500","GTA","SLTA",0.005213409,"Land cover",500
+"334","Frac_rice.500","SLTA","GTB",0.014513879,"Land cover",500
+"335","Frac_rice.500","SLTA","GTA",0.012751445,"Land cover",500
+"336","Frac_rice.500","Mean",NA,0.00863479428333333,"Land cover",500
+"337","Frac_tree.100","GTB","GTA",0,"Land cover",100
+"338","Frac_tree.100","GTB","SLTA",0.010674632,"Land cover",100
+"339","Frac_tree.100","GTA","GTB",0.012198908,"Land cover",100
+"340","Frac_tree.100","GTA","SLTA",0.013999503,"Land cover",100
+"341","Frac_tree.100","SLTA","GTB",0.008968389,"Land cover",100
+"342","Frac_tree.100","SLTA","GTA",0.009054005,"Land cover",100
+"343","Frac_tree.100","Mean",NA,0.00914923949999999,"Land cover",100
+"344","Frac_tree.1000","GTB","GTA",0.010526166,"Land cover",1000
+"345","Frac_tree.1000","GTB","SLTA",0.0162114,"Land cover",1000
+"346","Frac_tree.1000","GTA","GTB",0.0016438734,"Land cover",1000
+"347","Frac_tree.1000","GTA","SLTA",0.016176227,"Land cover",1000
+"348","Frac_tree.1000","SLTA","GTB",0.009845989,"Land cover",1000
+"349","Frac_tree.1000","SLTA","GTA",0.009670992,"Land cover",1000
+"350","Frac_tree.1000","Mean",NA,0.0106791079,"Land cover",1000
+"351","Frac_tree.200","GTB","GTA",0,"Land cover",200
+"352","Frac_tree.200","GTB","SLTA",0.013857158,"Land cover",200
+"353","Frac_tree.200","GTA","GTB",0.002253439,"Land cover",200
+"354","Frac_tree.200","GTA","SLTA",0.039400283,"Land cover",200
+"355","Frac_tree.200","SLTA","GTB",0.008993684,"Land cover",200
+"356","Frac_tree.200","SLTA","GTA",0.0102346325,"Land cover",200
+"357","Frac_tree.200","Mean",NA,0.01245653275,"Land cover",200
+"358","Frac_tree.25","GTB","GTA",0,"Land cover",25
+"359","Frac_tree.25","GTB","SLTA",0.012428863,"Land cover",25
+"360","Frac_tree.25","GTA","GTB",0.001907439,"Land cover",25
+"361","Frac_tree.25","GTA","SLTA",0.013557592,"Land cover",25
+"362","Frac_tree.25","SLTA","GTB",0.009948897,"Land cover",25
+"363","Frac_tree.25","SLTA","GTA",0.009077403,"Land cover",25
+"364","Frac_tree.25","Mean",NA,0.00782003233333333,"Land cover",25
+"365","Frac_tree.50","GTB","GTA",0,"Land cover",50
+"366","Frac_tree.50","GTB","SLTA",0.007374376,"Land cover",50
+"367","Frac_tree.50","GTA","GTB",0.002635893,"Land cover",50
+"368","Frac_tree.50","GTA","SLTA",0.015068566,"Land cover",50
+"369","Frac_tree.50","SLTA","GTB",0.008025822,"Land cover",50
+"370","Frac_tree.50","SLTA","GTA",0.008358373,"Land cover",50
+"371","Frac_tree.50","Mean",NA,0.006910505,"Land cover",50
+"372","Frac_tree.500","GTB","GTA",0,"Land cover",500
+"373","Frac_tree.500","GTB","SLTA",0.014013928,"Land cover",500
+"374","Frac_tree.500","GTA","GTB",0.037518658,"Land cover",500
+"375","Frac_tree.500","GTA","SLTA",0.012656083,"Land cover",500
+"376","Frac_tree.500","SLTA","GTB",0.012448223,"Land cover",500
+"377","Frac_tree.500","SLTA","GTA",0.010599968,"Land cover",500
+"378","Frac_tree.500","Mean",NA,0.0145394766666667,"Land cover",500
+"379","Frac_water.100","GTB","GTA",0.007804373,"Land cover",100
+"380","Frac_water.100","GTB","SLTA",0.008372987,"Land cover",100
+"381","Frac_water.100","GTA","GTB",0,"Land cover",100
+"382","Frac_water.100","GTA","SLTA",0,"Land cover",100
+"383","Frac_water.100","SLTA","GTB",0.011070464,"Land cover",100
+"384","Frac_water.100","SLTA","GTA",0.00997112,"Land cover",100
+"385","Frac_water.100","Mean",NA,0.00620315733333333,"Land cover",100
+"386","Frac_water.1000","GTB","GTA",0.0071756397,"Land cover",1000
+"387","Frac_water.1000","GTB","SLTA",0.008638038,"Land cover",1000
+"388","Frac_water.1000","GTA","GTB",0.0041028084,"Land cover",1000
+"389","Frac_water.1000","GTA","SLTA",0.034433495,"Land cover",1000
+"390","Frac_water.1000","SLTA","GTB",0.011805053,"Land cover",1000
+"391","Frac_water.1000","SLTA","GTA",0.012660684,"Land cover",1000
+"392","Frac_water.1000","Mean",NA,0.0131359530166667,"Land cover",1000
+"393","Frac_water.200","GTB","GTA",0.0070813047,"Land cover",200
+"394","Frac_water.200","GTB","SLTA",0.017164236,"Land cover",200
+"395","Frac_water.200","GTA","GTB",0,"Land cover",200
+"396","Frac_water.200","GTA","SLTA",0,"Land cover",200
+"397","Frac_water.200","SLTA","GTB",0.009729324,"Land cover",200
+"398","Frac_water.200","SLTA","GTA",0.01017792,"Land cover",200
+"399","Frac_water.200","Mean",NA,0.00735879744999999,"Land cover",200
+"400","Frac_water.25","GTB","GTA",0,"Land cover",25
+"401","Frac_water.25","GTB","SLTA",0.023297323,"Land cover",25
+"402","Frac_water.25","GTA","GTB",0,"Land cover",25
+"403","Frac_water.25","GTA","SLTA",0,"Land cover",25
+"404","Frac_water.25","SLTA","GTB",0.008967974,"Land cover",25
+"405","Frac_water.25","SLTA","GTA",0.0090966495,"Land cover",25
+"406","Frac_water.25","Mean",NA,0.00689365775,"Land cover",25
+"407","Frac_water.50","GTB","GTA",0.0034300464,"Land cover",50
+"408","Frac_water.50","GTB","SLTA",0.018832874,"Land cover",50
+"409","Frac_water.50","GTA","GTB",0,"Land cover",50
+"410","Frac_water.50","GTA","SLTA",0.003989898,"Land cover",50
+"411","Frac_water.50","SLTA","GTB",0.008914633,"Land cover",50
+"412","Frac_water.50","SLTA","GTA",0.008786035,"Land cover",50
+"413","Frac_water.50","Mean",NA,0.00732558106666666,"Land cover",50
+"414","Frac_water.500","GTB","GTA",0,"Land cover",500
+"415","Frac_water.500","GTB","SLTA",0.0052999966,"Land cover",500
+"416","Frac_water.500","GTA","GTB",0,"Land cover",500
+"417","Frac_water.500","GTA","SLTA",0.0022337919,"Land cover",500
+"418","Frac_water.500","SLTA","GTB",0.008529863,"Land cover",500
+"419","Frac_water.500","SLTA","GTA",0.0087764375,"Land cover",500
+"420","Frac_water.500","Mean",NA,0.00414001483333333,"Land cover",500
+"421","House","GTB","GTA",0.02876222,"Inside outside",NA
+"422","House","GTB","SLTA",0,"Inside outside",NA
+"423","House","GTA","GTB",0.23909944,"Inside outside",NA
+"424","House","GTA","SLTA",0,"Inside outside",NA
+"425","House","SLTA","GTB",0.058646057,"Inside outside",NA
+"426","House","SLTA","GTA",0.051658385,"Inside outside",NA
+"427","House","Mean",NA,0.0630276836666667,"Inside outside",NA
+"428","Night","GTB","GTA",0,"Trap night",NA
+"429","Night","GTB","SLTA",0.041573733,"Trap night",NA
+"430","Night","GTA","GTB",0.0027618345,"Trap night",NA
+"431","Night","GTA","SLTA",0.0065097483,"Trap night",NA
+"432","Night","SLTA","GTB",0.009701527,"Trap night",NA
+"433","Night","SLTA","GTA",0.0094731115,"Trap night",NA
+"434","Night","Mean",NA,0.0116699923833333,"Trap night",NA
+"435","P1","GTB","GTA",0.0074560964,"Precip",NA
+"436","P1","GTB","SLTA",0.01678795,"Precip",NA
+"437","P1","GTA","GTB",0.0019237865,"Precip",NA
+"438","P1","GTA","SLTA",0.0035512424,"Precip",NA
+"439","P1","SLTA","GTB",0.009819833,"Precip",NA
+"440","P1","SLTA","GTA",0.0101596145,"Precip",NA
+"441","P1","Mean",NA,0.00828308713333333,"Precip",NA
+"442","P10","GTB","GTA",0.009433727,"Precip",NA
+"443","P10","GTB","SLTA",0.0038820326,"Precip",NA
+"444","P10","GTA","GTB",0.0045445357,"Precip",NA
+"445","P10","GTA","SLTA",0,"Precip",NA
+"446","P10","SLTA","GTB",0.011982748,"Precip",NA
+"447","P10","SLTA","GTA",0.012353265,"Precip",NA
+"448","P10","Mean",NA,0.00703271805,"Precip",NA
+"449","P11","GTB","GTA",0.011834458,"Precip",NA
+"450","P11","GTB","SLTA",0.0060883537,"Precip",NA
+"451","P11","GTA","GTB",0,"Precip",NA
+"452","P11","GTA","SLTA",0,"Precip",NA
+"453","P11","SLTA","GTB",0.01297158,"Precip",NA
+"454","P11","SLTA","GTA",0.011978511,"Precip",NA
+"455","P11","Mean",NA,0.00714548378333333,"Precip",NA
+"456","P12","GTB","GTA",0.013718595,"Precip",NA
+"457","P12","GTB","SLTA",0.0044535655,"Precip",NA
+"458","P12","GTA","GTB",0.0012815866,"Precip",NA
+"459","P12","GTA","SLTA",0,"Precip",NA
+"460","P12","SLTA","GTB",0.010399753,"Precip",NA
+"461","P12","SLTA","GTA",0.009892363,"Precip",NA
+"462","P12","Mean",NA,0.00662431051666666,"Precip",NA
+"463","P2","GTB","GTA",0.012305191,"Precip",NA
+"464","P2","GTB","SLTA",0.006701095,"Precip",NA
+"465","P2","GTA","GTB",0.0015978087,"Precip",NA
+"466","P2","GTA","SLTA",0.012049142,"Precip",NA
+"467","P2","SLTA","GTB",0.011564393,"Precip",NA
+"468","P2","SLTA","GTA",0.012503802,"Precip",NA
+"469","P2","Mean",NA,0.00945357195,"Precip",NA
+"470","P3","GTB","GTA",0.006675052,"Precip",NA
+"471","P3","GTB","SLTA",0.001096668,"Precip",NA
+"472","P3","GTA","GTB",0.0038685456,"Precip",NA
+"473","P3","GTA","SLTA",0,"Precip",NA
+"474","P3","SLTA","GTB",0.0093071535,"Precip",NA
+"475","P3","SLTA","GTA",0.008320746,"Precip",NA
+"476","P3","Mean",NA,0.00487802751666666,"Precip",NA
+"477","P4","GTB","GTA",0.012183002,"Precip",NA
+"478","P4","GTB","SLTA",0.006360935,"Precip",NA
+"479","P4","GTA","GTB",0.0014622051,"Precip",NA
+"480","P4","GTA","SLTA",0.0088538965,"Precip",NA
+"481","P4","SLTA","GTB",0.010867714,"Precip",NA
+"482","P4","SLTA","GTA",0.010611176,"Precip",NA
+"483","P4","Mean",NA,0.00838982143333333,"Precip",NA
+"484","P5","GTB","GTA",0.011701838,"Precip",NA
+"485","P5","GTB","SLTA",0.0069456142,"Precip",NA
+"486","P5","GTA","GTB",0.0018881554,"Precip",NA
+"487","P5","GTA","SLTA",0.008602023,"Precip",NA
+"488","P5","SLTA","GTB",0.0086931875,"Precip",NA
+"489","P5","SLTA","GTA",0.009556887,"Precip",NA
+"490","P5","Mean",NA,0.00789795085,"Precip",NA
+"491","P6","GTB","GTA",0.013347034,"Precip",NA
+"492","P6","GTB","SLTA",0.00057953293,"Precip",NA
+"493","P6","GTA","GTB",0.0017786762,"Precip",NA
+"494","P6","GTA","SLTA",0.004950748,"Precip",NA
+"495","P6","SLTA","GTB",0.011308192,"Precip",NA
+"496","P6","SLTA","GTA",0.011788721,"Precip",NA
+"497","P6","Mean",NA,0.00729215068833333,"Precip",NA
+"498","P7","GTB","GTA",0.012087448,"Precip",NA
+"499","P7","GTB","SLTA",0.059307266,"Precip",NA
+"500","P7","GTA","GTB",0.0043295794,"Precip",NA
+"501","P7","GTA","SLTA",0,"Precip",NA
+"502","P7","SLTA","GTB",0.012621807,"Precip",NA
+"503","P7","SLTA","GTA",0.012546103,"Precip",NA
+"504","P7","Mean",NA,0.0168153672333333,"Precip",NA
+"505","P8","GTB","GTA",0.01016046,"Precip",NA
+"506","P8","GTB","SLTA",0.008913668,"Precip",NA
+"507","P8","GTA","GTB",0.0061480324,"Precip",NA
+"508","P8","GTA","SLTA",0.019184954,"Precip",NA
+"509","P8","SLTA","GTB",0.011211921,"Precip",NA
+"510","P8","SLTA","GTA",0.010160383,"Precip",NA
+"511","P8","Mean",NA,0.0109632364,"Precip",NA
+"512","P9","GTB","GTA",0.01159268,"Precip",NA
+"513","P9","GTB","SLTA",0.0068383245,"Precip",NA
+"514","P9","GTA","GTB",0.0023782474,"Precip",NA
+"515","P9","GTA","SLTA",0,"Precip",NA
+"516","P9","SLTA","GTB",0.015778411,"Precip",NA
+"517","P9","SLTA","GTA",0.017242609,"Precip",NA
+"518","P9","Mean",NA,0.00897171198333333,"Precip",NA
+"519","sc_Density_Buildings.100","GTB","GTA",0.00912678,"Building density scaled",100
+"520","sc_Density_Buildings.100","GTB","SLTA",0.018464789,"Building density scaled",100
+"521","sc_Density_Buildings.100","GTA","GTB",0.047110356,"Building density scaled",100
+"522","sc_Density_Buildings.100","GTA","SLTA",0,"Building density scaled",100
+"523","sc_Density_Buildings.100","SLTA","GTB",0.009218648,"Building density scaled",100
+"524","sc_Density_Buildings.100","SLTA","GTA",0.013885092,"Building density scaled",100
+"525","sc_Density_Buildings.100","Mean",NA,0.0163009441666667,"Building density scaled",100
+"526","sc_Density_Buildings.1000","GTB","GTA",0,"Building density scaled",1000
+"527","sc_Density_Buildings.1000","GTB","SLTA",0.007102403,"Building density scaled",1000
+"528","sc_Density_Buildings.1000","GTA","GTB",0,"Building density scaled",1000
+"529","sc_Density_Buildings.1000","GTA","SLTA",0,"Building density scaled",1000
+"530","sc_Density_Buildings.1000","SLTA","GTB",0.011019972,"Building density scaled",1000
+"531","sc_Density_Buildings.1000","SLTA","GTA",0.009835929,"Building density scaled",1000
+"532","sc_Density_Buildings.1000","Mean",NA,0.00465971733333333,"Building density scaled",1000
+"533","sc_Density_Buildings.200","GTB","GTA",0,"Building density scaled",200
+"534","sc_Density_Buildings.200","GTB","SLTA",0,"Building density scaled",200
+"535","sc_Density_Buildings.200","GTA","GTB",0.0021724405,"Building density scaled",200
+"536","sc_Density_Buildings.200","GTA","SLTA",2.386719e-05,"Building density scaled",200
+"537","sc_Density_Buildings.200","SLTA","GTB",0.011143875,"Building density scaled",200
+"538","sc_Density_Buildings.200","SLTA","GTA",0.011329173,"Building density scaled",200
+"539","sc_Density_Buildings.200","Mean",NA,0.00411155928166666,"Building density scaled",200
+"540","sc_Density_Buildings.25","GTB","GTA",0.05231935,"Building density scaled",25
+"541","sc_Density_Buildings.25","GTB","SLTA",0,"Building density scaled",25
+"542","sc_Density_Buildings.25","GTA","GTB",0.004742365,"Building density scaled",25
+"543","sc_Density_Buildings.25","GTA","SLTA",0,"Building density scaled",25
+"544","sc_Density_Buildings.25","SLTA","GTB",0.008783626,"Building density scaled",25
+"545","sc_Density_Buildings.25","SLTA","GTA",0.009978222,"Building density scaled",25
+"546","sc_Density_Buildings.25","Mean",NA,0.0126372605,"Building density scaled",25
+"547","sc_Density_Buildings.50","GTB","GTA",0.0330049,"Building density scaled",50
+"548","sc_Density_Buildings.50","GTB","SLTA",0.036272883,"Building density scaled",50
+"549","sc_Density_Buildings.50","GTA","GTB",0.039179068,"Building density scaled",50
+"550","sc_Density_Buildings.50","GTA","SLTA",0,"Building density scaled",50
+"551","sc_Density_Buildings.50","SLTA","GTB",0.010507696,"Building density scaled",50
+"552","sc_Density_Buildings.50","SLTA","GTA",0.011339281,"Building density scaled",50
+"553","sc_Density_Buildings.50","Mean",NA,0.0217173046666667,"Building density scaled",50
+"554","sc_Density_Buildings.500","GTB","GTA",0,"Building density scaled",500
+"555","sc_Density_Buildings.500","GTB","SLTA",0.007263934,"Building density scaled",500
+"556","sc_Density_Buildings.500","GTA","GTB",0.0036847384,"Building density scaled",500
+"557","sc_Density_Buildings.500","GTA","SLTA",0.00013657389,"Building density scaled",500
+"558","sc_Density_Buildings.500","SLTA","GTB",0.009204227,"Building density scaled",500
+"559","sc_Density_Buildings.500","SLTA","GTA",0.0095657455,"Building density scaled",500
+"560","sc_Density_Buildings.500","Mean",NA,0.00497586979833333,"Building density scaled",500
+"561","sc_Density_Moderns.100","GTB","GTA",0.014570469,"Building density scaled",100
+"562","sc_Density_Moderns.100","GTB","SLTA",0,"Building density scaled",100
+"563","sc_Density_Moderns.100","GTA","GTB",0.045179624,"Building density scaled",100
+"564","sc_Density_Moderns.100","GTA","SLTA",0,"Building density scaled",100
+"565","sc_Density_Moderns.100","SLTA","GTB",0.009995511,"Building density scaled",100
+"566","sc_Density_Moderns.100","SLTA","GTA",0.011312252,"Building density scaled",100
+"567","sc_Density_Moderns.100","Mean",NA,0.0135096426666667,"Building density scaled",100
+"568","sc_Density_Moderns.1000","GTB","GTA",0,"Building density scaled",1000
+"569","sc_Density_Moderns.1000","GTB","SLTA",0.0028248837,"Building density scaled",1000
+"570","sc_Density_Moderns.1000","GTA","GTB",0,"Building density scaled",1000
+"571","sc_Density_Moderns.1000","GTA","SLTA",0,"Building density scaled",1000
+"572","sc_Density_Moderns.1000","SLTA","GTB",0.0099988375,"Building density scaled",1000
+"573","sc_Density_Moderns.1000","SLTA","GTA",0.009676706,"Building density scaled",1000
+"574","sc_Density_Moderns.1000","Mean",NA,0.0037500712,"Building density scaled",1000
+"575","sc_Density_Moderns.200","GTB","GTA",0,"Building density scaled",200
+"576","sc_Density_Moderns.200","GTB","SLTA",0.027021803,"Building density scaled",200
+"577","sc_Density_Moderns.200","GTA","GTB",0.0045559267,"Building density scaled",200
+"578","sc_Density_Moderns.200","GTA","SLTA",0,"Building density scaled",200
+"579","sc_Density_Moderns.200","SLTA","GTB",0.008864261,"Building density scaled",200
+"580","sc_Density_Moderns.200","SLTA","GTA",0.0088101225,"Building density scaled",200
+"581","sc_Density_Moderns.200","Mean",NA,0.00820868553333333,"Building density scaled",200
+"582","sc_Density_Moderns.25","GTB","GTA",0.014704763,"Building density scaled",25
+"583","sc_Density_Moderns.25","GTB","SLTA",0,"Building density scaled",25
+"584","sc_Density_Moderns.25","GTA","GTB",0.0035413753,"Building density scaled",25
+"585","sc_Density_Moderns.25","GTA","SLTA",0,"Building density scaled",25
+"586","sc_Density_Moderns.25","SLTA","GTB",0.022870727,"Building density scaled",25
+"587","sc_Density_Moderns.25","SLTA","GTA",0.016979981,"Building density scaled",25
+"588","sc_Density_Moderns.25","Mean",NA,0.00968280771666666,"Building density scaled",25
+"589","sc_Density_Moderns.50","GTB","GTA",0.03841058,"Building density scaled",50
+"590","sc_Density_Moderns.50","GTB","SLTA",0.002640782,"Building density scaled",50
+"591","sc_Density_Moderns.50","GTA","GTB",0.018998846,"Building density scaled",50
+"592","sc_Density_Moderns.50","GTA","SLTA",0,"Building density scaled",50
+"593","sc_Density_Moderns.50","SLTA","GTB",0.0102631375,"Building density scaled",50
+"594","sc_Density_Moderns.50","SLTA","GTA",0.010711798,"Building density scaled",50
+"595","sc_Density_Moderns.50","Mean",NA,0.0135041905833333,"Building density scaled",50
+"596","sc_Density_Moderns.500","GTB","GTA",0,"Building density scaled",500
+"597","sc_Density_Moderns.500","GTB","SLTA",0.02578043,"Building density scaled",500
+"598","sc_Density_Moderns.500","GTA","GTB",0.0033249722,"Building density scaled",500
+"599","sc_Density_Moderns.500","GTA","SLTA",0,"Building density scaled",500
+"600","sc_Density_Moderns.500","SLTA","GTB",0.010602286,"Building density scaled",500
+"601","sc_Density_Moderns.500","SLTA","GTA",0.010301153,"Building density scaled",500
+"602","sc_Density_Moderns.500","Mean",NA,0.00833480686666666,"Building density scaled",500
+"603","sc_Density_Traditionals.100","GTB","GTA",0.02095602,"Building density scaled",100
+"604","sc_Density_Traditionals.100","GTB","SLTA",0,"Building density scaled",100
+"605","sc_Density_Traditionals.100","GTA","GTB",0.015866721,"Building density scaled",100
+"606","sc_Density_Traditionals.100","GTA","SLTA",0,"Building density scaled",100
+"607","sc_Density_Traditionals.100","SLTA","GTB",0.011877857,"Building density scaled",100
+"608","sc_Density_Traditionals.100","SLTA","GTA",0.0107752895,"Building density scaled",100
+"609","sc_Density_Traditionals.100","Mean",NA,0.00991264791666666,"Building density scaled",100
+"610","sc_Density_Traditionals.1000","GTB","GTA",0,"Building density scaled",1000
+"611","sc_Density_Traditionals.1000","GTB","SLTA",0.011613219,"Building density scaled",1000
+"612","sc_Density_Traditionals.1000","GTA","GTB",0,"Building density scaled",1000
+"613","sc_Density_Traditionals.1000","GTA","SLTA",0,"Building density scaled",1000
+"614","sc_Density_Traditionals.1000","SLTA","GTB",0.00876356,"Building density scaled",1000
+"615","sc_Density_Traditionals.1000","SLTA","GTA",0.011686512,"Building density scaled",1000
+"616","sc_Density_Traditionals.1000","Mean",NA,0.00534388183333333,"Building density scaled",1000
+"617","sc_Density_Traditionals.200","GTB","GTA",0.012777168,"Building density scaled",200
+"618","sc_Density_Traditionals.200","GTB","SLTA",0,"Building density scaled",200
+"619","sc_Density_Traditionals.200","GTA","GTB",0.007051843,"Building density scaled",200
+"620","sc_Density_Traditionals.200","GTA","SLTA",0,"Building density scaled",200
+"621","sc_Density_Traditionals.200","SLTA","GTB",0.009145147,"Building density scaled",200
+"622","sc_Density_Traditionals.200","SLTA","GTA",0.010959797,"Building density scaled",200
+"623","sc_Density_Traditionals.200","Mean",NA,0.00665565916666666,"Building density scaled",200
+"624","sc_Density_Traditionals.25","GTB","GTA",0.091359,"Building density scaled",25
+"625","sc_Density_Traditionals.25","GTB","SLTA",0,"Building density scaled",25
+"626","sc_Density_Traditionals.25","GTA","GTB",0.006413657,"Building density scaled",25
+"627","sc_Density_Traditionals.25","GTA","SLTA",0,"Building density scaled",25
+"628","sc_Density_Traditionals.25","SLTA","GTB",0.011482029,"Building density scaled",25
+"629","sc_Density_Traditionals.25","SLTA","GTA",0.011289648,"Building density scaled",25
+"630","sc_Density_Traditionals.25","Mean",NA,0.0200907223333333,"Building density scaled",25
+"631","sc_Density_Traditionals.50","GTB","GTA",0.040250316,"Building density scaled",50
+"632","sc_Density_Traditionals.50","GTB","SLTA",0,"Building density scaled",50
+"633","sc_Density_Traditionals.50","GTA","GTB",0.015423729,"Building density scaled",50
+"634","sc_Density_Traditionals.50","GTA","SLTA",0,"Building density scaled",50
+"635","sc_Density_Traditionals.50","SLTA","GTB",0.00681815,"Building density scaled",50
+"636","sc_Density_Traditionals.50","SLTA","GTA",0.0091578895,"Building density scaled",50
+"637","sc_Density_Traditionals.50","Mean",NA,0.01194168075,"Building density scaled",50
+"638","sc_Density_Traditionals.500","GTB","GTA",0,"Building density scaled",500
+"639","sc_Density_Traditionals.500","GTB","SLTA",0,"Building density scaled",500
+"640","sc_Density_Traditionals.500","GTA","GTB",0.0028870676,"Building density scaled",500
+"641","sc_Density_Traditionals.500","GTA","SLTA",0,"Building density scaled",500
+"642","sc_Density_Traditionals.500","SLTA","GTB",0.0107985595,"Building density scaled",500
+"643","sc_Density_Traditionals.500","SLTA","GTA",0.01052476,"Building density scaled",500
+"644","sc_Density_Traditionals.500","Mean",NA,0.00403506451666666,"Building density scaled",500
