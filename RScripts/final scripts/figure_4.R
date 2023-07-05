@@ -19,15 +19,15 @@ building <- text_grob("BRT prediction", face = "bold", col = "black", size = 20)
 
 arrow <- rasterGrob(readPNG(here("old_figures/segmented", "arrow.png")))
 
-tanganya <- list(base = readPNG(here("Figures", "tanganya_base.png")),
-                 brt = readPNG(here("old_figures/segmented", "Tanganya_brt_house_1.png")),
-                 legend = readPNG(here("old_figures/segmented", "Tanganya_brt_legend_house_1.png")))
-bantou <- list(base = readPNG(here("old_figures/segmented", "Bantou_base_house_1.png")),
-               brt = readPNG(here("old_figures/segmented", "Bantou_brt_house_1.png")),
-               legend = readPNG(here("old_figures/segmented", "Bantou_brt_legend_house_1.png")))
-bafodia <- list(base = readPNG(here("old_figures/segmented", "Bafodia_base_house_1.png")),
-                brt = readPNG(here("old_figures/segmented", "Bafodia_brt_house_1.png")),
-                legend = readPNG(here("old_figures/segmented", "Bafodia_brt_legend_house1.png")))
+  tanganya <- list(base = readPNG(here("Figures", "Tanganya_base_house_1.png")),
+                 brt = readPNG(here("Figures", "Tanganya_brt_house_1.png")),
+                 legend = readPNG(here("Figures", "Tanganya_brt_legend_house_1.png")))
+bantou <- list(base = readPNG(here("Figures", "Bantou_base_house_1.png")),
+               brt = readPNG(here("Figures", "Bantou_brt_house_1.png")),
+               legend = readPNG(here("Figures", "Bantou_brt_legend_house_1.png")))
+bafodia <- list(base = readPNG(here("Figures", "Bafodia_base_house_1.png")),
+                brt = readPNG(here("Figures", "Bafodia_brt_house_1.png")),
+                legend = readPNG(here("Figures", "Bafodia_brt_legend_house_1.png")))
 
 tanganya <- map(tanganya, ~rasterGrob(.x))
 bantou <- map(bantou, ~rasterGrob(.x))

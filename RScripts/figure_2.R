@@ -25,20 +25,31 @@ lay <- rbind(lay,
              8,
              lay + 8)
 
+
+
 instance <- text_grob("Landcover", face = "bold", col = "black", size = 20)
 building <- text_grob("Buildings", face = "bold", col = "black", size = 20)
 
 arrow <- rasterGrob(readPNG(here("old_figures/segmented", "arrow.png")))
 arrow <- nullGrob()
+
 tanganya <- list(cover = readPNG(here("old_figures/segmented", "tanganya_cover.png")),
                  building = readPNG(here("old_figures/segmented", "tanganya_building.png")))
+
+
 bantou <- list(cover = readPNG(here("old_figures/segmented", "bantou_cover.png")),
                building = readPNG(here("old_figures/segmented", "bantou_building.png")))
+
+
 bafodia <- list(cover = readPNG(here("old_figures/segmented", "bafodia_cover.png")),
                 building = readPNG(here("old_figures/segmented", "bafodia_building.png")))
 
 tanganya <- map(tanganya, ~rasterGrob(.x))
+
+
 bantou <- map(bantou, ~rasterGrob(.x))
+
+
 bafodia <- map(bafodia, ~rasterGrob(.x))
 
 cover_legend <- tibble(`Land Cover` = c("bare", "grass", "tree", "burned", "rice", "cloud", "water", "cultivation"),

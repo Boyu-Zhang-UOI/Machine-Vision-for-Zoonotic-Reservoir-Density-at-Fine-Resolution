@@ -4,6 +4,7 @@ library(ggdist)
 library(ggstance)
 library(here)
 library(ggpubr)
+library(lme4)
 
 # Unpack
 # Evan's awesome feedback:
@@ -36,8 +37,6 @@ dat_visit$house_name = c('All', 'Inside', 'Outside')[dat_visit$house_num +1]
 
 inout_TS <- dat_visit |> filter(house_name != "All")
 inout <- glmer(TS_Mn ~ house_name + (1|Visit) + (1|Night), data = inout_TS, family="binomial")
-
-# inout <- glmer(TS_Mn ~ Density_Moderns.100 + )
 
 inout_TS |> ggplot(aes(x = TS_Mn, fill = house_name, col = house_name)) +
   stat_slab(alpha = 0.5)

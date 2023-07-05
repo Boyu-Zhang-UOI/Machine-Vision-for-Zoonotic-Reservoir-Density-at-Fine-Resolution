@@ -5,6 +5,8 @@ library(terra)
 library(viridis)
 library(raster)
 
+house = 0
+
 # Load in visit data to auto crop rasters
 pnts <- read.csv("data/Trap_Data/Clean_Both_Data_By_Trap.csv")
 
@@ -18,7 +20,7 @@ tanganya_extent <- pnts |>
   unlist() |>
   extent()
 
-tanganya_brt <- raster(here("Predictions/Tanganya.tif"))
+tanganya_brt <- raster(paste0("Predictions/Tanganya_house_",house,".tif"))
 tanganya_brt <- crop(tanganya_brt, tanganya_extent)
 tanganya_brt <- rasterToPoints(tanganya_brt, spatial = T)
 tanganya_brt <- tanganya_brt |> as.data.frame()
