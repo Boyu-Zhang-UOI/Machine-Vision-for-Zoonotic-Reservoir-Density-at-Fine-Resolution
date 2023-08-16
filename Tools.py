@@ -100,7 +100,7 @@ def get_features(rvec, names):
 ## Apply set of models to raster and average result. Returns a numpy array
 def get_forecast(test_site, test_raster, cxmid, cymid, model_set, n_iter, 
                  nuke_preds, var_names,
-                forecast_year, forecast_month, house = 1,
+                forecast_year, forecast_month, house,
                 save_path = None, 
                 build_path = None, 
                 lc_path = None):
@@ -214,6 +214,7 @@ def get_sparse_block(template_x, template_y, site, model_features, focal_precip,
                     build_path, lc_path):
     nx = len(template_x)
     ny = len(template_y)
+    print(house)
     all_preds = []
     for ii in range(len(model_features)):
         var_name = model_features[ii]    

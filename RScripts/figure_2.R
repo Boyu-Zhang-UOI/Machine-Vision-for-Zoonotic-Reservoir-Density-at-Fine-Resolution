@@ -30,19 +30,19 @@ lay <- rbind(lay,
 instance <- text_grob("Landcover", face = "bold", col = "black", size = 20)
 building <- text_grob("Buildings", face = "bold", col = "black", size = 20)
 
-arrow <- rasterGrob(readPNG(here("old_figures/segmented", "arrow.png")))
+arrow <- rasterGrob(readPNG(here("Figures/misc", "arrow.png")))
 arrow <- nullGrob()
 
-tanganya <- list(cover = readPNG(here("old_figures/segmented", "tanganya_cover.png")),
-                 building = readPNG(here("old_figures/segmented", "tanganya_building.png")))
+tanganya <- list(cover = readPNG(here("Figures/segmented", "tanganya_cover.png")),
+                 building = readPNG(here("Figures/segmented", "tanganya_building.png")))
 
 
-bantou <- list(cover = readPNG(here("old_figures/segmented", "bantou_cover.png")),
-               building = readPNG(here("old_figures/segmented", "bantou_building.png")))
+bantou <- list(cover = readPNG(here("Figures/segmented", "bantou_cover.png")),
+               building = readPNG(here("Figures/segmented", "bantou_building.png")))
 
 
-bafodia <- list(cover = readPNG(here("old_figures/segmented", "bafodia_cover.png")),
-                building = readPNG(here("old_figures/segmented", "bafodia_building.png")))
+bafodia <- list(cover = readPNG(here("Figures/segmented", "bafodia_cover.png")),
+                building = readPNG(here("Figures/segmented", "bafodia_building.png")))
 
 tanganya <- map(tanganya, ~rasterGrob(.x))
 
@@ -83,6 +83,6 @@ plts <- grid.arrange(instance, building,
 
 legends <- grid.arrange(nullGrob(), building_legend, cover_legend, nullGrob(), ncol = 1, heights = c(1/10, 2/10, 4/10, 3/10))
 plot2 <- grid.arrange(plts, legends, nrow = 1, widths = c(7/9,2/9))
-ggsave("segmentation.png", plot2, width = 8.5, height = 8)
+ggsave("Figures/figure_2.png", plot2, width = 8.5, height = 8)
 
 

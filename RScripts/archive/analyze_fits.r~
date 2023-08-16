@@ -1,0 +1,321 @@
+library(ggplot2)
+
+## --- Load data
+
+model.path = '../Figures_agg/'
+
+## dat_base0 <- read.csv(paste0(model.path, 'rank_curves_base_nowater.csv'))
+## dat_base0$constraints = 'Spatial-no water'
+
+#dat_base <- read.csv(paste0(model.path, 'rank_curves_base.csv'))
+#dat_base$constraints = 'Spatial'
+
+## dat_base <- read.csv(paste0(model.path, 'rank_curves_base_all_earlystopping.csv'))
+## dat_base$constraints = 'Spatial'
+
+dat_base <- read.csv(paste0(model.path, 'rank_curves_base_all_earlystopping100.csv'))
+dat_base$constraints = 'Spatial'
+
+dat_base1 <- read.csv(paste0(model.path, 'rank_curves_base_all_earlystopping100_whouse.csv'))
+dat_base1$constraints = 'Spatial + in/out'
+
+## dat_base <- read.csv(paste0(model.path, 'rank_curves_base_md1only_earlystopping.csv'))
+## dat_base$constraints = 'Spatial'
+
+## dat_base <- read.csv(paste0(model.path, 'rank_curves_base_md1only_justminvalloss.csv'))
+## dat_base$constraints = 'Spatial'
+
+
+
+## dat_base1 <- read.csv(paste0(model.path, 'rank_curves_base_whouse.csv'))
+## dat_base1$constraints = 'Spatial + in/out'
+
+## dat_base2 <- read.csv(paste0(model.path, 'rank_curves_base_whouse_wprec.csv'))
+## dat_base2$constraints = 'Spatial + in/out + precip'
+
+## dat_base3 <- read.csv(paste0(model.path, 'rank_curves_base_whouse_wprec_wnight.csv'))
+## dat_base3$constraints = 'Full model'
+
+dat_visit <- read.csv(paste0(model.path, 'rank_curves_by_visit.csv'))
+dat_visit$constraints = 'Full model'
+
+## --- Aggregate data
+
+dat = plyr::rbind.fill(dat_base0, dat_base, dat_base1, dat_base2, dat_base3)
+dat = plyr::rbind.fill(dat_base, dat_base1)
+
+dat$Model_Type = factor(dat$Model_Type, levels = c("NullRandom", "NullSmart", "Model","TS"),
+                        ordered = TRUE)
+lab = function(x){
+               y = ifelse(x==1, 'House traps', 'Outside traps')
+               return(y)
+}
+
+## -- Calculate correlations of the different models
+
+data.table::setDT(dat)
+
+dat$model_name = 'zero'
+dat[Model_Type=='NullRandom']$model_name = 'Random'
+dat[Model_Type=='NullSmart']$model_name = 'Buildings'
+dat[Model_Type=='Model']$model_name = 'BRT'
+dat[Model_Type=='TS']$model_name = 'Optimal'
+dat$house_name = c('All','Inside', 'Outside')[dat$house_num +1]
+dat = dat[!(test_site=='Bantou' & house_name == 'Inside'), ]
+
+
+dat$constraints = factor(dat$constraints,
+                            levels = c('Spatial-no water', 'Spatial', 'Spatial + in/out',
+                                       'Spatial + in/out + precip',
+                                       'Full model'),
+                            ordered = TRUE)
+
+
+agg_models_dat = dat[,.(pred = mean(pred)),
+                     by = list(train_site, val_site, test_site, ji, Model_Type,
+                               model_name, house_name,
+                               house_num, constraints, boxi, TS_Mn, TotTraps)]
+
+cor_agg_models = agg_models_dat[ , .(wt.cor = min(cov.wt(cbind(pred, TS_Mn),
+                                                         wt = TotTraps, cor = TRUE)$cor)),
+                                by = list(test_site, ji, Model_Type, model_name,
+                                          house_num, house_name, constraints)]
+
+cor_models = dat[ , .(wt.cor = min(cov.wt(cbind(pred, TS_Mn),
+                                                         wt = TotTraps, cor = TRUE)$cor)),
+                                by = list(train_site, val_site,test_site, ji, Model_Type, model_name,
+                                          house_num, house_name, constraints)]
+
+
+
+
+
+p = ggplot(cor_agg_models[constraints == "Spatial" & house_name == 'All',],
+       aes(x = model_name, y = wt.cor, 
+           group = interaction(test_site, Model_Type, house_name)
+           )) +
+    geom_boxplot() + facet_wrap(vars(test_site)) + 
+    ylab('Correlation with trap success') +
+    xlab('Model type')
+p
+ggsave('Figures_agg/Compare_wtcor_modavg.png', width = 8, height = 5)
+
+p = ggplot(cor_models[constraints == "Spatial" & house_name == 'All',],
+       aes(x = model_name, y = wt.cor, 
+           group = interaction(train_site, val_site, test_site, Model_Type, house_name)
+           )) +
+    geom_boxplot(aes(color = train_site)) + facet_wrap(vars(test_site)) + 
+    ylab('Correlation with trap success') +
+    xlab('Model type')
+p
+ggsave('Figures_agg/Compare_wtcor_models.png', width = 8, height = 5)
+
+
+
+
+
+## --- Work on a different metric
+
+rank.metric <- function(x,y){
+    samp1 = sample(1:length(x), replace = TRUE)
+    samp2 = sample(1:length(x), replace = TRUE)
+    corr.rank = 0
+    mask = (y[samp1]!=y[samp2]) 
+    samp1 = samp1[mask]
+    samp2 = samp2[mask]
+
+    corr.rank = sum(((y[samp1] < y[samp2]) & (x[samp1] < x[samp2])) | 
+                    ((y[samp1] > y[samp2]) & (x[samp1] > x[samp2])))
+    
+    return(corr.rank / length(samp1))
+}
+
+
+ranked = agg_models_dat[,.(prob = rank.metric(pred, TS_Mn)),
+    by = list(test_site, ji, Model_Type, model_name, house_num, house_name, constraints)]
+
+
+out = ggplot(ranked[Model_Type!='TS' & house_name=='All' &
+                    constraints == "Spatial",],
+       aes(x = model_name, y = prob , 
+           group = interaction(test_site, Model_Type, house_name)
+           )) +
+    geom_boxplot() + facet_wrap(vars(test_site)) + 
+    ylab('Probability of correctly ranking') +
+    xlab('Model type')
+out
+ggsave('Figures_agg/Compare_models.png', width = 8, height = 5)
+
+
+
+## -- Divide into different house types
+
+temp = ranked[Model_Type!='TS' & house_name!='All',]
+temp[,.(mean_rank = mean(prob), sd_rank = sd(prob)),
+     by = list(Model_Type, house_name)]
+##    Model_Type house_name mean_rank    sd_rank
+## 1:  NullSmart     Inside 0.4773146 0.05700021
+## 2: NullRandom     Inside 0.5074829 0.05681153
+## 3:      Model     Inside 0.4728337 0.04485282
+## 4:  NullSmart    Outside 0.6494412 0.06575509
+## 5: NullRandom    Outside 0.4993286 0.05962196
+## 6:      Model    Outside 0.6358920 0.05143142
+
+
+out = ggplot(ranked[constraints == 'Spatial + in/out' & Model_Type!='TS' & house_num !=0,],
+       aes(x = model_name, y = prob , color = house_name,
+                group = interaction(test_site, Model_Type, house_name))) +
+    geom_boxplot() + facet_wrap(vars(test_site)) + 
+    ylab('Probability of correctly ranking') +
+    xlab('Model type')
+out$labels$colour = 'Trap location'
+out
+ggsave('Figures_agg/Compare_house.png', width = 8, height = 4)
+
+
+
+
+## --- Comparison of precip yes/no
+
+out = ggplot(ranked[(model_name=='BRT' & house_name == 'All') |
+                    (model_name=='Buildings' & house_name=='All' &
+                     constraints == 'Buildings'),],
+       aes(x = model_name, y = prob , color = constraints,
+                group = interaction(test_site, Model_Type, house_name, constraints))) +
+    geom_boxplot() + facet_wrap(vars(test_site)) +
+    ylab('Probability of correctly ranking') +
+    xlab('Model type')
+out$labels$colour = 'Model'
+out
+ggsave('Figures_agg/Compare_precip.png', width = 8, height = 4)
+
+
+
+
+## -- ranking across visits
+
+data.table::setDT(dat_visit)
+ranked = dat_visit[,.(prob = rank.metric(pred, TS_Mn),
+                      date = min(Date)),
+    by = list(test_site, ji, Model_Type, house_num, visit, constraints)]
+ranked$house_name = c('All','Inside', 'Outside')[ranked$house_num +1]
+ranked$constraints = factor(ranked$constraints,
+                            levels = c('Spatial', 'Spatial + in/out',
+                                       'Spatial + in/out + precip',
+                                       'Full model'),
+                            ordered = TRUE)
+ranked$model_name = 'zero'
+ranked[Model_Type=='NullRandom']$model_name = 'Random'
+ranked[Model_Type=='NullSmart']$model_name = 'Buildings'
+ranked[Model_Type=='Model']$model_name = 'BRT'
+ranked[test_site=='Bantou' & house_name == 'Inside'] = NA
+ranked$site_visit = paste(ranked$test_site, ranked$visit, sep = '')
+
+out = ggplot(ranked[Model_Type%in%c('Model', 'NullSmart') & house_name=='All' &
+                    constraints == "Full model",],
+       aes(x = date, y = prob , color = model_name,
+           group = interaction(test_site, Model_Type, house_name, date)
+           )) +
+    geom_boxplot() +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+    facet_wrap(vars(test_site), scales = 'free_x') + 
+    ylab('Probability of correctly ranking') +
+    xlab('Visit date')
+out$labels$colour = 'Model type'
+out
+ggsave('Figures_agg/Compare_visit.png', width = 8, height = 4)
+
+
+
+## -- plot ts vs rainfall
+
+
+trap.data <- read.csv('../../Trap_Data/Data/Clean_Trap_Data/Clean_Both_Data_By_Trap.csv')
+data.table::setDT(trap.data)
+trap.data = trap.data[Site %in% c('Bafodia', 'Bantou', 'Tanganya') & ind_coords==TRUE,]
+
+agg.data <- trap.data[,.(TotCaptures = sum(Trap.weight[Mna==1]),
+             TotTraps = sum(Trap.weight),
+             Date = mean(Date = as.Date(Date)),
+             P1 = mean(P1)),
+          by = list(Site, House, Visit)]
+agg.data$TS = with(agg.data, TotCaptures / TotTraps)
+
+library(lubridate)
+
+## -- ts vs rainfall plots
+
+## Load in supp files with extracted rainfall
+a1 = read.csv('../../Trap_Data/Data/Extracted_Village_Rainfall/Bantou_precip.csv')
+a1$Site = 'Bantou'
+a2 = read.csv('../../Trap_Data/Data/Extracted_Village_Rainfall/Bafodia_precip.csv')
+a2$Site = 'Bafodia'
+a3 = read.csv('../../Trap_Data/Data/Extracted_Village_Rainfall/Tanganya_precip.csv')
+a3$Site = 'Tanganya'
+
+rainfall.dat <- rbind(a1,a2,a3)
+rainfall.dat$Date <- as.Date(paste(rainfall.dat$Year, rainfall.dat$Month, rainfall.dat$Day,
+                                   sep = '-'))
+agg.data$house.name <- ifelse(agg.data$House==1, 'Inside', 'Outside')
+agg.data[Site=='Bantou' & house.name=='Inside', 'TS'] = NA
+
+
+for(site in c('Bantou', 'Bafodia', 'Tanganya')){
+    xmin = min(agg.data[Site==site, Date]) - days(30)
+    xmax = max(agg.data[Site==site, Date]) + days(30)
+    data.table::setDT(rainfall.dat)
+    out = ggplot(data = rainfall.dat[Site==site,],
+                 mapping = aes(x = Date, y = Precip/200, group = Site)) +
+        geom_line(color = 'blue', alpha = 0.5) +
+        ylab('TS (and Precip / 200)') + 
+        geom_point(data = agg.data[Site==site,], aes(x = Date, y = TS,
+                                                     group = interaction(Site, House),
+                                                     color = as.factor(house.name),
+                                                     size = TotTraps)) +
+        xlim(xmin, xmax) + ylim(0,0.3)
+    out$labels$colour = 'Trap'
+    out$labels$size = 'Total traps'
+    out
+    ggsave(plot = out, paste0('Figures_agg/Rainfall_TS_', site, '.png'))
+}    
+
+
+
+lab = function(x){
+               y = ifelse(x==1, 'House traps', 'Outside traps')
+               return(y)
+}
+
+out = ggplot(data = dat[dat$house_num %in% c(1,2) & dat$precip==FALSE,],
+             aes(x = cTotTraps, y = cTotCaptures,
+                 group = interaction(test_site,house_num, ji, Model_Type), color = Model_Type)) +
+    geom_line(size = 0.75, alpha = 0.5) +
+    xlab('Cumulative traps chosen') +
+    ylab('Cumulative captures') + 
+facet_grid(rows = vars(test_site),
+               cols = vars(house_num),
+           scales = 'free',
+           labeller = labeller(house_num = lab)
+           )
+out$labels$colour = 'Model type'
+out
+ggsave(paste0(model.path,'Figures_agg/Ranking_curves.png'))
+
+## ---
+
+out = ggplot(data = dat[dat$house_num %in% c(1,2) & dat$precip==FALSE,],
+             aes(x = cTotTraps, y = cTotCaptures,
+                 group = interaction(test_site,house_num, Model_Type),
+                 color = Model_Type)) +
+    ##geom_line(size = 0.75, alpha = 0.5) +
+    stat_summary_bin(geom = 'line') + 
+    xlab('Cumulative traps chosen') +
+    ylab('Cumulative captures') + 
+facet_grid(rows = vars(test_site),
+               cols = vars(house_num),
+           scales = 'free',
+           labeller = labeller(house_num = lab)
+           )
+out$labels$colour = 'Model type'
+out
+ggsave(paste0(model.path,'Figures_agg/Ranking_curves.png'))

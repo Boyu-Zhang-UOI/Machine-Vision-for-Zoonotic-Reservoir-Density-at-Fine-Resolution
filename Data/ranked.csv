@@ -1,0 +1,1601 @@
+test_site,ji,Model_Type,model_name,house_num,house_name,constraints,prob
+Tanganya,0,NullSmart,Buildings,0,All,Spatial,0.7420494699646644
+Tanganya,0,NullRandom,Random,0,All,Spatial,0.4981949458483754
+Tanganya,0,Model,BRT,0,All,Spatial,0.6028880866425993
+Tanganya,0,TS,Optimal,0,All,Spatial,1
+Tanganya,1,NullSmart,Buildings,0,All,Spatial,0.7962264150943397
+Tanganya,1,NullRandom,Random,0,All,Spatial,0.5076923076923077
+Tanganya,1,Model,BRT,0,All,Spatial,0.6231617647058824
+Tanganya,1,TS,Optimal,0,All,Spatial,1
+Tanganya,2,NullSmart,Buildings,0,All,Spatial,0.7713178294573644
+Tanganya,2,NullRandom,Random,0,All,Spatial,0.5179856115107914
+Tanganya,2,Model,BRT,0,All,Spatial,0.6395348837209303
+Tanganya,2,TS,Optimal,0,All,Spatial,1
+Tanganya,3,NullSmart,Buildings,0,All,Spatial,0.7595419847328244
+Tanganya,3,NullRandom,Random,0,All,Spatial,0.5150375939849624
+Tanganya,3,Model,BRT,0,All,Spatial,0.6011342155009451
+Tanganya,3,TS,Optimal,0,All,Spatial,1
+Tanganya,4,NullSmart,Buildings,0,All,Spatial,0.7619047619047619
+Tanganya,4,NullRandom,Random,0,All,Spatial,0.5421245421245421
+Tanganya,4,Model,BRT,0,All,Spatial,0.6290322580645161
+Tanganya,4,TS,Optimal,0,All,Spatial,1
+Tanganya,5,NullSmart,Buildings,0,All,Spatial,0.7626459143968871
+Tanganya,5,NullRandom,Random,0,All,Spatial,0.5448028673835126
+Tanganya,5,Model,BRT,0,All,Spatial,0.6148148148148148
+Tanganya,5,TS,Optimal,0,All,Spatial,1
+Tanganya,6,NullSmart,Buildings,0,All,Spatial,0.7508650519031141
+Tanganya,6,NullRandom,Random,0,All,Spatial,0.4647887323943662
+Tanganya,6,Model,BRT,0,All,Spatial,0.6039426523297491
+Tanganya,6,TS,Optimal,0,All,Spatial,1
+Tanganya,7,NullSmart,Buildings,0,All,Spatial,0.7318840579710145
+Tanganya,7,NullRandom,Random,0,All,Spatial,0.4861111111111111
+Tanganya,7,Model,BRT,0,All,Spatial,0.578397212543554
+Tanganya,7,TS,Optimal,0,All,Spatial,1
+Tanganya,8,NullSmart,Buildings,0,All,Spatial,0.779783393501805
+Tanganya,8,NullRandom,Random,0,All,Spatial,0.5143884892086331
+Tanganya,8,Model,BRT,0,All,Spatial,0.5632183908045977
+Tanganya,8,TS,Optimal,0,All,Spatial,1
+Tanganya,9,NullSmart,Buildings,0,All,Spatial,0.7183098591549296
+Tanganya,9,NullRandom,Random,0,All,Spatial,0.4343065693430657
+Tanganya,9,Model,BRT,0,All,Spatial,0.6076642335766423
+Tanganya,9,TS,Optimal,0,All,Spatial,1
+Tanganya,10,NullSmart,Buildings,0,All,Spatial,0.7311827956989247
+Tanganya,10,NullRandom,Random,0,All,Spatial,0.5090252707581228
+Tanganya,10,Model,BRT,0,All,Spatial,0.6086175942549371
+Tanganya,10,TS,Optimal,0,All,Spatial,1
+Tanganya,11,NullSmart,Buildings,0,All,Spatial,0.7712177121771218
+Tanganya,11,NullRandom,Random,0,All,Spatial,0.4791666666666667
+Tanganya,11,Model,BRT,0,All,Spatial,0.5940959409594095
+Tanganya,11,TS,Optimal,0,All,Spatial,1
+Tanganya,12,NullSmart,Buildings,0,All,Spatial,0.7137404580152672
+Tanganya,12,NullRandom,Random,0,All,Spatial,0.4981132075471698
+Tanganya,12,Model,BRT,0,All,Spatial,0.5861423220973783
+Tanganya,12,TS,Optimal,0,All,Spatial,1
+Tanganya,13,NullSmart,Buildings,0,All,Spatial,0.7706093189964157
+Tanganya,13,NullRandom,Random,0,All,Spatial,0.5447761194029851
+Tanganya,13,Model,BRT,0,All,Spatial,0.648936170212766
+Tanganya,13,TS,Optimal,0,All,Spatial,1
+Tanganya,14,NullSmart,Buildings,0,All,Spatial,0.724907063197026
+Tanganya,14,NullRandom,Random,0,All,Spatial,0.4857142857142857
+Tanganya,14,Model,BRT,0,All,Spatial,0.5754189944134078
+Tanganya,14,TS,Optimal,0,All,Spatial,1
+Tanganya,15,NullSmart,Buildings,0,All,Spatial,0.7992277992277992
+Tanganya,15,NullRandom,Random,0,All,Spatial,0.5193798449612403
+Tanganya,15,Model,BRT,0,All,Spatial,0.5996275605214153
+Tanganya,15,TS,Optimal,0,All,Spatial,1
+Tanganya,16,NullSmart,Buildings,0,All,Spatial,0.7421875
+Tanganya,16,NullRandom,Random,0,All,Spatial,0.49635036496350365
+Tanganya,16,Model,BRT,0,All,Spatial,0.614100185528757
+Tanganya,16,TS,Optimal,0,All,Spatial,1
+Tanganya,17,NullSmart,Buildings,0,All,Spatial,0.7941176470588235
+Tanganya,17,NullRandom,Random,0,All,Spatial,0.47619047619047616
+Tanganya,17,Model,BRT,0,All,Spatial,0.6064030131826742
+Tanganya,17,TS,Optimal,0,All,Spatial,1
+Tanganya,18,NullSmart,Buildings,0,All,Spatial,0.7706766917293233
+Tanganya,18,NullRandom,Random,0,All,Spatial,0.5296296296296297
+Tanganya,18,Model,BRT,0,All,Spatial,0.6121673003802282
+Tanganya,18,TS,Optimal,0,All,Spatial,1
+Tanganya,19,NullSmart,Buildings,0,All,Spatial,0.7653429602888087
+Tanganya,19,NullRandom,Random,0,All,Spatial,0.46494464944649444
+Tanganya,19,Model,BRT,0,All,Spatial,0.6160877513711152
+Tanganya,19,TS,Optimal,0,All,Spatial,0.9963235294117647
+Tanganya,20,NullSmart,Buildings,0,All,Spatial,0.7340823970037453
+Tanganya,20,NullRandom,Random,0,All,Spatial,0.43656716417910446
+Tanganya,20,Model,BRT,0,All,Spatial,0.5738636363636364
+Tanganya,20,TS,Optimal,0,All,Spatial,1
+Tanganya,21,NullSmart,Buildings,0,All,Spatial,0.7283018867924528
+Tanganya,21,NullRandom,Random,0,All,Spatial,0.4908424908424908
+Tanganya,21,Model,BRT,0,All,Spatial,0.5916515426497277
+Tanganya,21,TS,Optimal,0,All,Spatial,1
+Tanganya,22,NullSmart,Buildings,0,All,Spatial,0.7192982456140351
+Tanganya,22,NullRandom,Random,0,All,Spatial,0.4963768115942029
+Tanganya,22,Model,BRT,0,All,Spatial,0.6
+Tanganya,22,TS,Optimal,0,All,Spatial,1
+Tanganya,23,NullSmart,Buildings,0,All,Spatial,0.7840909090909091
+Tanganya,23,NullRandom,Random,0,All,Spatial,0.4907749077490775
+Tanganya,23,Model,BRT,0,All,Spatial,0.6014897579143389
+Tanganya,23,TS,Optimal,0,All,Spatial,1
+Tanganya,24,NullSmart,Buildings,0,All,Spatial,0.7591240875912408
+Tanganya,24,NullRandom,Random,0,All,Spatial,0.42592592592592593
+Tanganya,24,Model,BRT,0,All,Spatial,0.5506993006993007
+Tanganya,24,TS,Optimal,0,All,Spatial,1
+Tanganya,0,NullSmart,Buildings,1,Inside,Spatial,0.4444444444444444
+Tanganya,0,NullRandom,Random,1,Inside,Spatial,0.5648148148148148
+Tanganya,0,Model,BRT,1,Inside,Spatial,0.42272727272727273
+Tanganya,0,TS,Optimal,1,Inside,Spatial,1
+Tanganya,1,NullSmart,Buildings,1,Inside,Spatial,0.5357142857142857
+Tanganya,1,NullRandom,Random,1,Inside,Spatial,0.5526315789473685
+Tanganya,1,Model,BRT,1,Inside,Spatial,0.4847161572052402
+Tanganya,1,TS,Optimal,1,Inside,Spatial,1
+Tanganya,2,NullSmart,Buildings,1,Inside,Spatial,0.5483870967741935
+Tanganya,2,NullRandom,Random,1,Inside,Spatial,0.4959349593495935
+Tanganya,2,Model,BRT,1,Inside,Spatial,0.502127659574468
+Tanganya,2,TS,Optimal,1,Inside,Spatial,1
+Tanganya,3,NullSmart,Buildings,1,Inside,Spatial,0.559322033898305
+Tanganya,3,NullRandom,Random,1,Inside,Spatial,0.5
+Tanganya,3,Model,BRT,1,Inside,Spatial,0.4808510638297872
+Tanganya,3,TS,Optimal,1,Inside,Spatial,1
+Tanganya,4,NullSmart,Buildings,1,Inside,Spatial,0.46017699115044247
+Tanganya,4,NullRandom,Random,1,Inside,Spatial,0.5309734513274337
+Tanganya,4,Model,BRT,1,Inside,Spatial,0.5288888888888889
+Tanganya,4,TS,Optimal,1,Inside,Spatial,1
+Tanganya,5,NullSmart,Buildings,1,Inside,Spatial,0.5344827586206896
+Tanganya,5,NullRandom,Random,1,Inside,Spatial,0.4444444444444444
+Tanganya,5,Model,BRT,1,Inside,Spatial,0.4425531914893617
+Tanganya,5,TS,Optimal,1,Inside,Spatial,1
+Tanganya,6,NullSmart,Buildings,1,Inside,Spatial,0.4205607476635514
+Tanganya,6,NullRandom,Random,1,Inside,Spatial,0.5283018867924528
+Tanganya,6,Model,BRT,1,Inside,Spatial,0.49537037037037035
+Tanganya,6,TS,Optimal,1,Inside,Spatial,1
+Tanganya,7,NullSmart,Buildings,1,Inside,Spatial,0.4774774774774775
+Tanganya,7,NullRandom,Random,1,Inside,Spatial,0.48598130841121495
+Tanganya,7,Model,BRT,1,Inside,Spatial,0.4955357142857143
+Tanganya,7,TS,Optimal,1,Inside,Spatial,1
+Tanganya,8,NullSmart,Buildings,1,Inside,Spatial,0.45535714285714285
+Tanganya,8,NullRandom,Random,1,Inside,Spatial,0.35454545454545455
+Tanganya,8,Model,BRT,1,Inside,Spatial,0.42857142857142855
+Tanganya,8,TS,Optimal,1,Inside,Spatial,1
+Tanganya,9,NullSmart,Buildings,1,Inside,Spatial,0.5277777777777778
+Tanganya,9,NullRandom,Random,1,Inside,Spatial,0.5929203539823009
+Tanganya,9,Model,BRT,1,Inside,Spatial,0.4796380090497738
+Tanganya,9,TS,Optimal,1,Inside,Spatial,1
+Tanganya,10,NullSmart,Buildings,1,Inside,Spatial,0.49166666666666664
+Tanganya,10,NullRandom,Random,1,Inside,Spatial,0.39316239316239315
+Tanganya,10,Model,BRT,1,Inside,Spatial,0.5316455696202531
+Tanganya,10,TS,Optimal,1,Inside,Spatial,1
+Tanganya,11,NullSmart,Buildings,1,Inside,Spatial,0.5043478260869565
+Tanganya,11,NullRandom,Random,1,Inside,Spatial,0.6106194690265486
+Tanganya,11,Model,BRT,1,Inside,Spatial,0.5021645021645021
+Tanganya,11,TS,Optimal,1,Inside,Spatial,1
+Tanganya,12,NullSmart,Buildings,1,Inside,Spatial,0.45901639344262296
+Tanganya,12,NullRandom,Random,1,Inside,Spatial,0.5833333333333334
+Tanganya,12,Model,BRT,1,Inside,Spatial,0.48535564853556484
+Tanganya,12,TS,Optimal,1,Inside,Spatial,1
+Tanganya,13,NullSmart,Buildings,1,Inside,Spatial,0.42857142857142855
+Tanganya,13,NullRandom,Random,1,Inside,Spatial,0.6146788990825688
+Tanganya,13,Model,BRT,1,Inside,Spatial,0.5529953917050692
+Tanganya,13,TS,Optimal,1,Inside,Spatial,1
+Tanganya,14,NullSmart,Buildings,1,Inside,Spatial,0.4727272727272727
+Tanganya,14,NullRandom,Random,1,Inside,Spatial,0.5
+Tanganya,14,Model,BRT,1,Inside,Spatial,0.46153846153846156
+Tanganya,14,TS,Optimal,1,Inside,Spatial,1
+Tanganya,15,NullSmart,Buildings,1,Inside,Spatial,0.5289256198347108
+Tanganya,15,NullRandom,Random,1,Inside,Spatial,0.4796747967479675
+Tanganya,15,Model,BRT,1,Inside,Spatial,0.4322033898305085
+Tanganya,15,TS,Optimal,1,Inside,Spatial,1
+Tanganya,16,NullSmart,Buildings,1,Inside,Spatial,0.49557522123893805
+Tanganya,16,NullRandom,Random,1,Inside,Spatial,0.5086206896551724
+Tanganya,16,Model,BRT,1,Inside,Spatial,0.5283842794759825
+Tanganya,16,TS,Optimal,1,Inside,Spatial,1
+Tanganya,17,NullSmart,Buildings,1,Inside,Spatial,0.5537190082644629
+Tanganya,17,NullRandom,Random,1,Inside,Spatial,0.5042735042735043
+Tanganya,17,Model,BRT,1,Inside,Spatial,0.49794238683127573
+Tanganya,17,TS,Optimal,1,Inside,Spatial,1
+Tanganya,18,NullSmart,Buildings,1,Inside,Spatial,0.4152542372881356
+Tanganya,18,NullRandom,Random,1,Inside,Spatial,0.39473684210526316
+Tanganya,18,Model,BRT,1,Inside,Spatial,0.47863247863247865
+Tanganya,18,TS,Optimal,1,Inside,Spatial,1
+Tanganya,19,NullSmart,Buildings,1,Inside,Spatial,0.5
+Tanganya,19,NullRandom,Random,1,Inside,Spatial,0.5701754385964912
+Tanganya,19,Model,BRT,1,Inside,Spatial,0.4488888888888889
+Tanganya,19,TS,Optimal,1,Inside,Spatial,1
+Tanganya,20,NullSmart,Buildings,1,Inside,Spatial,0.43636363636363634
+Tanganya,20,NullRandom,Random,1,Inside,Spatial,0.5225225225225225
+Tanganya,20,Model,BRT,1,Inside,Spatial,0.44
+Tanganya,20,TS,Optimal,1,Inside,Spatial,1
+Tanganya,21,NullSmart,Buildings,1,Inside,Spatial,0.5785123966942148
+Tanganya,21,NullRandom,Random,1,Inside,Spatial,0.4083333333333333
+Tanganya,21,Model,BRT,1,Inside,Spatial,0.45228215767634855
+Tanganya,21,TS,Optimal,1,Inside,Spatial,1
+Tanganya,22,NullSmart,Buildings,1,Inside,Spatial,0.5535714285714286
+Tanganya,22,NullRandom,Random,1,Inside,Spatial,0.5398230088495575
+Tanganya,22,Model,BRT,1,Inside,Spatial,0.42543859649122806
+Tanganya,22,TS,Optimal,1,Inside,Spatial,1
+Tanganya,23,NullSmart,Buildings,1,Inside,Spatial,0.5263157894736842
+Tanganya,23,NullRandom,Random,1,Inside,Spatial,0.41739130434782606
+Tanganya,23,Model,BRT,1,Inside,Spatial,0.5151515151515151
+Tanganya,23,TS,Optimal,1,Inside,Spatial,1
+Tanganya,24,NullSmart,Buildings,1,Inside,Spatial,0.5391304347826087
+Tanganya,24,NullRandom,Random,1,Inside,Spatial,0.48148148148148145
+Tanganya,24,Model,BRT,1,Inside,Spatial,0.4794520547945205
+Tanganya,24,TS,Optimal,1,Inside,Spatial,1
+Tanganya,0,NullSmart,Buildings,2,Outside,Spatial,0.7641509433962265
+Tanganya,0,NullRandom,Random,2,Outside,Spatial,0.5042735042735043
+Tanganya,0,Model,BRT,2,Outside,Spatial,0.5481171548117155
+Tanganya,0,TS,Optimal,2,Outside,Spatial,1
+Tanganya,1,NullSmart,Buildings,2,Outside,Spatial,0.6692913385826772
+Tanganya,1,NullRandom,Random,2,Outside,Spatial,0.43243243243243246
+Tanganya,1,Model,BRT,2,Outside,Spatial,0.5588235294117647
+Tanganya,1,TS,Optimal,2,Outside,Spatial,1
+Tanganya,2,NullSmart,Buildings,2,Outside,Spatial,0.6814159292035398
+Tanganya,2,NullRandom,Random,2,Outside,Spatial,0.47540983606557374
+Tanganya,2,Model,BRT,2,Outside,Spatial,0.5938864628820961
+Tanganya,2,TS,Optimal,2,Outside,Spatial,1
+Tanganya,3,NullSmart,Buildings,2,Outside,Spatial,0.7016129032258065
+Tanganya,3,NullRandom,Random,2,Outside,Spatial,0.5338345864661654
+Tanganya,3,Model,BRT,2,Outside,Spatial,0.5787234042553191
+Tanganya,3,TS,Optimal,2,Outside,Spatial,0.9921875
+Tanganya,4,NullSmart,Buildings,2,Outside,Spatial,0.7192982456140351
+Tanganya,4,NullRandom,Random,2,Outside,Spatial,0.48672566371681414
+Tanganya,4,Model,BRT,2,Outside,Spatial,0.5748987854251012
+Tanganya,4,TS,Optimal,2,Outside,Spatial,1
+Tanganya,5,NullSmart,Buildings,2,Outside,Spatial,0.7421875
+Tanganya,5,NullRandom,Random,2,Outside,Spatial,0.5045045045045045
+Tanganya,5,Model,BRT,2,Outside,Spatial,0.5775862068965517
+Tanganya,5,TS,Optimal,2,Outside,Spatial,1
+Tanganya,6,NullSmart,Buildings,2,Outside,Spatial,0.7457627118644068
+Tanganya,6,NullRandom,Random,2,Outside,Spatial,0.3790322580645161
+Tanganya,6,Model,BRT,2,Outside,Spatial,0.538135593220339
+Tanganya,6,TS,Optimal,2,Outside,Spatial,1
+Tanganya,7,NullSmart,Buildings,2,Outside,Spatial,0.7575757575757576
+Tanganya,7,NullRandom,Random,2,Outside,Spatial,0.5483870967741935
+Tanganya,7,Model,BRT,2,Outside,Spatial,0.5739910313901345
+Tanganya,7,TS,Optimal,2,Outside,Spatial,1
+Tanganya,8,NullSmart,Buildings,2,Outside,Spatial,0.7086614173228346
+Tanganya,8,NullRandom,Random,2,Outside,Spatial,0.5508474576271186
+Tanganya,8,Model,BRT,2,Outside,Spatial,0.5826446280991735
+Tanganya,8,TS,Optimal,2,Outside,Spatial,0.992
+Tanganya,9,NullSmart,Buildings,2,Outside,Spatial,0.7786885245901639
+Tanganya,9,NullRandom,Random,2,Outside,Spatial,0.475
+Tanganya,9,Model,BRT,2,Outside,Spatial,0.568075117370892
+Tanganya,9,TS,Optimal,2,Outside,Spatial,1
+Tanganya,10,NullSmart,Buildings,2,Outside,Spatial,0.6776859504132231
+Tanganya,10,NullRandom,Random,2,Outside,Spatial,0.5491803278688525
+Tanganya,10,Model,BRT,2,Outside,Spatial,0.5336134453781513
+Tanganya,10,TS,Optimal,2,Outside,Spatial,1
+Tanganya,11,NullSmart,Buildings,2,Outside,Spatial,0.6693548387096774
+Tanganya,11,NullRandom,Random,2,Outside,Spatial,0.5
+Tanganya,11,Model,BRT,2,Outside,Spatial,0.5203252032520326
+Tanganya,11,TS,Optimal,2,Outside,Spatial,1
+Tanganya,12,NullSmart,Buildings,2,Outside,Spatial,0.6194690265486725
+Tanganya,12,NullRandom,Random,2,Outside,Spatial,0.4098360655737705
+Tanganya,12,Model,BRT,2,Outside,Spatial,0.5219123505976095
+Tanganya,12,TS,Optimal,2,Outside,Spatial,1
+Tanganya,13,NullSmart,Buildings,2,Outside,Spatial,0.7142857142857143
+Tanganya,13,NullRandom,Random,2,Outside,Spatial,0.5588235294117647
+Tanganya,13,Model,BRT,2,Outside,Spatial,0.5923076923076923
+Tanganya,13,TS,Optimal,2,Outside,Spatial,1
+Tanganya,14,NullSmart,Buildings,2,Outside,Spatial,0.6141732283464567
+Tanganya,14,NullRandom,Random,2,Outside,Spatial,0.5086206896551724
+Tanganya,14,Model,BRT,2,Outside,Spatial,0.4775510204081633
+Tanganya,14,TS,Optimal,2,Outside,Spatial,1
+Tanganya,15,NullSmart,Buildings,2,Outside,Spatial,0.5729166666666666
+Tanganya,15,NullRandom,Random,2,Outside,Spatial,0.5714285714285714
+Tanganya,15,Model,BRT,2,Outside,Spatial,0.6188340807174888
+Tanganya,15,TS,Optimal,2,Outside,Spatial,1
+Tanganya,16,NullSmart,Buildings,2,Outside,Spatial,0.6890756302521008
+Tanganya,16,NullRandom,Random,2,Outside,Spatial,0.5752212389380531
+Tanganya,16,Model,BRT,2,Outside,Spatial,0.5450643776824035
+Tanganya,16,TS,Optimal,2,Outside,Spatial,1
+Tanganya,17,NullSmart,Buildings,2,Outside,Spatial,0.7413793103448276
+Tanganya,17,NullRandom,Random,2,Outside,Spatial,0.4318181818181818
+Tanganya,17,Model,BRT,2,Outside,Spatial,0.5741444866920152
+Tanganya,17,TS,Optimal,2,Outside,Spatial,1
+Tanganya,18,NullSmart,Buildings,2,Outside,Spatial,0.728
+Tanganya,18,NullRandom,Random,2,Outside,Spatial,0.5045045045045045
+Tanganya,18,Model,BRT,2,Outside,Spatial,0.5585585585585585
+Tanganya,18,TS,Optimal,2,Outside,Spatial,1
+Tanganya,19,NullSmart,Buildings,2,Outside,Spatial,0.7304347826086957
+Tanganya,19,NullRandom,Random,2,Outside,Spatial,0.4358974358974359
+Tanganya,19,Model,BRT,2,Outside,Spatial,0.5714285714285714
+Tanganya,19,TS,Optimal,2,Outside,Spatial,1
+Tanganya,20,NullSmart,Buildings,2,Outside,Spatial,0.6607142857142857
+Tanganya,20,NullRandom,Random,2,Outside,Spatial,0.38596491228070173
+Tanganya,20,Model,BRT,2,Outside,Spatial,0.5191489361702127
+Tanganya,20,TS,Optimal,2,Outside,Spatial,1
+Tanganya,21,NullSmart,Buildings,2,Outside,Spatial,0.7401574803149606
+Tanganya,21,NullRandom,Random,2,Outside,Spatial,0.5258620689655172
+Tanganya,21,Model,BRT,2,Outside,Spatial,0.5645161290322581
+Tanganya,21,TS,Optimal,2,Outside,Spatial,1
+Tanganya,22,NullSmart,Buildings,2,Outside,Spatial,0.7130434782608696
+Tanganya,22,NullRandom,Random,2,Outside,Spatial,0.46296296296296297
+Tanganya,22,Model,BRT,2,Outside,Spatial,0.5508474576271186
+Tanganya,22,TS,Optimal,2,Outside,Spatial,1
+Tanganya,23,NullSmart,Buildings,2,Outside,Spatial,0.7345132743362832
+Tanganya,23,NullRandom,Random,2,Outside,Spatial,0.4609375
+Tanganya,23,Model,BRT,2,Outside,Spatial,0.575
+Tanganya,23,TS,Optimal,2,Outside,Spatial,1
+Tanganya,24,NullSmart,Buildings,2,Outside,Spatial,0.6538461538461539
+Tanganya,24,NullRandom,Random,2,Outside,Spatial,0.608
+Tanganya,24,Model,BRT,2,Outside,Spatial,0.5823754789272031
+Tanganya,24,TS,Optimal,2,Outside,Spatial,1
+Bantou,0,NullSmart,Buildings,0,All,Spatial,0.7386363636363636
+Bantou,0,NullRandom,Random,0,All,Spatial,0.44025157232704404
+Bantou,0,Model,BRT,0,All,Spatial,0.601823708206687
+Bantou,0,TS,Optimal,0,All,Spatial,1
+Bantou,1,NullSmart,Buildings,0,All,Spatial,0.7602040816326531
+Bantou,1,NullRandom,Random,0,All,Spatial,0.5677083333333334
+Bantou,1,Model,BRT,0,All,Spatial,0.5846153846153846
+Bantou,1,TS,Optimal,0,All,Spatial,1
+Bantou,2,NullSmart,Buildings,0,All,Spatial,0.7777777777777778
+Bantou,2,NullRandom,Random,0,All,Spatial,0.45454545454545453
+Bantou,2,Model,BRT,0,All,Spatial,0.6361386138613861
+Bantou,2,TS,Optimal,0,All,Spatial,1
+Bantou,3,NullSmart,Buildings,0,All,Spatial,0.7730061349693251
+Bantou,3,NullRandom,Random,0,All,Spatial,0.48502994011976047
+Bantou,3,Model,BRT,0,All,Spatial,0.64
+Bantou,3,TS,Optimal,0,All,Spatial,1
+Bantou,4,NullSmart,Buildings,0,All,Spatial,0.7540106951871658
+Bantou,4,NullRandom,Random,0,All,Spatial,0.48295454545454547
+Bantou,4,Model,BRT,0,All,Spatial,0.6181318681318682
+Bantou,4,TS,Optimal,0,All,Spatial,1
+Bantou,5,NullSmart,Buildings,0,All,Spatial,0.7563451776649747
+Bantou,5,NullRandom,Random,0,All,Spatial,0.40816326530612246
+Bantou,5,Model,BRT,0,All,Spatial,0.6377952755905512
+Bantou,5,TS,Optimal,0,All,Spatial,1
+Bantou,6,NullSmart,Buildings,0,All,Spatial,0.7241379310344828
+Bantou,6,NullRandom,Random,0,All,Spatial,0.42011834319526625
+Bantou,6,Model,BRT,0,All,Spatial,0.5807365439093485
+Bantou,6,TS,Optimal,0,All,Spatial,1
+Bantou,7,NullSmart,Buildings,0,All,Spatial,0.7052023121387283
+Bantou,7,NullRandom,Random,0,All,Spatial,0.5393939393939394
+Bantou,7,Model,BRT,0,All,Spatial,0.6464088397790055
+Bantou,7,TS,Optimal,0,All,Spatial,1
+Bantou,8,NullSmart,Buildings,0,All,Spatial,0.76
+Bantou,8,NullRandom,Random,0,All,Spatial,0.425531914893617
+Bantou,8,Model,BRT,0,All,Spatial,0.622478386167147
+Bantou,8,TS,Optimal,0,All,Spatial,1
+Bantou,9,NullSmart,Buildings,0,All,Spatial,0.7357512953367875
+Bantou,9,NullRandom,Random,0,All,Spatial,0.5515463917525774
+Bantou,9,Model,BRT,0,All,Spatial,0.6377952755905512
+Bantou,9,TS,Optimal,0,All,Spatial,1
+Bantou,10,NullSmart,Buildings,0,All,Spatial,0.7740112994350282
+Bantou,10,NullRandom,Random,0,All,Spatial,0.4294117647058823
+Bantou,10,Model,BRT,0,All,Spatial,0.646551724137931
+Bantou,10,TS,Optimal,0,All,Spatial,1
+Bantou,11,NullSmart,Buildings,0,All,Spatial,0.8117647058823529
+Bantou,11,NullRandom,Random,0,All,Spatial,0.4827586206896552
+Bantou,11,Model,BRT,0,All,Spatial,0.6104972375690608
+Bantou,11,TS,Optimal,0,All,Spatial,1
+Bantou,12,NullSmart,Buildings,0,All,Spatial,0.7447916666666666
+Bantou,12,NullRandom,Random,0,All,Spatial,0.49230769230769234
+Bantou,12,Model,BRT,0,All,Spatial,0.6412213740458015
+Bantou,12,TS,Optimal,0,All,Spatial,1
+Bantou,13,NullSmart,Buildings,0,All,Spatial,0.8
+Bantou,13,NullRandom,Random,0,All,Spatial,0.5445544554455446
+Bantou,13,Model,BRT,0,All,Spatial,0.6021220159151194
+Bantou,13,TS,Optimal,0,All,Spatial,1
+Bantou,14,NullSmart,Buildings,0,All,Spatial,0.7717391304347826
+Bantou,14,NullRandom,Random,0,All,Spatial,0.5193370165745856
+Bantou,14,Model,BRT,0,All,Spatial,0.6580976863753213
+Bantou,14,TS,Optimal,0,All,Spatial,1
+Bantou,15,NullSmart,Buildings,0,All,Spatial,0.7616580310880829
+Bantou,15,NullRandom,Random,0,All,Spatial,0.44021739130434784
+Bantou,15,Model,BRT,0,All,Spatial,0.5691056910569106
+Bantou,15,TS,Optimal,0,All,Spatial,1
+Bantou,16,NullSmart,Buildings,0,All,Spatial,0.7578947368421053
+Bantou,16,NullRandom,Random,0,All,Spatial,0.49746192893401014
+Bantou,16,Model,BRT,0,All,Spatial,0.6334164588528678
+Bantou,16,TS,Optimal,0,All,Spatial,1
+Bantou,17,NullSmart,Buildings,0,All,Spatial,0.7777777777777778
+Bantou,17,NullRandom,Random,0,All,Spatial,0.5536723163841808
+Bantou,17,Model,BRT,0,All,Spatial,0.6043360433604336
+Bantou,17,TS,Optimal,0,All,Spatial,1
+Bantou,18,NullSmart,Buildings,0,All,Spatial,0.735
+Bantou,18,NullRandom,Random,0,All,Spatial,0.5099009900990099
+Bantou,18,Model,BRT,0,All,Spatial,0.5955334987593052
+Bantou,18,TS,Optimal,0,All,Spatial,1
+Bantou,19,NullSmart,Buildings,0,All,Spatial,0.7602339181286549
+Bantou,19,NullRandom,Random,0,All,Spatial,0.48255813953488375
+Bantou,19,Model,BRT,0,All,Spatial,0.5739644970414202
+Bantou,19,TS,Optimal,0,All,Spatial,1
+Bantou,20,NullSmart,Buildings,0,All,Spatial,0.7634408602150538
+Bantou,20,NullRandom,Random,0,All,Spatial,0.4853801169590643
+Bantou,20,Model,BRT,0,All,Spatial,0.5948275862068966
+Bantou,20,TS,Optimal,0,All,Spatial,1
+Bantou,21,NullSmart,Buildings,0,All,Spatial,0.7790055248618785
+Bantou,21,NullRandom,Random,0,All,Spatial,0.5363128491620112
+Bantou,21,Model,BRT,0,All,Spatial,0.6613333333333333
+Bantou,21,TS,Optimal,0,All,Spatial,1
+Bantou,22,NullSmart,Buildings,0,All,Spatial,0.7307692307692307
+Bantou,22,NullRandom,Random,0,All,Spatial,0.53
+Bantou,22,Model,BRT,0,All,Spatial,0.6111111111111112
+Bantou,22,TS,Optimal,0,All,Spatial,1
+Bantou,23,NullSmart,Buildings,0,All,Spatial,0.7305699481865285
+Bantou,23,NullRandom,Random,0,All,Spatial,0.536723163841808
+Bantou,23,Model,BRT,0,All,Spatial,0.6127450980392157
+Bantou,23,TS,Optimal,0,All,Spatial,1
+Bantou,24,NullSmart,Buildings,0,All,Spatial,0.7796610169491526
+Bantou,24,NullRandom,Random,0,All,Spatial,0.5
+Bantou,24,Model,BRT,0,All,Spatial,0.6212534059945504
+Bantou,24,TS,Optimal,0,All,Spatial,1
+Bantou,0,NullSmart,Buildings,2,Outside,Spatial,0.5869565217391305
+Bantou,0,NullRandom,Random,2,Outside,Spatial,0.5486111111111112
+Bantou,0,Model,BRT,2,Outside,Spatial,0.5535055350553506
+Bantou,0,TS,Optimal,2,Outside,Spatial,1
+Bantou,1,NullSmart,Buildings,2,Outside,Spatial,0.7037037037037037
+Bantou,1,NullRandom,Random,2,Outside,Spatial,0.472
+Bantou,1,Model,BRT,2,Outside,Spatial,0.5255474452554745
+Bantou,1,TS,Optimal,2,Outside,Spatial,1
+Bantou,2,NullSmart,Buildings,2,Outside,Spatial,0.6993006993006993
+Bantou,2,NullRandom,Random,2,Outside,Spatial,0.5319148936170213
+Bantou,2,Model,BRT,2,Outside,Spatial,0.5480427046263345
+Bantou,2,TS,Optimal,2,Outside,Spatial,1
+Bantou,3,NullSmart,Buildings,2,Outside,Spatial,0.6413793103448275
+Bantou,3,NullRandom,Random,2,Outside,Spatial,0.42207792207792205
+Bantou,3,Model,BRT,2,Outside,Spatial,0.5884244372990354
+Bantou,3,TS,Optimal,2,Outside,Spatial,1
+Bantou,4,NullSmart,Buildings,2,Outside,Spatial,0.6197183098591549
+Bantou,4,NullRandom,Random,2,Outside,Spatial,0.45255474452554745
+Bantou,4,Model,BRT,2,Outside,Spatial,0.584192439862543
+Bantou,4,TS,Optimal,2,Outside,Spatial,1
+Bantou,5,NullSmart,Buildings,2,Outside,Spatial,0.6516129032258065
+Bantou,5,NullRandom,Random,2,Outside,Spatial,0.5096774193548387
+Bantou,5,Model,BRT,2,Outside,Spatial,0.5559440559440559
+Bantou,5,TS,Optimal,2,Outside,Spatial,1
+Bantou,6,NullSmart,Buildings,2,Outside,Spatial,0.6940298507462687
+Bantou,6,NullRandom,Random,2,Outside,Spatial,0.5
+Bantou,6,Model,BRT,2,Outside,Spatial,0.5687732342007435
+Bantou,6,TS,Optimal,2,Outside,Spatial,1
+Bantou,7,NullSmart,Buildings,2,Outside,Spatial,0.647887323943662
+Bantou,7,NullRandom,Random,2,Outside,Spatial,0.5460992907801419
+Bantou,7,Model,BRT,2,Outside,Spatial,0.5620437956204379
+Bantou,7,TS,Optimal,2,Outside,Spatial,1
+Bantou,8,NullSmart,Buildings,2,Outside,Spatial,0.6180555555555556
+Bantou,8,NullRandom,Random,2,Outside,Spatial,0.4621212121212121
+Bantou,8,Model,BRT,2,Outside,Spatial,0.5912408759124088
+Bantou,8,TS,Optimal,2,Outside,Spatial,1
+Bantou,9,NullSmart,Buildings,2,Outside,Spatial,0.6530612244897959
+Bantou,9,NullRandom,Random,2,Outside,Spatial,0.49624060150375937
+Bantou,9,Model,BRT,2,Outside,Spatial,0.5815602836879432
+Bantou,9,TS,Optimal,2,Outside,Spatial,1
+Bantou,10,NullSmart,Buildings,2,Outside,Spatial,0.6493506493506493
+Bantou,10,NullRandom,Random,2,Outside,Spatial,0.5138888888888888
+Bantou,10,Model,BRT,2,Outside,Spatial,0.5483870967741935
+Bantou,10,TS,Optimal,2,Outside,Spatial,1
+Bantou,11,NullSmart,Buildings,2,Outside,Spatial,0.6194029850746269
+Bantou,11,NullRandom,Random,2,Outside,Spatial,0.5592105263157895
+Bantou,11,Model,BRT,2,Outside,Spatial,0.6059479553903345
+Bantou,11,TS,Optimal,2,Outside,Spatial,1
+Bantou,12,NullSmart,Buildings,2,Outside,Spatial,0.6644295302013423
+Bantou,12,NullRandom,Random,2,Outside,Spatial,0.5241379310344828
+Bantou,12,Model,BRT,2,Outside,Spatial,0.5946843853820598
+Bantou,12,TS,Optimal,2,Outside,Spatial,1
+Bantou,13,NullSmart,Buildings,2,Outside,Spatial,0.575
+Bantou,13,NullRandom,Random,2,Outside,Spatial,0.5476190476190477
+Bantou,13,Model,BRT,2,Outside,Spatial,0.5614035087719298
+Bantou,13,TS,Optimal,2,Outside,Spatial,1
+Bantou,14,NullSmart,Buildings,2,Outside,Spatial,0.6423841059602649
+Bantou,14,NullRandom,Random,2,Outside,Spatial,0.5401459854014599
+Bantou,14,Model,BRT,2,Outside,Spatial,0.5048231511254019
+Bantou,14,TS,Optimal,2,Outside,Spatial,1
+Bantou,15,NullSmart,Buildings,2,Outside,Spatial,0.6751592356687898
+Bantou,15,NullRandom,Random,2,Outside,Spatial,0.5034013605442177
+Bantou,15,Model,BRT,2,Outside,Spatial,0.580327868852459
+Bantou,15,TS,Optimal,2,Outside,Spatial,1
+Bantou,16,NullSmart,Buildings,2,Outside,Spatial,0.64
+Bantou,16,NullRandom,Random,2,Outside,Spatial,0.5
+Bantou,16,Model,BRT,2,Outside,Spatial,0.5714285714285714
+Bantou,16,TS,Optimal,2,Outside,Spatial,1
+Bantou,17,NullSmart,Buildings,2,Outside,Spatial,0.6142857142857143
+Bantou,17,NullRandom,Random,2,Outside,Spatial,0.5251798561151079
+Bantou,17,Model,BRT,2,Outside,Spatial,0.5516014234875445
+Bantou,17,TS,Optimal,2,Outside,Spatial,1
+Bantou,18,NullSmart,Buildings,2,Outside,Spatial,0.7152777777777778
+Bantou,18,NullRandom,Random,2,Outside,Spatial,0.47619047619047616
+Bantou,18,Model,BRT,2,Outside,Spatial,0.5197132616487455
+Bantou,18,TS,Optimal,2,Outside,Spatial,1
+Bantou,19,NullSmart,Buildings,2,Outside,Spatial,0.6870229007633588
+Bantou,19,NullRandom,Random,2,Outside,Spatial,0.4573643410852713
+Bantou,19,Model,BRT,2,Outside,Spatial,0.5418181818181819
+Bantou,19,TS,Optimal,2,Outside,Spatial,1
+Bantou,20,NullSmart,Buildings,2,Outside,Spatial,0.7037037037037037
+Bantou,20,NullRandom,Random,2,Outside,Spatial,0.503448275862069
+Bantou,20,Model,BRT,2,Outside,Spatial,0.5484949832775919
+Bantou,20,TS,Optimal,2,Outside,Spatial,1
+Bantou,21,NullSmart,Buildings,2,Outside,Spatial,0.6433566433566433
+Bantou,21,NullRandom,Random,2,Outside,Spatial,0.5133333333333333
+Bantou,21,Model,BRT,2,Outside,Spatial,0.5544217687074829
+Bantou,21,TS,Optimal,2,Outside,Spatial,1
+Bantou,22,NullSmart,Buildings,2,Outside,Spatial,0.6692913385826772
+Bantou,22,NullRandom,Random,2,Outside,Spatial,0.49612403100775193
+Bantou,22,Model,BRT,2,Outside,Spatial,0.5228215767634855
+Bantou,22,TS,Optimal,2,Outside,Spatial,1
+Bantou,23,NullSmart,Buildings,2,Outside,Spatial,0.6827586206896552
+Bantou,23,NullRandom,Random,2,Outside,Spatial,0.5107913669064749
+Bantou,23,Model,BRT,2,Outside,Spatial,0.6
+Bantou,23,TS,Optimal,2,Outside,Spatial,1
+Bantou,24,NullSmart,Buildings,2,Outside,Spatial,0.6923076923076923
+Bantou,24,NullRandom,Random,2,Outside,Spatial,0.45925925925925926
+Bantou,24,Model,BRT,2,Outside,Spatial,0.5742574257425742
+Bantou,24,TS,Optimal,2,Outside,Spatial,1
+Bafodia,0,NullSmart,Buildings,0,All,Spatial,0.634020618556701
+Bafodia,0,NullRandom,Random,0,All,Spatial,0.5205479452054794
+Bafodia,0,Model,BRT,0,All,Spatial,0.6314553990610329
+Bafodia,0,TS,Optimal,0,All,Spatial,1
+Bafodia,1,NullSmart,Buildings,0,All,Spatial,0.6342592592592593
+Bafodia,1,NullRandom,Random,0,All,Spatial,0.4878048780487805
+Bafodia,1,Model,BRT,0,All,Spatial,0.6408977556109726
+Bafodia,1,TS,Optimal,0,All,Spatial,1
+Bafodia,2,NullSmart,Buildings,0,All,Spatial,0.684931506849315
+Bafodia,2,NullRandom,Random,0,All,Spatial,0.5445026178010471
+Bafodia,2,Model,BRT,0,All,Spatial,0.6219512195121951
+Bafodia,2,TS,Optimal,0,All,Spatial,1
+Bafodia,3,NullSmart,Buildings,0,All,Spatial,0.6601941747572816
+Bafodia,3,NullRandom,Random,0,All,Spatial,0.5124378109452736
+Bafodia,3,Model,BRT,0,All,Spatial,0.6201923076923077
+Bafodia,3,TS,Optimal,0,All,Spatial,1
+Bafodia,4,NullSmart,Buildings,0,All,Spatial,0.6398104265402843
+Bafodia,4,NullRandom,Random,0,All,Spatial,0.49065420560747663
+Bafodia,4,Model,BRT,0,All,Spatial,0.6620689655172414
+Bafodia,4,TS,Optimal,0,All,Spatial,1
+Bafodia,5,NullSmart,Buildings,0,All,Spatial,0.6214953271028038
+Bafodia,5,NullRandom,Random,0,All,Spatial,0.5833333333333334
+Bafodia,5,Model,BRT,0,All,Spatial,0.6502463054187192
+Bafodia,5,TS,Optimal,0,All,Spatial,1
+Bafodia,6,NullSmart,Buildings,0,All,Spatial,0.6135265700483091
+Bafodia,6,NullRandom,Random,0,All,Spatial,0.43147208121827413
+Bafodia,6,Model,BRT,0,All,Spatial,0.6539440203562341
+Bafodia,6,TS,Optimal,0,All,Spatial,1
+Bafodia,7,NullSmart,Buildings,0,All,Spatial,0.6086956521739131
+Bafodia,7,NullRandom,Random,0,All,Spatial,0.5662100456621004
+Bafodia,7,Model,BRT,0,All,Spatial,0.6009389671361502
+Bafodia,7,TS,Optimal,0,All,Spatial,1
+Bafodia,8,NullSmart,Buildings,0,All,Spatial,0.595
+Bafodia,8,NullRandom,Random,0,All,Spatial,0.5198019801980198
+Bafodia,8,Model,BRT,0,All,Spatial,0.6666666666666666
+Bafodia,8,TS,Optimal,0,All,Spatial,1
+Bafodia,9,NullSmart,Buildings,0,All,Spatial,0.6197916666666666
+Bafodia,9,NullRandom,Random,0,All,Spatial,0.5198019801980198
+Bafodia,9,Model,BRT,0,All,Spatial,0.6310679611650486
+Bafodia,9,TS,Optimal,0,All,Spatial,1
+Bafodia,10,NullSmart,Buildings,0,All,Spatial,0.6839622641509434
+Bafodia,10,NullRandom,Random,0,All,Spatial,0.5365853658536586
+Bafodia,10,Model,BRT,0,All,Spatial,0.6050632911392405
+Bafodia,10,TS,Optimal,0,All,Spatial,1
+Bafodia,11,NullSmart,Buildings,0,All,Spatial,0.6601941747572816
+Bafodia,11,NullRandom,Random,0,All,Spatial,0.47643979057591623
+Bafodia,11,Model,BRT,0,All,Spatial,0.6481481481481481
+Bafodia,11,TS,Optimal,0,All,Spatial,1
+Bafodia,12,NullSmart,Buildings,0,All,Spatial,0.6881188118811881
+Bafodia,12,NullRandom,Random,0,All,Spatial,0.48936170212765956
+Bafodia,12,Model,BRT,0,All,Spatial,0.6329411764705882
+Bafodia,12,TS,Optimal,0,All,Spatial,1
+Bafodia,13,NullSmart,Buildings,0,All,Spatial,0.6878306878306878
+Bafodia,13,NullRandom,Random,0,All,Spatial,0.5518867924528302
+Bafodia,13,Model,BRT,0,All,Spatial,0.653012048192771
+Bafodia,13,TS,Optimal,0,All,Spatial,1
+Bafodia,14,NullSmart,Buildings,0,All,Spatial,0.6243654822335025
+Bafodia,14,NullRandom,Random,0,All,Spatial,0.4951923076923077
+Bafodia,14,Model,BRT,0,All,Spatial,0.5967741935483871
+Bafodia,14,TS,Optimal,0,All,Spatial,1
+Bafodia,15,NullSmart,Buildings,0,All,Spatial,0.6167664670658682
+Bafodia,15,NullRandom,Random,0,All,Spatial,0.5722543352601156
+Bafodia,15,Model,BRT,0,All,Spatial,0.5967741935483871
+Bafodia,15,TS,Optimal,0,All,Spatial,1
+Bafodia,16,NullSmart,Buildings,0,All,Spatial,0.6358974358974359
+Bafodia,16,NullRandom,Random,0,All,Spatial,0.5808080808080808
+Bafodia,16,Model,BRT,0,All,Spatial,0.6305418719211823
+Bafodia,16,TS,Optimal,0,All,Spatial,1
+Bafodia,17,NullSmart,Buildings,0,All,Spatial,0.5920398009950248
+Bafodia,17,NullRandom,Random,0,All,Spatial,0.5323383084577115
+Bafodia,17,Model,BRT,0,All,Spatial,0.645
+Bafodia,17,TS,Optimal,0,All,Spatial,1
+Bafodia,18,NullSmart,Buildings,0,All,Spatial,0.5913461538461539
+Bafodia,18,NullRandom,Random,0,All,Spatial,0.5046728971962616
+Bafodia,18,Model,BRT,0,All,Spatial,0.6305882352941177
+Bafodia,18,TS,Optimal,0,All,Spatial,1
+Bafodia,19,NullSmart,Buildings,0,All,Spatial,0.616504854368932
+Bafodia,19,NullRandom,Random,0,All,Spatial,0.5408163265306123
+Bafodia,19,Model,BRT,0,All,Spatial,0.6036745406824147
+Bafodia,19,TS,Optimal,0,All,Spatial,1
+Bafodia,20,NullSmart,Buildings,0,All,Spatial,0.685
+Bafodia,20,NullRandom,Random,0,All,Spatial,0.467005076142132
+Bafodia,20,Model,BRT,0,All,Spatial,0.6365979381443299
+Bafodia,20,TS,Optimal,0,All,Spatial,1
+Bafodia,21,NullSmart,Buildings,0,All,Spatial,0.6354166666666666
+Bafodia,21,NullRandom,Random,0,All,Spatial,0.5631578947368421
+Bafodia,21,Model,BRT,0,All,Spatial,0.5960591133004927
+Bafodia,21,TS,Optimal,0,All,Spatial,1
+Bafodia,22,NullSmart,Buildings,0,All,Spatial,0.5638297872340425
+Bafodia,22,NullRandom,Random,0,All,Spatial,0.5376884422110553
+Bafodia,22,Model,BRT,0,All,Spatial,0.6143617021276596
+Bafodia,22,TS,Optimal,0,All,Spatial,1
+Bafodia,23,NullSmart,Buildings,0,All,Spatial,0.6414141414141414
+Bafodia,23,NullRandom,Random,0,All,Spatial,0.4098360655737705
+Bafodia,23,Model,BRT,0,All,Spatial,0.6205962059620597
+Bafodia,23,TS,Optimal,0,All,Spatial,1
+Bafodia,24,NullSmart,Buildings,0,All,Spatial,0.6580310880829016
+Bafodia,24,NullRandom,Random,0,All,Spatial,0.5
+Bafodia,24,Model,BRT,0,All,Spatial,0.6277372262773723
+Bafodia,24,TS,Optimal,0,All,Spatial,1
+Bafodia,0,NullSmart,Buildings,1,Inside,Spatial,0.43157894736842106
+Bafodia,0,NullRandom,Random,1,Inside,Spatial,0.5268817204301075
+Bafodia,0,Model,BRT,1,Inside,Spatial,0.453125
+Bafodia,0,TS,Optimal,1,Inside,Spatial,1
+Bafodia,1,NullSmart,Buildings,1,Inside,Spatial,0.5056179775280899
+Bafodia,1,NullRandom,Random,1,Inside,Spatial,0.42045454545454547
+Bafodia,1,Model,BRT,1,Inside,Spatial,0.45294117647058824
+Bafodia,1,TS,Optimal,1,Inside,Spatial,1
+Bafodia,2,NullSmart,Buildings,1,Inside,Spatial,0.4479166666666667
+Bafodia,2,NullRandom,Random,1,Inside,Spatial,0.5670103092783505
+Bafodia,2,Model,BRT,1,Inside,Spatial,0.3924731182795699
+Bafodia,2,TS,Optimal,1,Inside,Spatial,1
+Bafodia,3,NullSmart,Buildings,1,Inside,Spatial,0.4659090909090909
+Bafodia,3,NullRandom,Random,1,Inside,Spatial,0.40229885057471265
+Bafodia,3,Model,BRT,1,Inside,Spatial,0.46794871794871795
+Bafodia,3,TS,Optimal,1,Inside,Spatial,1
+Bafodia,4,NullSmart,Buildings,1,Inside,Spatial,0.48
+Bafodia,4,NullRandom,Random,1,Inside,Spatial,0.5533980582524272
+Bafodia,4,Model,BRT,1,Inside,Spatial,0.41450777202072536
+Bafodia,4,TS,Optimal,1,Inside,Spatial,1
+Bafodia,5,NullSmart,Buildings,1,Inside,Spatial,0.5384615384615384
+Bafodia,5,NullRandom,Random,1,Inside,Spatial,0.44565217391304346
+Bafodia,5,Model,BRT,1,Inside,Spatial,0.42564102564102563
+Bafodia,5,TS,Optimal,1,Inside,Spatial,1
+Bafodia,6,NullSmart,Buildings,1,Inside,Spatial,0.5816326530612245
+Bafodia,6,NullRandom,Random,1,Inside,Spatial,0.5217391304347826
+Bafodia,6,Model,BRT,1,Inside,Spatial,0.4583333333333333
+Bafodia,6,TS,Optimal,1,Inside,Spatial,1
+Bafodia,7,NullSmart,Buildings,1,Inside,Spatial,0.45161290322580644
+Bafodia,7,NullRandom,Random,1,Inside,Spatial,0.47674418604651164
+Bafodia,7,Model,BRT,1,Inside,Spatial,0.3742690058479532
+Bafodia,7,TS,Optimal,1,Inside,Spatial,1
+Bafodia,8,NullSmart,Buildings,1,Inside,Spatial,0.4772727272727273
+Bafodia,8,NullRandom,Random,1,Inside,Spatial,0.5949367088607594
+Bafodia,8,Model,BRT,1,Inside,Spatial,0.3672316384180791
+Bafodia,8,TS,Optimal,1,Inside,Spatial,1
+Bafodia,9,NullSmart,Buildings,1,Inside,Spatial,0.5054945054945055
+Bafodia,9,NullRandom,Random,1,Inside,Spatial,0.4880952380952381
+Bafodia,9,Model,BRT,1,Inside,Spatial,0.46551724137931033
+Bafodia,9,TS,Optimal,1,Inside,Spatial,1
+Bafodia,10,NullSmart,Buildings,1,Inside,Spatial,0.391304347826087
+Bafodia,10,NullRandom,Random,1,Inside,Spatial,0.425531914893617
+Bafodia,10,Model,BRT,1,Inside,Spatial,0.4032258064516129
+Bafodia,10,TS,Optimal,1,Inside,Spatial,1
+Bafodia,11,NullSmart,Buildings,1,Inside,Spatial,0.42857142857142855
+Bafodia,11,NullRandom,Random,1,Inside,Spatial,0.4827586206896552
+Bafodia,11,Model,BRT,1,Inside,Spatial,0.44808743169398907
+Bafodia,11,TS,Optimal,1,Inside,Spatial,1
+Bafodia,12,NullSmart,Buildings,1,Inside,Spatial,0.4065934065934066
+Bafodia,12,NullRandom,Random,1,Inside,Spatial,0.46875
+Bafodia,12,Model,BRT,1,Inside,Spatial,0.5081081081081081
+Bafodia,12,TS,Optimal,1,Inside,Spatial,1
+Bafodia,13,NullSmart,Buildings,1,Inside,Spatial,0.46875
+Bafodia,13,NullRandom,Random,1,Inside,Spatial,0.5154639175257731
+Bafodia,13,Model,BRT,1,Inside,Spatial,0.44751381215469616
+Bafodia,13,TS,Optimal,1,Inside,Spatial,1
+Bafodia,14,NullSmart,Buildings,1,Inside,Spatial,0.41379310344827586
+Bafodia,14,NullRandom,Random,1,Inside,Spatial,0.4367816091954023
+Bafodia,14,Model,BRT,1,Inside,Spatial,0.4371584699453552
+Bafodia,14,TS,Optimal,1,Inside,Spatial,1
+Bafodia,15,NullSmart,Buildings,1,Inside,Spatial,0.4842105263157895
+Bafodia,15,NullRandom,Random,1,Inside,Spatial,0.43434343434343436
+Bafodia,15,Model,BRT,1,Inside,Spatial,0.41935483870967744
+Bafodia,15,TS,Optimal,1,Inside,Spatial,1
+Bafodia,16,NullSmart,Buildings,1,Inside,Spatial,0.42857142857142855
+Bafodia,16,NullRandom,Random,1,Inside,Spatial,0.4074074074074074
+Bafodia,16,Model,BRT,1,Inside,Spatial,0.4228571428571429
+Bafodia,16,TS,Optimal,1,Inside,Spatial,1
+Bafodia,17,NullSmart,Buildings,1,Inside,Spatial,0.4024390243902439
+Bafodia,17,NullRandom,Random,1,Inside,Spatial,0.5180722891566265
+Bafodia,17,Model,BRT,1,Inside,Spatial,0.5058823529411764
+Bafodia,17,TS,Optimal,1,Inside,Spatial,1
+Bafodia,18,NullSmart,Buildings,1,Inside,Spatial,0.46875
+Bafodia,18,NullRandom,Random,1,Inside,Spatial,0.5227272727272727
+Bafodia,18,Model,BRT,1,Inside,Spatial,0.4860335195530726
+Bafodia,18,TS,Optimal,1,Inside,Spatial,1
+Bafodia,19,NullSmart,Buildings,1,Inside,Spatial,0.46511627906976744
+Bafodia,19,NullRandom,Random,1,Inside,Spatial,0.5833333333333334
+Bafodia,19,Model,BRT,1,Inside,Spatial,0.455026455026455
+Bafodia,19,TS,Optimal,1,Inside,Spatial,1
+Bafodia,20,NullSmart,Buildings,1,Inside,Spatial,0.5164835164835165
+Bafodia,20,NullRandom,Random,1,Inside,Spatial,0.4574468085106383
+Bafodia,20,Model,BRT,1,Inside,Spatial,0.45989304812834225
+Bafodia,20,TS,Optimal,1,Inside,Spatial,1
+Bafodia,21,NullSmart,Buildings,1,Inside,Spatial,0.4235294117647059
+Bafodia,21,NullRandom,Random,1,Inside,Spatial,0.5280898876404494
+Bafodia,21,Model,BRT,1,Inside,Spatial,0.5057471264367817
+Bafodia,21,TS,Optimal,1,Inside,Spatial,1
+Bafodia,22,NullSmart,Buildings,1,Inside,Spatial,0.4583333333333333
+Bafodia,22,NullRandom,Random,1,Inside,Spatial,0.5098039215686274
+Bafodia,22,Model,BRT,1,Inside,Spatial,0.44502617801047123
+Bafodia,22,TS,Optimal,1,Inside,Spatial,1
+Bafodia,23,NullSmart,Buildings,1,Inside,Spatial,0.4270833333333333
+Bafodia,23,NullRandom,Random,1,Inside,Spatial,0.5463917525773195
+Bafodia,23,Model,BRT,1,Inside,Spatial,0.4816753926701571
+Bafodia,23,TS,Optimal,1,Inside,Spatial,1
+Bafodia,24,NullSmart,Buildings,1,Inside,Spatial,0.43478260869565216
+Bafodia,24,NullRandom,Random,1,Inside,Spatial,0.5053763440860215
+Bafodia,24,Model,BRT,1,Inside,Spatial,0.4627659574468085
+Bafodia,24,TS,Optimal,1,Inside,Spatial,1
+Bafodia,0,NullSmart,Buildings,2,Outside,Spatial,0.47058823529411764
+Bafodia,0,NullRandom,Random,2,Outside,Spatial,0.47191011235955055
+Bafodia,0,Model,BRT,2,Outside,Spatial,0.5310734463276836
+Bafodia,0,TS,Optimal,2,Outside,Spatial,1
+Bafodia,1,NullSmart,Buildings,2,Outside,Spatial,0.6274509803921569
+Bafodia,1,NullRandom,Random,2,Outside,Spatial,0.5050505050505051
+Bafodia,1,Model,BRT,2,Outside,Spatial,0.6544502617801047
+Bafodia,1,TS,Optimal,2,Outside,Spatial,1
+Bafodia,2,NullSmart,Buildings,2,Outside,Spatial,0.5619047619047619
+Bafodia,2,NullRandom,Random,2,Outside,Spatial,0.5
+Bafodia,2,Model,BRT,2,Outside,Spatial,0.6284153005464481
+Bafodia,2,TS,Optimal,2,Outside,Spatial,1
+Bafodia,3,NullSmart,Buildings,2,Outside,Spatial,0.7083333333333334
+Bafodia,3,NullRandom,Random,2,Outside,Spatial,0.3564356435643564
+Bafodia,3,Model,BRT,2,Outside,Spatial,0.5027624309392266
+Bafodia,3,TS,Optimal,2,Outside,Spatial,1
+Bafodia,4,NullSmart,Buildings,2,Outside,Spatial,0.5051546391752577
+Bafodia,4,NullRandom,Random,2,Outside,Spatial,0.4
+Bafodia,4,Model,BRT,2,Outside,Spatial,0.645
+Bafodia,4,TS,Optimal,2,Outside,Spatial,1
+Bafodia,5,NullSmart,Buildings,2,Outside,Spatial,0.6082474226804123
+Bafodia,5,NullRandom,Random,2,Outside,Spatial,0.57
+Bafodia,5,Model,BRT,2,Outside,Spatial,0.5425531914893617
+Bafodia,5,TS,Optimal,2,Outside,Spatial,1
+Bafodia,6,NullSmart,Buildings,2,Outside,Spatial,0.4731182795698925
+Bafodia,6,NullRandom,Random,2,Outside,Spatial,0.5555555555555556
+Bafodia,6,Model,BRT,2,Outside,Spatial,0.601123595505618
+Bafodia,6,TS,Optimal,2,Outside,Spatial,1
+Bafodia,7,NullSmart,Buildings,2,Outside,Spatial,0.6822429906542056
+Bafodia,7,NullRandom,Random,2,Outside,Spatial,0.4791666666666667
+Bafodia,7,Model,BRT,2,Outside,Spatial,0.5513513513513514
+Bafodia,7,TS,Optimal,2,Outside,Spatial,1
+Bafodia,8,NullSmart,Buildings,2,Outside,Spatial,0.5263157894736842
+Bafodia,8,NullRandom,Random,2,Outside,Spatial,0.49074074074074076
+Bafodia,8,Model,BRT,2,Outside,Spatial,0.5441176470588235
+Bafodia,8,TS,Optimal,2,Outside,Spatial,1
+Bafodia,9,NullSmart,Buildings,2,Outside,Spatial,0.5454545454545454
+Bafodia,9,NullRandom,Random,2,Outside,Spatial,0.5252525252525253
+Bafodia,9,Model,BRT,2,Outside,Spatial,0.572139303482587
+Bafodia,9,TS,Optimal,2,Outside,Spatial,1
+Bafodia,10,NullSmart,Buildings,2,Outside,Spatial,0.5769230769230769
+Bafodia,10,NullRandom,Random,2,Outside,Spatial,0.4375
+Bafodia,10,Model,BRT,2,Outside,Spatial,0.5459183673469388
+Bafodia,10,TS,Optimal,2,Outside,Spatial,1
+Bafodia,11,NullSmart,Buildings,2,Outside,Spatial,0.5425531914893617
+Bafodia,11,NullRandom,Random,2,Outside,Spatial,0.44660194174757284
+Bafodia,11,Model,BRT,2,Outside,Spatial,0.6257668711656442
+Bafodia,11,TS,Optimal,2,Outside,Spatial,1
+Bafodia,12,NullSmart,Buildings,2,Outside,Spatial,0.6017699115044248
+Bafodia,12,NullRandom,Random,2,Outside,Spatial,0.5728155339805825
+Bafodia,12,Model,BRT,2,Outside,Spatial,0.5689655172413793
+Bafodia,12,TS,Optimal,2,Outside,Spatial,1
+Bafodia,13,NullSmart,Buildings,2,Outside,Spatial,0.6170212765957447
+Bafodia,13,NullRandom,Random,2,Outside,Spatial,0.34285714285714286
+Bafodia,13,Model,BRT,2,Outside,Spatial,0.5291005291005291
+Bafodia,13,TS,Optimal,2,Outside,Spatial,1
+Bafodia,14,NullSmart,Buildings,2,Outside,Spatial,0.5760869565217391
+Bafodia,14,NullRandom,Random,2,Outside,Spatial,0.4774774774774775
+Bafodia,14,Model,BRT,2,Outside,Spatial,0.6153846153846154
+Bafodia,14,TS,Optimal,2,Outside,Spatial,1
+Bafodia,15,NullSmart,Buildings,2,Outside,Spatial,0.5106382978723404
+Bafodia,15,NullRandom,Random,2,Outside,Spatial,0.5384615384615384
+Bafodia,15,Model,BRT,2,Outside,Spatial,0.6127167630057804
+Bafodia,15,TS,Optimal,2,Outside,Spatial,1
+Bafodia,16,NullSmart,Buildings,2,Outside,Spatial,0.5578947368421052
+Bafodia,16,NullRandom,Random,2,Outside,Spatial,0.6354166666666666
+Bafodia,16,Model,BRT,2,Outside,Spatial,0.5362318840579711
+Bafodia,16,TS,Optimal,2,Outside,Spatial,1
+Bafodia,17,NullSmart,Buildings,2,Outside,Spatial,0.6476190476190476
+Bafodia,17,NullRandom,Random,2,Outside,Spatial,0.45098039215686275
+Bafodia,17,Model,BRT,2,Outside,Spatial,0.5243243243243243
+Bafodia,17,TS,Optimal,2,Outside,Spatial,1
+Bafodia,18,NullSmart,Buildings,2,Outside,Spatial,0.53125
+Bafodia,18,NullRandom,Random,2,Outside,Spatial,0.54
+Bafodia,18,Model,BRT,2,Outside,Spatial,0.6011560693641619
+Bafodia,18,TS,Optimal,2,Outside,Spatial,1
+Bafodia,19,NullSmart,Buildings,2,Outside,Spatial,0.5714285714285714
+Bafodia,19,NullRandom,Random,2,Outside,Spatial,0.4479166666666667
+Bafodia,19,Model,BRT,2,Outside,Spatial,0.5375722543352601
+Bafodia,19,TS,Optimal,2,Outside,Spatial,1
+Bafodia,20,NullSmart,Buildings,2,Outside,Spatial,0.5851063829787234
+Bafodia,20,NullRandom,Random,2,Outside,Spatial,0.6105263157894737
+Bafodia,20,Model,BRT,2,Outside,Spatial,0.5847953216374269
+Bafodia,20,TS,Optimal,2,Outside,Spatial,1
+Bafodia,21,NullSmart,Buildings,2,Outside,Spatial,0.5217391304347826
+Bafodia,21,NullRandom,Random,2,Outside,Spatial,0.32989690721649484
+Bafodia,21,Model,BRT,2,Outside,Spatial,0.594059405940594
+Bafodia,21,TS,Optimal,2,Outside,Spatial,1
+Bafodia,22,NullSmart,Buildings,2,Outside,Spatial,0.55
+Bafodia,22,NullRandom,Random,2,Outside,Spatial,0.4329896907216495
+Bafodia,22,Model,BRT,2,Outside,Spatial,0.5729166666666666
+Bafodia,22,TS,Optimal,2,Outside,Spatial,1
+Bafodia,23,NullSmart,Buildings,2,Outside,Spatial,0.5740740740740741
+Bafodia,23,NullRandom,Random,2,Outside,Spatial,0.504950495049505
+Bafodia,23,Model,BRT,2,Outside,Spatial,0.5420560747663551
+Bafodia,23,TS,Optimal,2,Outside,Spatial,1
+Bafodia,24,NullSmart,Buildings,2,Outside,Spatial,0.5977011494252874
+Bafodia,24,NullRandom,Random,2,Outside,Spatial,0.6021505376344086
+Bafodia,24,Model,BRT,2,Outside,Spatial,0.5738636363636364
+Bafodia,24,TS,Optimal,2,Outside,Spatial,1
+Tanganya,0,NullSmart,Buildings,0,All,Spatial + in/out,0.7811320754716982
+Tanganya,0,NullRandom,Random,0,All,Spatial + in/out,0.5492424242424242
+Tanganya,0,Model,BRT,0,All,Spatial + in/out,0.6229205175600739
+Tanganya,0,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,1,NullSmart,Buildings,0,All,Spatial + in/out,0.7649122807017544
+Tanganya,1,NullRandom,Random,0,All,Spatial + in/out,0.5131086142322098
+Tanganya,1,Model,BRT,0,All,Spatial + in/out,0.5813953488372093
+Tanganya,1,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,2,NullSmart,Buildings,0,All,Spatial + in/out,0.7709923664122137
+Tanganya,2,NullRandom,Random,0,All,Spatial + in/out,0.4962686567164179
+Tanganya,2,Model,BRT,0,All,Spatial + in/out,0.5752688172043011
+Tanganya,2,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,3,NullSmart,Buildings,0,All,Spatial + in/out,0.7769784172661871
+Tanganya,3,NullRandom,Random,0,All,Spatial + in/out,0.4676258992805755
+Tanganya,3,Model,BRT,0,All,Spatial + in/out,0.6164874551971327
+Tanganya,3,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,4,NullSmart,Buildings,0,All,Spatial + in/out,0.7904411764705882
+Tanganya,4,NullRandom,Random,0,All,Spatial + in/out,0.5132075471698113
+Tanganya,4,Model,BRT,0,All,Spatial + in/out,0.5545112781954887
+Tanganya,4,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,5,NullSmart,Buildings,0,All,Spatial + in/out,0.8109090909090909
+Tanganya,5,NullRandom,Random,0,All,Spatial + in/out,0.5399239543726235
+Tanganya,5,Model,BRT,0,All,Spatial + in/out,0.5709090909090909
+Tanganya,5,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,6,NullSmart,Buildings,0,All,Spatial + in/out,0.75177304964539
+Tanganya,6,NullRandom,Random,0,All,Spatial + in/out,0.5206349206349207
+Tanganya,6,Model,BRT,0,All,Spatial + in/out,0.5611888111888111
+Tanganya,6,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,7,NullSmart,Buildings,0,All,Spatial + in/out,0.7925925925925926
+Tanganya,7,NullRandom,Random,0,All,Spatial + in/out,0.5291970802919708
+Tanganya,7,Model,BRT,0,All,Spatial + in/out,0.6121323529411765
+Tanganya,7,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,8,NullSmart,Buildings,0,All,Spatial + in/out,0.7517985611510791
+Tanganya,8,NullRandom,Random,0,All,Spatial + in/out,0.4708171206225681
+Tanganya,8,Model,BRT,0,All,Spatial + in/out,0.5805860805860806
+Tanganya,8,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,9,NullSmart,Buildings,0,All,Spatial + in/out,0.75
+Tanganya,9,NullRandom,Random,0,All,Spatial + in/out,0.4784172661870504
+Tanganya,9,Model,BRT,0,All,Spatial + in/out,0.5905797101449275
+Tanganya,9,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,10,NullSmart,Buildings,0,All,Spatial + in/out,0.7888888888888889
+Tanganya,10,NullRandom,Random,0,All,Spatial + in/out,0.5494880546075085
+Tanganya,10,Model,BRT,0,All,Spatial + in/out,0.5768535262206148
+Tanganya,10,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,11,NullSmart,Buildings,0,All,Spatial + in/out,0.7821011673151751
+Tanganya,11,NullRandom,Random,0,All,Spatial + in/out,0.5301204819277109
+Tanganya,11,Model,BRT,0,All,Spatial + in/out,0.5831739961759083
+Tanganya,11,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,12,NullSmart,Buildings,0,All,Spatial + in/out,0.7706093189964157
+Tanganya,12,NullRandom,Random,0,All,Spatial + in/out,0.532608695652174
+Tanganya,12,Model,BRT,0,All,Spatial + in/out,0.5863309352517986
+Tanganya,12,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,13,NullSmart,Buildings,0,All,Spatial + in/out,0.7715355805243446
+Tanganya,13,NullRandom,Random,0,All,Spatial + in/out,0.43884892086330934
+Tanganya,13,Model,BRT,0,All,Spatial + in/out,0.5822306238185255
+Tanganya,13,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,14,NullSmart,Buildings,0,All,Spatial + in/out,0.7923875432525952
+Tanganya,14,NullRandom,Random,0,All,Spatial + in/out,0.4721189591078067
+Tanganya,14,Model,BRT,0,All,Spatial + in/out,0.6238859180035651
+Tanganya,14,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,15,NullSmart,Buildings,0,All,Spatial + in/out,0.7067137809187279
+Tanganya,15,NullRandom,Random,0,All,Spatial + in/out,0.5296167247386759
+Tanganya,15,Model,BRT,0,All,Spatial + in/out,0.5876865671641791
+Tanganya,15,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,16,NullSmart,Buildings,0,All,Spatial + in/out,0.7302158273381295
+Tanganya,16,NullRandom,Random,0,All,Spatial + in/out,0.4823943661971831
+Tanganya,16,Model,BRT,0,All,Spatial + in/out,0.6363636363636364
+Tanganya,16,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,17,NullSmart,Buildings,0,All,Spatial + in/out,0.7789115646258503
+Tanganya,17,NullRandom,Random,0,All,Spatial + in/out,0.49825783972125437
+Tanganya,17,Model,BRT,0,All,Spatial + in/out,0.6038062283737025
+Tanganya,17,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,18,NullSmart,Buildings,0,All,Spatial + in/out,0.708171206225681
+Tanganya,18,NullRandom,Random,0,All,Spatial + in/out,0.5238095238095238
+Tanganya,18,Model,BRT,0,All,Spatial + in/out,0.5796545105566219
+Tanganya,18,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,19,NullSmart,Buildings,0,All,Spatial + in/out,0.7962264150943397
+Tanganya,19,NullRandom,Random,0,All,Spatial + in/out,0.5111940298507462
+Tanganya,19,Model,BRT,0,All,Spatial + in/out,0.6056603773584905
+Tanganya,19,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,20,NullSmart,Buildings,0,All,Spatial + in/out,0.7063492063492064
+Tanganya,20,NullRandom,Random,0,All,Spatial + in/out,0.547244094488189
+Tanganya,20,Model,BRT,0,All,Spatial + in/out,0.5966228893058161
+Tanganya,20,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,21,NullSmart,Buildings,0,All,Spatial + in/out,0.779467680608365
+Tanganya,21,NullRandom,Random,0,All,Spatial + in/out,0.47794117647058826
+Tanganya,21,Model,BRT,0,All,Spatial + in/out,0.5586080586080586
+Tanganya,21,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,22,NullSmart,Buildings,0,All,Spatial + in/out,0.7242647058823529
+Tanganya,22,NullRandom,Random,0,All,Spatial + in/out,0.5563380281690141
+Tanganya,22,Model,BRT,0,All,Spatial + in/out,0.5916515426497277
+Tanganya,22,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,23,NullSmart,Buildings,0,All,Spatial + in/out,0.7799227799227799
+Tanganya,23,NullRandom,Random,0,All,Spatial + in/out,0.45051194539249145
+Tanganya,23,Model,BRT,0,All,Spatial + in/out,0.5719298245614035
+Tanganya,23,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,24,NullSmart,Buildings,0,All,Spatial + in/out,0.7419354838709677
+Tanganya,24,NullRandom,Random,0,All,Spatial + in/out,0.45255474452554745
+Tanganya,24,Model,BRT,0,All,Spatial + in/out,0.585278276481149
+Tanganya,24,TS,Optimal,0,All,Spatial + in/out,1
+Tanganya,0,NullSmart,Buildings,1,Inside,Spatial + in/out,0.45614035087719296
+Tanganya,0,NullRandom,Random,1,Inside,Spatial + in/out,0.5614035087719298
+Tanganya,0,Model,BRT,1,Inside,Spatial + in/out,0.45147679324894513
+Tanganya,0,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,1,NullSmart,Buildings,1,Inside,Spatial + in/out,0.5545454545454546
+Tanganya,1,NullRandom,Random,1,Inside,Spatial + in/out,0.4636363636363636
+Tanganya,1,Model,BRT,1,Inside,Spatial + in/out,0.45045045045045046
+Tanganya,1,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,2,NullSmart,Buildings,1,Inside,Spatial + in/out,0.5283018867924528
+Tanganya,2,NullRandom,Random,1,Inside,Spatial + in/out,0.4727272727272727
+Tanganya,2,Model,BRT,1,Inside,Spatial + in/out,0.5235849056603774
+Tanganya,2,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,3,NullSmart,Buildings,1,Inside,Spatial + in/out,0.48695652173913045
+Tanganya,3,NullRandom,Random,1,Inside,Spatial + in/out,0.5299145299145299
+Tanganya,3,Model,BRT,1,Inside,Spatial + in/out,0.5361702127659574
+Tanganya,3,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,4,NullSmart,Buildings,1,Inside,Spatial + in/out,0.4583333333333333
+Tanganya,4,NullRandom,Random,1,Inside,Spatial + in/out,0.5206611570247934
+Tanganya,4,Model,BRT,1,Inside,Spatial + in/out,0.41841004184100417
+Tanganya,4,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,5,NullSmart,Buildings,1,Inside,Spatial + in/out,0.5042735042735043
+Tanganya,5,NullRandom,Random,1,Inside,Spatial + in/out,0.4188034188034188
+Tanganya,5,Model,BRT,1,Inside,Spatial + in/out,0.4279661016949153
+Tanganya,5,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,6,NullSmart,Buildings,1,Inside,Spatial + in/out,0.48717948717948717
+Tanganya,6,NullRandom,Random,1,Inside,Spatial + in/out,0.5042016806722689
+Tanganya,6,Model,BRT,1,Inside,Spatial + in/out,0.4890829694323144
+Tanganya,6,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,7,NullSmart,Buildings,1,Inside,Spatial + in/out,0.5714285714285714
+Tanganya,7,NullRandom,Random,1,Inside,Spatial + in/out,0.42342342342342343
+Tanganya,7,Model,BRT,1,Inside,Spatial + in/out,0.3915094339622642
+Tanganya,7,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,8,NullSmart,Buildings,1,Inside,Spatial + in/out,0.5309734513274337
+Tanganya,8,NullRandom,Random,1,Inside,Spatial + in/out,0.47413793103448276
+Tanganya,8,Model,BRT,1,Inside,Spatial + in/out,0.47533632286995514
+Tanganya,8,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,9,NullSmart,Buildings,1,Inside,Spatial + in/out,0.5398230088495575
+Tanganya,9,NullRandom,Random,1,Inside,Spatial + in/out,0.5887850467289719
+Tanganya,9,Model,BRT,1,Inside,Spatial + in/out,0.4185022026431718
+Tanganya,9,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,10,NullSmart,Buildings,1,Inside,Spatial + in/out,0.4915254237288136
+Tanganya,10,NullRandom,Random,1,Inside,Spatial + in/out,0.5677966101694916
+Tanganya,10,Model,BRT,1,Inside,Spatial + in/out,0.48936170212765956
+Tanganya,10,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,11,NullSmart,Buildings,1,Inside,Spatial + in/out,0.5135135135135135
+Tanganya,11,NullRandom,Random,1,Inside,Spatial + in/out,0.33043478260869563
+Tanganya,11,Model,BRT,1,Inside,Spatial + in/out,0.4585152838427948
+Tanganya,11,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,12,NullSmart,Buildings,1,Inside,Spatial + in/out,0.509090909090909
+Tanganya,12,NullRandom,Random,1,Inside,Spatial + in/out,0.4732142857142857
+Tanganya,12,Model,BRT,1,Inside,Spatial + in/out,0.5203619909502263
+Tanganya,12,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,13,NullSmart,Buildings,1,Inside,Spatial + in/out,0.46153846153846156
+Tanganya,13,NullRandom,Random,1,Inside,Spatial + in/out,0.4690265486725664
+Tanganya,13,Model,BRT,1,Inside,Spatial + in/out,0.5021459227467812
+Tanganya,13,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,14,NullSmart,Buildings,1,Inside,Spatial + in/out,0.4642857142857143
+Tanganya,14,NullRandom,Random,1,Inside,Spatial + in/out,0.5446428571428571
+Tanganya,14,Model,BRT,1,Inside,Spatial + in/out,0.44782608695652176
+Tanganya,14,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,15,NullSmart,Buildings,1,Inside,Spatial + in/out,0.5486725663716814
+Tanganya,15,NullRandom,Random,1,Inside,Spatial + in/out,0.5652173913043478
+Tanganya,15,Model,BRT,1,Inside,Spatial + in/out,0.4497816593886463
+Tanganya,15,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,16,NullSmart,Buildings,1,Inside,Spatial + in/out,0.49122807017543857
+Tanganya,16,NullRandom,Random,1,Inside,Spatial + in/out,0.6120689655172413
+Tanganya,16,Model,BRT,1,Inside,Spatial + in/out,0.4888888888888889
+Tanganya,16,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,17,NullSmart,Buildings,1,Inside,Spatial + in/out,0.44954128440366975
+Tanganya,17,NullRandom,Random,1,Inside,Spatial + in/out,0.5181818181818182
+Tanganya,17,Model,BRT,1,Inside,Spatial + in/out,0.48148148148148145
+Tanganya,17,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,18,NullSmart,Buildings,1,Inside,Spatial + in/out,0.5086206896551724
+Tanganya,18,NullRandom,Random,1,Inside,Spatial + in/out,0.5045871559633027
+Tanganya,18,Model,BRT,1,Inside,Spatial + in/out,0.44933920704845814
+Tanganya,18,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,19,NullSmart,Buildings,1,Inside,Spatial + in/out,0.504424778761062
+Tanganya,19,NullRandom,Random,1,Inside,Spatial + in/out,0.4778761061946903
+Tanganya,19,Model,BRT,1,Inside,Spatial + in/out,0.4672489082969432
+Tanganya,19,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,20,NullSmart,Buildings,1,Inside,Spatial + in/out,0.5897435897435898
+Tanganya,20,NullRandom,Random,1,Inside,Spatial + in/out,0.5
+Tanganya,20,Model,BRT,1,Inside,Spatial + in/out,0.47085201793721976
+Tanganya,20,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,21,NullSmart,Buildings,1,Inside,Spatial + in/out,0.40350877192982454
+Tanganya,21,NullRandom,Random,1,Inside,Spatial + in/out,0.45045045045045046
+Tanganya,21,Model,BRT,1,Inside,Spatial + in/out,0.49557522123893805
+Tanganya,21,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,22,NullSmart,Buildings,1,Inside,Spatial + in/out,0.42990654205607476
+Tanganya,22,NullRandom,Random,1,Inside,Spatial + in/out,0.5137614678899083
+Tanganya,22,Model,BRT,1,Inside,Spatial + in/out,0.49765258215962443
+Tanganya,22,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,23,NullSmart,Buildings,1,Inside,Spatial + in/out,0.5045045045045045
+Tanganya,23,NullRandom,Random,1,Inside,Spatial + in/out,0.4824561403508772
+Tanganya,23,Model,BRT,1,Inside,Spatial + in/out,0.5627705627705628
+Tanganya,23,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,24,NullSmart,Buildings,1,Inside,Spatial + in/out,0.4594594594594595
+Tanganya,24,NullRandom,Random,1,Inside,Spatial + in/out,0.5132743362831859
+Tanganya,24,Model,BRT,1,Inside,Spatial + in/out,0.536036036036036
+Tanganya,24,TS,Optimal,1,Inside,Spatial + in/out,1
+Tanganya,0,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6422018348623854
+Tanganya,0,NullRandom,Random,2,Outside,Spatial + in/out,0.5384615384615384
+Tanganya,0,Model,BRT,2,Outside,Spatial + in/out,0.5654008438818565
+Tanganya,0,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,1,NullSmart,Buildings,2,Outside,Spatial + in/out,0.7008547008547008
+Tanganya,1,NullRandom,Random,2,Outside,Spatial + in/out,0.5083333333333333
+Tanganya,1,Model,BRT,2,Outside,Spatial + in/out,0.5666666666666667
+Tanganya,1,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,2,NullSmart,Buildings,2,Outside,Spatial + in/out,0.7348484848484849
+Tanganya,2,NullRandom,Random,2,Outside,Spatial + in/out,0.4883720930232558
+Tanganya,2,Model,BRT,2,Outside,Spatial + in/out,0.5311203319502075
+Tanganya,2,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,3,NullSmart,Buildings,2,Outside,Spatial + in/out,0.7058823529411765
+Tanganya,3,NullRandom,Random,2,Outside,Spatial + in/out,0.46511627906976744
+Tanganya,3,Model,BRT,2,Outside,Spatial + in/out,0.5732217573221757
+Tanganya,3,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,4,NullSmart,Buildings,2,Outside,Spatial + in/out,0.7058823529411765
+Tanganya,4,NullRandom,Random,2,Outside,Spatial + in/out,0.5039370078740157
+Tanganya,4,Model,BRT,2,Outside,Spatial + in/out,0.5897435897435898
+Tanganya,4,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,5,NullSmart,Buildings,2,Outside,Spatial + in/out,0.7111111111111111
+Tanganya,5,NullRandom,Random,2,Outside,Spatial + in/out,0.48360655737704916
+Tanganya,5,Model,BRT,2,Outside,Spatial + in/out,0.572
+Tanganya,5,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,6,NullSmart,Buildings,2,Outside,Spatial + in/out,0.7163120567375887
+Tanganya,6,NullRandom,Random,2,Outside,Spatial + in/out,0.42424242424242425
+Tanganya,6,Model,BRT,2,Outside,Spatial + in/out,0.5830258302583026
+Tanganya,6,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,7,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6976744186046512
+Tanganya,7,NullRandom,Random,2,Outside,Spatial + in/out,0.4806201550387597
+Tanganya,7,Model,BRT,2,Outside,Spatial + in/out,0.5806451612903226
+Tanganya,7,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,8,NullSmart,Buildings,2,Outside,Spatial + in/out,0.672
+Tanganya,8,NullRandom,Random,2,Outside,Spatial + in/out,0.5833333333333334
+Tanganya,8,Model,BRT,2,Outside,Spatial + in/out,0.5365853658536586
+Tanganya,8,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,9,NullSmart,Buildings,2,Outside,Spatial + in/out,0.7073170731707317
+Tanganya,9,NullRandom,Random,2,Outside,Spatial + in/out,0.47368421052631576
+Tanganya,9,Model,BRT,2,Outside,Spatial + in/out,0.5263157894736842
+Tanganya,9,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,10,NullSmart,Buildings,2,Outside,Spatial + in/out,0.7265625
+Tanganya,10,NullRandom,Random,2,Outside,Spatial + in/out,0.5508474576271186
+Tanganya,10,Model,BRT,2,Outside,Spatial + in/out,0.5555555555555556
+Tanganya,10,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,11,NullSmart,Buildings,2,Outside,Spatial + in/out,0.7164179104477612
+Tanganya,11,NullRandom,Random,2,Outside,Spatial + in/out,0.45535714285714285
+Tanganya,11,Model,BRT,2,Outside,Spatial + in/out,0.4652014652014652
+Tanganya,11,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,12,NullSmart,Buildings,2,Outside,Spatial + in/out,0.7076923076923077
+Tanganya,12,NullRandom,Random,2,Outside,Spatial + in/out,0.46153846153846156
+Tanganya,12,Model,BRT,2,Outside,Spatial + in/out,0.5325670498084292
+Tanganya,12,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,13,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6386554621848739
+Tanganya,13,NullRandom,Random,2,Outside,Spatial + in/out,0.4649122807017544
+Tanganya,13,Model,BRT,2,Outside,Spatial + in/out,0.5367965367965368
+Tanganya,13,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,14,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6846153846153846
+Tanganya,14,NullRandom,Random,2,Outside,Spatial + in/out,0.5846153846153846
+Tanganya,14,Model,BRT,2,Outside,Spatial + in/out,0.5487804878048781
+Tanganya,14,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,15,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6982758620689655
+Tanganya,15,NullRandom,Random,2,Outside,Spatial + in/out,0.4962962962962963
+Tanganya,15,Model,BRT,2,Outside,Spatial + in/out,0.49612403100775193
+Tanganya,15,TS,Optimal,2,Outside,Spatial + in/out,0.9915966386554622
+Tanganya,16,NullSmart,Buildings,2,Outside,Spatial + in/out,0.7016129032258065
+Tanganya,16,NullRandom,Random,2,Outside,Spatial + in/out,0.43089430894308944
+Tanganya,16,Model,BRT,2,Outside,Spatial + in/out,0.5335968379446641
+Tanganya,16,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,17,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6410256410256411
+Tanganya,17,NullRandom,Random,2,Outside,Spatial + in/out,0.5486725663716814
+Tanganya,17,Model,BRT,2,Outside,Spatial + in/out,0.5327510917030568
+Tanganya,17,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,18,NullSmart,Buildings,2,Outside,Spatial + in/out,0.7196969696969697
+Tanganya,18,NullRandom,Random,2,Outside,Spatial + in/out,0.5126050420168067
+Tanganya,18,Model,BRT,2,Outside,Spatial + in/out,0.5568627450980392
+Tanganya,18,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,19,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6936936936936937
+Tanganya,19,NullRandom,Random,2,Outside,Spatial + in/out,0.5688073394495413
+Tanganya,19,Model,BRT,2,Outside,Spatial + in/out,0.5733333333333334
+Tanganya,19,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,20,NullSmart,Buildings,2,Outside,Spatial + in/out,0.5483870967741935
+Tanganya,20,NullRandom,Random,2,Outside,Spatial + in/out,0.5652173913043478
+Tanganya,20,Model,BRT,2,Outside,Spatial + in/out,0.5547445255474452
+Tanganya,20,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,21,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6605504587155964
+Tanganya,21,NullRandom,Random,2,Outside,Spatial + in/out,0.5089285714285714
+Tanganya,21,Model,BRT,2,Outside,Spatial + in/out,0.49356223175965663
+Tanganya,21,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,22,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6611570247933884
+Tanganya,22,NullRandom,Random,2,Outside,Spatial + in/out,0.47761194029850745
+Tanganya,22,Model,BRT,2,Outside,Spatial + in/out,0.5376344086021505
+Tanganya,22,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,23,NullSmart,Buildings,2,Outside,Spatial + in/out,0.743801652892562
+Tanganya,23,NullRandom,Random,2,Outside,Spatial + in/out,0.45454545454545453
+Tanganya,23,Model,BRT,2,Outside,Spatial + in/out,0.5
+Tanganya,23,TS,Optimal,2,Outside,Spatial + in/out,1
+Tanganya,24,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6363636363636364
+Tanganya,24,NullRandom,Random,2,Outside,Spatial + in/out,0.46511627906976744
+Tanganya,24,Model,BRT,2,Outside,Spatial + in/out,0.5609756097560976
+Tanganya,24,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,0,NullSmart,Buildings,0,All,Spatial + in/out,0.7816091954022989
+Bantou,0,NullRandom,Random,0,All,Spatial + in/out,0.49710982658959535
+Bantou,0,Model,BRT,0,All,Spatial + in/out,0.5982658959537572
+Bantou,0,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,1,NullSmart,Buildings,0,All,Spatial + in/out,0.7597765363128491
+Bantou,1,NullRandom,Random,0,All,Spatial + in/out,0.4972375690607735
+Bantou,1,Model,BRT,0,All,Spatial + in/out,0.5886889460154242
+Bantou,1,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,2,NullSmart,Buildings,0,All,Spatial + in/out,0.7567567567567568
+Bantou,2,NullRandom,Random,0,All,Spatial + in/out,0.453125
+Bantou,2,Model,BRT,0,All,Spatial + in/out,0.6200527704485488
+Bantou,2,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,3,NullSmart,Buildings,0,All,Spatial + in/out,0.7914438502673797
+Bantou,3,NullRandom,Random,0,All,Spatial + in/out,0.489010989010989
+Bantou,3,Model,BRT,0,All,Spatial + in/out,0.6199460916442049
+Bantou,3,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,4,NullSmart,Buildings,0,All,Spatial + in/out,0.7427184466019418
+Bantou,4,NullRandom,Random,0,All,Spatial + in/out,0.5174129353233831
+Bantou,4,Model,BRT,0,All,Spatial + in/out,0.6277915632754343
+Bantou,4,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,5,NullSmart,Buildings,0,All,Spatial + in/out,0.7473118279569892
+Bantou,5,NullRandom,Random,0,All,Spatial + in/out,0.5686274509803921
+Bantou,5,Model,BRT,0,All,Spatial + in/out,0.6312997347480106
+Bantou,5,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,6,NullSmart,Buildings,0,All,Spatial + in/out,0.8333333333333334
+Bantou,6,NullRandom,Random,0,All,Spatial + in/out,0.5347593582887701
+Bantou,6,Model,BRT,0,All,Spatial + in/out,0.6454293628808865
+Bantou,6,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,7,NullSmart,Buildings,0,All,Spatial + in/out,0.7897435897435897
+Bantou,7,NullRandom,Random,0,All,Spatial + in/out,0.5396039603960396
+Bantou,7,Model,BRT,0,All,Spatial + in/out,0.6361323155216285
+Bantou,7,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,8,NullSmart,Buildings,0,All,Spatial + in/out,0.7621621621621621
+Bantou,8,NullRandom,Random,0,All,Spatial + in/out,0.46774193548387094
+Bantou,8,Model,BRT,0,All,Spatial + in/out,0.6190476190476191
+Bantou,8,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,9,NullSmart,Buildings,0,All,Spatial + in/out,0.7354497354497355
+Bantou,9,NullRandom,Random,0,All,Spatial + in/out,0.5026737967914439
+Bantou,9,Model,BRT,0,All,Spatial + in/out,0.6059850374064838
+Bantou,9,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,10,NullSmart,Buildings,0,All,Spatial + in/out,0.7539267015706806
+Bantou,10,NullRandom,Random,0,All,Spatial + in/out,0.5594059405940595
+Bantou,10,Model,BRT,0,All,Spatial + in/out,0.6349614395886889
+Bantou,10,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,11,NullSmart,Buildings,0,All,Spatial + in/out,0.7678571428571429
+Bantou,11,NullRandom,Random,0,All,Spatial + in/out,0.39204545454545453
+Bantou,11,Model,BRT,0,All,Spatial + in/out,0.5380434782608695
+Bantou,11,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,12,NullSmart,Buildings,0,All,Spatial + in/out,0.8148148148148148
+Bantou,12,NullRandom,Random,0,All,Spatial + in/out,0.49
+Bantou,12,Model,BRT,0,All,Spatial + in/out,0.6273972602739726
+Bantou,12,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,13,NullSmart,Buildings,0,All,Spatial + in/out,0.8426966292134831
+Bantou,13,NullRandom,Random,0,All,Spatial + in/out,0.5
+Bantou,13,Model,BRT,0,All,Spatial + in/out,0.5871313672922251
+Bantou,13,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,14,NullSmart,Buildings,0,All,Spatial + in/out,0.7819148936170213
+Bantou,14,NullRandom,Random,0,All,Spatial + in/out,0.4595959595959596
+Bantou,14,Model,BRT,0,All,Spatial + in/out,0.6490765171503958
+Bantou,14,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,15,NullSmart,Buildings,0,All,Spatial + in/out,0.7904761904761904
+Bantou,15,NullRandom,Random,0,All,Spatial + in/out,0.4927536231884058
+Bantou,15,Model,BRT,0,All,Spatial + in/out,0.6177215189873417
+Bantou,15,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,16,NullSmart,Buildings,0,All,Spatial + in/out,0.7772020725388601
+Bantou,16,NullRandom,Random,0,All,Spatial + in/out,0.48633879781420764
+Bantou,16,Model,BRT,0,All,Spatial + in/out,0.6727748691099477
+Bantou,16,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,17,NullSmart,Buildings,0,All,Spatial + in/out,0.751412429378531
+Bantou,17,NullRandom,Random,0,All,Spatial + in/out,0.5976331360946746
+Bantou,17,Model,BRT,0,All,Spatial + in/out,0.6267806267806267
+Bantou,17,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,18,NullSmart,Buildings,0,All,Spatial + in/out,0.7734806629834254
+Bantou,18,NullRandom,Random,0,All,Spatial + in/out,0.5081081081081081
+Bantou,18,Model,BRT,0,All,Spatial + in/out,0.6277173913043478
+Bantou,18,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,19,NullSmart,Buildings,0,All,Spatial + in/out,0.7346938775510204
+Bantou,19,NullRandom,Random,0,All,Spatial + in/out,0.42783505154639173
+Bantou,19,Model,BRT,0,All,Spatial + in/out,0.6016042780748663
+Bantou,19,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,20,NullSmart,Buildings,0,All,Spatial + in/out,0.7457627118644068
+Bantou,20,NullRandom,Random,0,All,Spatial + in/out,0.48295454545454547
+Bantou,20,Model,BRT,0,All,Spatial + in/out,0.6005917159763313
+Bantou,20,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,21,NullSmart,Buildings,0,All,Spatial + in/out,0.8021390374331551
+Bantou,21,NullRandom,Random,0,All,Spatial + in/out,0.5084745762711864
+Bantou,21,Model,BRT,0,All,Spatial + in/out,0.5918367346938775
+Bantou,21,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,22,NullSmart,Buildings,0,All,Spatial + in/out,0.770949720670391
+Bantou,22,NullRandom,Random,0,All,Spatial + in/out,0.45614035087719296
+Bantou,22,Model,BRT,0,All,Spatial + in/out,0.6416666666666667
+Bantou,22,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,23,NullSmart,Buildings,0,All,Spatial + in/out,0.7708333333333334
+Bantou,23,NullRandom,Random,0,All,Spatial + in/out,0.4381443298969072
+Bantou,23,Model,BRT,0,All,Spatial + in/out,0.6517412935323383
+Bantou,23,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,24,NullSmart,Buildings,0,All,Spatial + in/out,0.7365591397849462
+Bantou,24,NullRandom,Random,0,All,Spatial + in/out,0.517948717948718
+Bantou,24,Model,BRT,0,All,Spatial + in/out,0.6020671834625323
+Bantou,24,TS,Optimal,0,All,Spatial + in/out,1
+Bantou,0,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6493506493506493
+Bantou,0,NullRandom,Random,2,Outside,Spatial + in/out,0.4827586206896552
+Bantou,0,Model,BRT,2,Outside,Spatial + in/out,0.5907473309608541
+Bantou,0,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,1,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6866666666666666
+Bantou,1,NullRandom,Random,2,Outside,Spatial + in/out,0.4307692307692308
+Bantou,1,Model,BRT,2,Outside,Spatial + in/out,0.6133828996282528
+Bantou,1,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,2,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6762589928057554
+Bantou,2,NullRandom,Random,2,Outside,Spatial + in/out,0.5661764705882353
+Bantou,2,Model,BRT,2,Outside,Spatial + in/out,0.5672727272727273
+Bantou,2,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,3,NullSmart,Buildings,2,Outside,Spatial + in/out,0.7071428571428572
+Bantou,3,NullRandom,Random,2,Outside,Spatial + in/out,0.39473684210526316
+Bantou,3,Model,BRT,2,Outside,Spatial + in/out,0.6173285198555957
+Bantou,3,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,4,NullSmart,Buildings,2,Outside,Spatial + in/out,0.7666666666666667
+Bantou,4,NullRandom,Random,2,Outside,Spatial + in/out,0.5608108108108109
+Bantou,4,Model,BRT,2,Outside,Spatial + in/out,0.6006825938566553
+Bantou,4,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,5,NullSmart,Buildings,2,Outside,Spatial + in/out,0.624
+Bantou,5,NullRandom,Random,2,Outside,Spatial + in/out,0.49166666666666664
+Bantou,5,Model,BRT,2,Outside,Spatial + in/out,0.5375
+Bantou,5,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,6,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6240601503759399
+Bantou,6,NullRandom,Random,2,Outside,Spatial + in/out,0.5555555555555556
+Bantou,6,Model,BRT,2,Outside,Spatial + in/out,0.6377952755905512
+Bantou,6,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,7,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6987179487179487
+Bantou,7,NullRandom,Random,2,Outside,Spatial + in/out,0.41134751773049644
+Bantou,7,Model,BRT,2,Outside,Spatial + in/out,0.607773851590106
+Bantou,7,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,8,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6953125
+Bantou,8,NullRandom,Random,2,Outside,Spatial + in/out,0.4796747967479675
+Bantou,8,Model,BRT,2,Outside,Spatial + in/out,0.5894308943089431
+Bantou,8,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,9,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6230769230769231
+Bantou,9,NullRandom,Random,2,Outside,Spatial + in/out,0.5531914893617021
+Bantou,9,Model,BRT,2,Outside,Spatial + in/out,0.5760869565217391
+Bantou,9,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,10,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6623376623376623
+Bantou,10,NullRandom,Random,2,Outside,Spatial + in/out,0.4491017964071856
+Bantou,10,Model,BRT,2,Outside,Spatial + in/out,0.5501519756838906
+Bantou,10,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,11,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6341463414634146
+Bantou,11,NullRandom,Random,2,Outside,Spatial + in/out,0.5166666666666667
+Bantou,11,Model,BRT,2,Outside,Spatial + in/out,0.5037878787878788
+Bantou,11,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,12,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6413793103448275
+Bantou,12,NullRandom,Random,2,Outside,Spatial + in/out,0.5310344827586206
+Bantou,12,Model,BRT,2,Outside,Spatial + in/out,0.6114864864864865
+Bantou,12,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,13,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6736111111111112
+Bantou,13,NullRandom,Random,2,Outside,Spatial + in/out,0.5769230769230769
+Bantou,13,Model,BRT,2,Outside,Spatial + in/out,0.5730337078651685
+Bantou,13,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,14,NullSmart,Buildings,2,Outside,Spatial + in/out,0.7163120567375887
+Bantou,14,NullRandom,Random,2,Outside,Spatial + in/out,0.5816993464052288
+Bantou,14,Model,BRT,2,Outside,Spatial + in/out,0.573943661971831
+Bantou,14,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,15,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6620689655172414
+Bantou,15,NullRandom,Random,2,Outside,Spatial + in/out,0.5069444444444444
+Bantou,15,Model,BRT,2,Outside,Spatial + in/out,0.5878378378378378
+Bantou,15,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,16,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6131386861313869
+Bantou,16,NullRandom,Random,2,Outside,Spatial + in/out,0.5
+Bantou,16,Model,BRT,2,Outside,Spatial + in/out,0.576
+Bantou,16,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,17,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6194029850746269
+Bantou,17,NullRandom,Random,2,Outside,Spatial + in/out,0.48507462686567165
+Bantou,17,Model,BRT,2,Outside,Spatial + in/out,0.6015325670498084
+Bantou,17,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,18,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6857142857142857
+Bantou,18,NullRandom,Random,2,Outside,Spatial + in/out,0.44755244755244755
+Bantou,18,Model,BRT,2,Outside,Spatial + in/out,0.5340909090909091
+Bantou,18,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,19,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6946564885496184
+Bantou,19,NullRandom,Random,2,Outside,Spatial + in/out,0.4621212121212121
+Bantou,19,Model,BRT,2,Outside,Spatial + in/out,0.5531135531135531
+Bantou,19,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,20,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6308724832214765
+Bantou,20,NullRandom,Random,2,Outside,Spatial + in/out,0.4791666666666667
+Bantou,20,Model,BRT,2,Outside,Spatial + in/out,0.5852842809364549
+Bantou,20,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,21,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6206896551724138
+Bantou,21,NullRandom,Random,2,Outside,Spatial + in/out,0.4748201438848921
+Bantou,21,Model,BRT,2,Outside,Spatial + in/out,0.5871886120996441
+Bantou,21,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,22,NullSmart,Buildings,2,Outside,Spatial + in/out,0.7153846153846154
+Bantou,22,NullRandom,Random,2,Outside,Spatial + in/out,0.45112781954887216
+Bantou,22,Model,BRT,2,Outside,Spatial + in/out,0.5763888888888888
+Bantou,22,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,23,NullSmart,Buildings,2,Outside,Spatial + in/out,0.7163120567375887
+Bantou,23,NullRandom,Random,2,Outside,Spatial + in/out,0.55
+Bantou,23,Model,BRT,2,Outside,Spatial + in/out,0.6164874551971327
+Bantou,23,TS,Optimal,2,Outside,Spatial + in/out,1
+Bantou,24,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6490066225165563
+Bantou,24,NullRandom,Random,2,Outside,Spatial + in/out,0.4589041095890411
+Bantou,24,Model,BRT,2,Outside,Spatial + in/out,0.5206349206349207
+Bantou,24,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,0,NullSmart,Buildings,0,All,Spatial + in/out,0.6022099447513812
+Bafodia,0,NullRandom,Random,0,All,Spatial + in/out,0.5376344086021505
+Bafodia,0,Model,BRT,0,All,Spatial + in/out,0.6575
+Bafodia,0,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,1,NullSmart,Buildings,0,All,Spatial + in/out,0.6777251184834123
+Bafodia,1,NullRandom,Random,0,All,Spatial + in/out,0.51010101010101
+Bafodia,1,Model,BRT,0,All,Spatial + in/out,0.6608910891089109
+Bafodia,1,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,2,NullSmart,Buildings,0,All,Spatial + in/out,0.6894736842105263
+Bafodia,2,NullRandom,Random,0,All,Spatial + in/out,0.47715736040609136
+Bafodia,2,Model,BRT,0,All,Spatial + in/out,0.6572890025575447
+Bafodia,2,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,3,NullSmart,Buildings,0,All,Spatial + in/out,0.6844660194174758
+Bafodia,3,NullRandom,Random,0,All,Spatial + in/out,0.5175879396984925
+Bafodia,3,Model,BRT,0,All,Spatial + in/out,0.6840796019900498
+Bafodia,3,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,4,NullSmart,Buildings,0,All,Spatial + in/out,0.6210526315789474
+Bafodia,4,NullRandom,Random,0,All,Spatial + in/out,0.4975124378109453
+Bafodia,4,Model,BRT,0,All,Spatial + in/out,0.6842105263157895
+Bafodia,4,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,5,NullSmart,Buildings,0,All,Spatial + in/out,0.6618357487922706
+Bafodia,5,NullRandom,Random,0,All,Spatial + in/out,0.4801980198019802
+Bafodia,5,Model,BRT,0,All,Spatial + in/out,0.6330049261083743
+Bafodia,5,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,6,NullSmart,Buildings,0,All,Spatial + in/out,0.6456310679611651
+Bafodia,6,NullRandom,Random,0,All,Spatial + in/out,0.5573770491803278
+Bafodia,6,Model,BRT,0,All,Spatial + in/out,0.6590330788804071
+Bafodia,6,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,7,NullSmart,Buildings,0,All,Spatial + in/out,0.6318407960199005
+Bafodia,7,NullRandom,Random,0,All,Spatial + in/out,0.5458937198067633
+Bafodia,7,Model,BRT,0,All,Spatial + in/out,0.6211764705882353
+Bafodia,7,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,8,NullSmart,Buildings,0,All,Spatial + in/out,0.6798029556650246
+Bafodia,8,NullRandom,Random,0,All,Spatial + in/out,0.5857142857142857
+Bafodia,8,Model,BRT,0,All,Spatial + in/out,0.6732673267326733
+Bafodia,8,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,9,NullSmart,Buildings,0,All,Spatial + in/out,0.6732673267326733
+Bafodia,9,NullRandom,Random,0,All,Spatial + in/out,0.4358974358974359
+Bafodia,9,Model,BRT,0,All,Spatial + in/out,0.6472019464720195
+Bafodia,9,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,10,NullSmart,Buildings,0,All,Spatial + in/out,0.6308411214953271
+Bafodia,10,NullRandom,Random,0,All,Spatial + in/out,0.45145631067961167
+Bafodia,10,Model,BRT,0,All,Spatial + in/out,0.6298076923076923
+Bafodia,10,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,11,NullSmart,Buildings,0,All,Spatial + in/out,0.574468085106383
+Bafodia,11,NullRandom,Random,0,All,Spatial + in/out,0.47029702970297027
+Bafodia,11,Model,BRT,0,All,Spatial + in/out,0.5965346534653465
+Bafodia,11,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,12,NullSmart,Buildings,0,All,Spatial + in/out,0.6443298969072165
+Bafodia,12,NullRandom,Random,0,All,Spatial + in/out,0.5202020202020202
+Bafodia,12,Model,BRT,0,All,Spatial + in/out,0.6781609195402298
+Bafodia,12,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,13,NullSmart,Buildings,0,All,Spatial + in/out,0.6581632653061225
+Bafodia,13,NullRandom,Random,0,All,Spatial + in/out,0.4931506849315068
+Bafodia,13,Model,BRT,0,All,Spatial + in/out,0.6399026763990268
+Bafodia,13,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,14,NullSmart,Buildings,0,All,Spatial + in/out,0.6391752577319587
+Bafodia,14,NullRandom,Random,0,All,Spatial + in/out,0.5
+Bafodia,14,Model,BRT,0,All,Spatial + in/out,0.6337662337662338
+Bafodia,14,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,15,NullSmart,Buildings,0,All,Spatial + in/out,0.71875
+Bafodia,15,NullRandom,Random,0,All,Spatial + in/out,0.4585365853658537
+Bafodia,15,Model,BRT,0,All,Spatial + in/out,0.6706730769230769
+Bafodia,15,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,16,NullSmart,Buildings,0,All,Spatial + in/out,0.59375
+Bafodia,16,NullRandom,Random,0,All,Spatial + in/out,0.4639175257731959
+Bafodia,16,Model,BRT,0,All,Spatial + in/out,0.6494845360824743
+Bafodia,16,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,17,NullSmart,Buildings,0,All,Spatial + in/out,0.5641025641025641
+Bafodia,17,NullRandom,Random,0,All,Spatial + in/out,0.5376884422110553
+Bafodia,17,Model,BRT,0,All,Spatial + in/out,0.6826923076923077
+Bafodia,17,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,18,NullSmart,Buildings,0,All,Spatial + in/out,0.7129186602870813
+Bafodia,18,NullRandom,Random,0,All,Spatial + in/out,0.5
+Bafodia,18,Model,BRT,0,All,Spatial + in/out,0.6612903225806451
+Bafodia,18,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,19,NullSmart,Buildings,0,All,Spatial + in/out,0.6519607843137255
+Bafodia,19,NullRandom,Random,0,All,Spatial + in/out,0.43315508021390375
+Bafodia,19,Model,BRT,0,All,Spatial + in/out,0.6641604010025063
+Bafodia,19,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,20,NullSmart,Buildings,0,All,Spatial + in/out,0.6105263157894737
+Bafodia,20,NullRandom,Random,0,All,Spatial + in/out,0.5519125683060109
+Bafodia,20,Model,BRT,0,All,Spatial + in/out,0.6570048309178744
+Bafodia,20,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,21,NullSmart,Buildings,0,All,Spatial + in/out,0.7258883248730964
+Bafodia,21,NullRandom,Random,0,All,Spatial + in/out,0.5515463917525774
+Bafodia,21,Model,BRT,0,All,Spatial + in/out,0.6391752577319587
+Bafodia,21,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,22,NullSmart,Buildings,0,All,Spatial + in/out,0.6561085972850679
+Bafodia,22,NullRandom,Random,0,All,Spatial + in/out,0.4793814432989691
+Bafodia,22,Model,BRT,0,All,Spatial + in/out,0.6945812807881774
+Bafodia,22,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,23,NullSmart,Buildings,0,All,Spatial + in/out,0.6731707317073171
+Bafodia,23,NullRandom,Random,0,All,Spatial + in/out,0.4697674418604651
+Bafodia,23,Model,BRT,0,All,Spatial + in/out,0.6430379746835443
+Bafodia,23,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,24,NullSmart,Buildings,0,All,Spatial + in/out,0.5618556701030928
+Bafodia,24,NullRandom,Random,0,All,Spatial + in/out,0.4838709677419355
+Bafodia,24,Model,BRT,0,All,Spatial + in/out,0.6203208556149733
+Bafodia,24,TS,Optimal,0,All,Spatial + in/out,1
+Bafodia,0,NullSmart,Buildings,1,Inside,Spatial + in/out,0.34444444444444444
+Bafodia,0,NullRandom,Random,1,Inside,Spatial + in/out,0.5108695652173914
+Bafodia,0,Model,BRT,1,Inside,Spatial + in/out,0.44623655913978494
+Bafodia,0,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,1,NullSmart,Buildings,1,Inside,Spatial + in/out,0.47959183673469385
+Bafodia,1,NullRandom,Random,1,Inside,Spatial + in/out,0.4583333333333333
+Bafodia,1,Model,BRT,1,Inside,Spatial + in/out,0.42696629213483145
+Bafodia,1,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,2,NullSmart,Buildings,1,Inside,Spatial + in/out,0.4418604651162791
+Bafodia,2,NullRandom,Random,1,Inside,Spatial + in/out,0.4482758620689655
+Bafodia,2,Model,BRT,1,Inside,Spatial + in/out,0.4486486486486487
+Bafodia,2,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,3,NullSmart,Buildings,1,Inside,Spatial + in/out,0.43010752688172044
+Bafodia,3,NullRandom,Random,1,Inside,Spatial + in/out,0.51
+Bafodia,3,Model,BRT,1,Inside,Spatial + in/out,0.43820224719101125
+Bafodia,3,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,4,NullSmart,Buildings,1,Inside,Spatial + in/out,0.4567901234567901
+Bafodia,4,NullRandom,Random,1,Inside,Spatial + in/out,0.422680412371134
+Bafodia,4,Model,BRT,1,Inside,Spatial + in/out,0.44886363636363635
+Bafodia,4,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,5,NullSmart,Buildings,1,Inside,Spatial + in/out,0.45977011494252873
+Bafodia,5,NullRandom,Random,1,Inside,Spatial + in/out,0.632183908045977
+Bafodia,5,Model,BRT,1,Inside,Spatial + in/out,0.533678756476684
+Bafodia,5,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,6,NullSmart,Buildings,1,Inside,Spatial + in/out,0.5056179775280899
+Bafodia,6,NullRandom,Random,1,Inside,Spatial + in/out,0.611764705882353
+Bafodia,6,Model,BRT,1,Inside,Spatial + in/out,0.41818181818181815
+Bafodia,6,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,7,NullSmart,Buildings,1,Inside,Spatial + in/out,0.4942528735632184
+Bafodia,7,NullRandom,Random,1,Inside,Spatial + in/out,0.5113636363636364
+Bafodia,7,Model,BRT,1,Inside,Spatial + in/out,0.43103448275862066
+Bafodia,7,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,8,NullSmart,Buildings,1,Inside,Spatial + in/out,0.43157894736842106
+Bafodia,8,NullRandom,Random,1,Inside,Spatial + in/out,0.5638297872340425
+Bafodia,8,Model,BRT,1,Inside,Spatial + in/out,0.358695652173913
+Bafodia,8,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,9,NullSmart,Buildings,1,Inside,Spatial + in/out,0.5050505050505051
+Bafodia,9,NullRandom,Random,1,Inside,Spatial + in/out,0.4787234042553192
+Bafodia,9,Model,BRT,1,Inside,Spatial + in/out,0.46236559139784944
+Bafodia,9,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,10,NullSmart,Buildings,1,Inside,Spatial + in/out,0.4318181818181818
+Bafodia,10,NullRandom,Random,1,Inside,Spatial + in/out,0.43529411764705883
+Bafodia,10,Model,BRT,1,Inside,Spatial + in/out,0.47058823529411764
+Bafodia,10,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,11,NullSmart,Buildings,1,Inside,Spatial + in/out,0.42528735632183906
+Bafodia,11,NullRandom,Random,1,Inside,Spatial + in/out,0.43529411764705883
+Bafodia,11,Model,BRT,1,Inside,Spatial + in/out,0.42857142857142855
+Bafodia,11,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,12,NullSmart,Buildings,1,Inside,Spatial + in/out,0.5494505494505495
+Bafodia,12,NullRandom,Random,1,Inside,Spatial + in/out,0.5
+Bafodia,12,Model,BRT,1,Inside,Spatial + in/out,0.42934782608695654
+Bafodia,12,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,13,NullSmart,Buildings,1,Inside,Spatial + in/out,0.47368421052631576
+Bafodia,13,NullRandom,Random,1,Inside,Spatial + in/out,0.5512820512820513
+Bafodia,13,Model,BRT,1,Inside,Spatial + in/out,0.43915343915343913
+Bafodia,13,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,14,NullSmart,Buildings,1,Inside,Spatial + in/out,0.4891304347826087
+Bafodia,14,NullRandom,Random,1,Inside,Spatial + in/out,0.5402298850574713
+Bafodia,14,Model,BRT,1,Inside,Spatial + in/out,0.42196531791907516
+Bafodia,14,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,15,NullSmart,Buildings,1,Inside,Spatial + in/out,0.4519230769230769
+Bafodia,15,NullRandom,Random,1,Inside,Spatial + in/out,0.5048543689320388
+Bafodia,15,Model,BRT,1,Inside,Spatial + in/out,0.4777777777777778
+Bafodia,15,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,16,NullSmart,Buildings,1,Inside,Spatial + in/out,0.44554455445544555
+Bafodia,16,NullRandom,Random,1,Inside,Spatial + in/out,0.40860215053763443
+Bafodia,16,Model,BRT,1,Inside,Spatial + in/out,0.40217391304347827
+Bafodia,16,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,17,NullSmart,Buildings,1,Inside,Spatial + in/out,0.4777777777777778
+Bafodia,17,NullRandom,Random,1,Inside,Spatial + in/out,0.4791666666666667
+Bafodia,17,Model,BRT,1,Inside,Spatial + in/out,0.3489583333333333
+Bafodia,17,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,18,NullSmart,Buildings,1,Inside,Spatial + in/out,0.45652173913043476
+Bafodia,18,NullRandom,Random,1,Inside,Spatial + in/out,0.5172413793103449
+Bafodia,18,Model,BRT,1,Inside,Spatial + in/out,0.3862433862433862
+Bafodia,18,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,19,NullSmart,Buildings,1,Inside,Spatial + in/out,0.5638297872340425
+Bafodia,19,NullRandom,Random,1,Inside,Spatial + in/out,0.4065934065934066
+Bafodia,19,Model,BRT,1,Inside,Spatial + in/out,0.4550561797752809
+Bafodia,19,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,20,NullSmart,Buildings,1,Inside,Spatial + in/out,0.4948453608247423
+Bafodia,20,NullRandom,Random,1,Inside,Spatial + in/out,0.5164835164835165
+Bafodia,20,Model,BRT,1,Inside,Spatial + in/out,0.49171270718232046
+Bafodia,20,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,21,NullSmart,Buildings,1,Inside,Spatial + in/out,0.3829787234042553
+Bafodia,21,NullRandom,Random,1,Inside,Spatial + in/out,0.53
+Bafodia,21,Model,BRT,1,Inside,Spatial + in/out,0.3870967741935484
+Bafodia,21,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,22,NullSmart,Buildings,1,Inside,Spatial + in/out,0.4897959183673469
+Bafodia,22,NullRandom,Random,1,Inside,Spatial + in/out,0.6265060240963856
+Bafodia,22,Model,BRT,1,Inside,Spatial + in/out,0.4127906976744186
+Bafodia,22,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,23,NullSmart,Buildings,1,Inside,Spatial + in/out,0.5
+Bafodia,23,NullRandom,Random,1,Inside,Spatial + in/out,0.4835164835164835
+Bafodia,23,Model,BRT,1,Inside,Spatial + in/out,0.41968911917098445
+Bafodia,23,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,24,NullSmart,Buildings,1,Inside,Spatial + in/out,0.4742268041237113
+Bafodia,24,NullRandom,Random,1,Inside,Spatial + in/out,0.5054945054945055
+Bafodia,24,Model,BRT,1,Inside,Spatial + in/out,0.43147208121827413
+Bafodia,24,TS,Optimal,1,Inside,Spatial + in/out,1
+Bafodia,0,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6082474226804123
+Bafodia,0,NullRandom,Random,2,Outside,Spatial + in/out,0.37272727272727274
+Bafodia,0,Model,BRT,2,Outside,Spatial + in/out,0.55
+Bafodia,0,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,1,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6774193548387096
+Bafodia,1,NullRandom,Random,2,Outside,Spatial + in/out,0.4725274725274725
+Bafodia,1,Model,BRT,2,Outside,Spatial + in/out,0.515
+Bafodia,1,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,2,NullSmart,Buildings,2,Outside,Spatial + in/out,0.5555555555555556
+Bafodia,2,NullRandom,Random,2,Outside,Spatial + in/out,0.49504950495049505
+Bafodia,2,Model,BRT,2,Outside,Spatial + in/out,0.5166666666666667
+Bafodia,2,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,3,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6699029126213593
+Bafodia,3,NullRandom,Random,2,Outside,Spatial + in/out,0.6129032258064516
+Bafodia,3,Model,BRT,2,Outside,Spatial + in/out,0.6069651741293532
+Bafodia,3,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,4,NullSmart,Buildings,2,Outside,Spatial + in/out,0.5544554455445545
+Bafodia,4,NullRandom,Random,2,Outside,Spatial + in/out,0.5473684210526316
+Bafodia,4,Model,BRT,2,Outside,Spatial + in/out,0.6464088397790055
+Bafodia,4,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,5,NullSmart,Buildings,2,Outside,Spatial + in/out,0.5463917525773195
+Bafodia,5,NullRandom,Random,2,Outside,Spatial + in/out,0.4943820224719101
+Bafodia,5,Model,BRT,2,Outside,Spatial + in/out,0.6192893401015228
+Bafodia,5,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,6,NullSmart,Buildings,2,Outside,Spatial + in/out,0.5263157894736842
+Bafodia,6,NullRandom,Random,2,Outside,Spatial + in/out,0.5425531914893617
+Bafodia,6,Model,BRT,2,Outside,Spatial + in/out,0.5027932960893855
+Bafodia,6,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,7,NullSmart,Buildings,2,Outside,Spatial + in/out,0.5370370370370371
+Bafodia,7,NullRandom,Random,2,Outside,Spatial + in/out,0.3595505617977528
+Bafodia,7,Model,BRT,2,Outside,Spatial + in/out,0.5775401069518716
+Bafodia,7,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,8,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6385542168674698
+Bafodia,8,NullRandom,Random,2,Outside,Spatial + in/out,0.4954954954954955
+Bafodia,8,Model,BRT,2,Outside,Spatial + in/out,0.625
+Bafodia,8,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,9,NullSmart,Buildings,2,Outside,Spatial + in/out,0.49504950495049505
+Bafodia,9,NullRandom,Random,2,Outside,Spatial + in/out,0.53125
+Bafodia,9,Model,BRT,2,Outside,Spatial + in/out,0.6043956043956044
+Bafodia,9,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,10,NullSmart,Buildings,2,Outside,Spatial + in/out,0.5257731958762887
+Bafodia,10,NullRandom,Random,2,Outside,Spatial + in/out,0.4583333333333333
+Bafodia,10,Model,BRT,2,Outside,Spatial + in/out,0.582089552238806
+Bafodia,10,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,11,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6219512195121951
+Bafodia,11,NullRandom,Random,2,Outside,Spatial + in/out,0.45454545454545453
+Bafodia,11,Model,BRT,2,Outside,Spatial + in/out,0.5621890547263682
+Bafodia,11,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,12,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6704545454545454
+Bafodia,12,NullRandom,Random,2,Outside,Spatial + in/out,0.5384615384615384
+Bafodia,12,Model,BRT,2,Outside,Spatial + in/out,0.5918367346938775
+Bafodia,12,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,13,NullSmart,Buildings,2,Outside,Spatial + in/out,0.550561797752809
+Bafodia,13,NullRandom,Random,2,Outside,Spatial + in/out,0.5851063829787234
+Bafodia,13,Model,BRT,2,Outside,Spatial + in/out,0.6171428571428571
+Bafodia,13,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,14,NullSmart,Buildings,2,Outside,Spatial + in/out,0.5531914893617021
+Bafodia,14,NullRandom,Random,2,Outside,Spatial + in/out,0.45555555555555555
+Bafodia,14,Model,BRT,2,Outside,Spatial + in/out,0.5276381909547738
+Bafodia,14,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,15,NullSmart,Buildings,2,Outside,Spatial + in/out,0.5934065934065934
+Bafodia,15,NullRandom,Random,2,Outside,Spatial + in/out,0.4774774774774775
+Bafodia,15,Model,BRT,2,Outside,Spatial + in/out,0.601010101010101
+Bafodia,15,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,16,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6666666666666666
+Bafodia,16,NullRandom,Random,2,Outside,Spatial + in/out,0.5555555555555556
+Bafodia,16,Model,BRT,2,Outside,Spatial + in/out,0.5243243243243243
+Bafodia,16,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,17,NullSmart,Buildings,2,Outside,Spatial + in/out,0.56
+Bafodia,17,NullRandom,Random,2,Outside,Spatial + in/out,0.5483870967741935
+Bafodia,17,Model,BRT,2,Outside,Spatial + in/out,0.5215311004784688
+Bafodia,17,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,18,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6363636363636364
+Bafodia,18,NullRandom,Random,2,Outside,Spatial + in/out,0.47058823529411764
+Bafodia,18,Model,BRT,2,Outside,Spatial + in/out,0.5515463917525774
+Bafodia,18,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,19,NullSmart,Buildings,2,Outside,Spatial + in/out,0.5116279069767442
+Bafodia,19,NullRandom,Random,2,Outside,Spatial + in/out,0.45555555555555555
+Bafodia,19,Model,BRT,2,Outside,Spatial + in/out,0.5380434782608695
+Bafodia,19,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,20,NullSmart,Buildings,2,Outside,Spatial + in/out,0.5368421052631579
+Bafodia,20,NullRandom,Random,2,Outside,Spatial + in/out,0.5681818181818182
+Bafodia,20,Model,BRT,2,Outside,Spatial + in/out,0.5967741935483871
+Bafodia,20,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,21,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6435643564356436
+Bafodia,21,NullRandom,Random,2,Outside,Spatial + in/out,0.5
+Bafodia,21,Model,BRT,2,Outside,Spatial + in/out,0.5597826086956522
+Bafodia,21,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,22,NullSmart,Buildings,2,Outside,Spatial + in/out,0.5533980582524272
+Bafodia,22,NullRandom,Random,2,Outside,Spatial + in/out,0.4742268041237113
+Bafodia,22,Model,BRT,2,Outside,Spatial + in/out,0.5472636815920398
+Bafodia,22,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,23,NullSmart,Buildings,2,Outside,Spatial + in/out,0.5979381443298969
+Bafodia,23,NullRandom,Random,2,Outside,Spatial + in/out,0.3764705882352941
+Bafodia,23,Model,BRT,2,Outside,Spatial + in/out,0.5904255319148937
+Bafodia,23,TS,Optimal,2,Outside,Spatial + in/out,1
+Bafodia,24,NullSmart,Buildings,2,Outside,Spatial + in/out,0.6597938144329897
+Bafodia,24,NullRandom,Random,2,Outside,Spatial + in/out,0.5591397849462365
+Bafodia,24,Model,BRT,2,Outside,Spatial + in/out,0.5671641791044776
+Bafodia,24,TS,Optimal,2,Outside,Spatial + in/out,1

@@ -1,0 +1,18 @@
+  \begin{sidewaystable}
+  \caption{Performance of boosted regression tree model on training and validation datasets. MAE stands for mean absolute error. The hyperparameters describe the maximum allowed tree depth (Max Depth), the proportion of columns sampled at each tree-fitting iteration (ColSample), the proportion of training data that is used to generate each tree (Subsample), the number of tree-fitting iterations (Iterations), and minimum loss reduction required to make a further partition on a leaf node of the tree (gamma)}\label{tab:perf}% <===============================================
+  \newcolumntype{R}{>{\raggedright \arraybackslash} X}
+  \newcolumntype{S}{>{\centering \arraybackslash} X}
+  \newcolumntype{T}{>{\raggedleft \arraybackslash} X}
+  \begin{tabularx}{\linewidth} {>{\setlength\hsize{.16\hsize}}S >{\setlength\hsize{.16\hsize}}S >{\setlength\hsize{.025\hsize}}S >{\setlength\hsize{.11\hsize}}S >{\setlength\hsize{.11\hsize}}S >{\setlength\hsize{.11\hsize}}S >{\setlength\hsize{.11\hsize}}S  >{\setlength\hsize{.11\hsize}}S >{\setlength\hsize{.11\hsize}}S >{\setlength\hsize{.11\hsize}}S >{\setlength\hsize{.18\hsize}}S  >{\setlength\hsize{.18\hsize}}S >{\setlength\hsize{.18\hsize}}S >{\setlength\hsize{.18\hsize}}S}  
+  %\toprule
+  \multicolumn{1}{c}{Train} & \multicolumn{1}{c}{Validation} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{Train MAE} & \multicolumn{1}{c}{Val. MAE} & \multicolumn{4}{c}{Hyperparameters} \\
+  \cmidrule(l){1-1}\cmidrule(l){2-2}\cmidrule(l){4-4} \cmidrule(l){5-5}\cmidrule(l){6-10}
+  & & & & & Max Depth & ColSample & Subsample & Iterations & gamma \tabularnewline  
+  Bafodia & Bantou & & 0.059 & 0.037 & 4 & 0.05 & 0.5 & 1000 & 2 \\ 
+  Bafodia & Tanganya & & 0.057 & 0.032 & 4 & 0.05 & 0.5 & 1050 & 0.5 \\ 
+  Bantou & Bafodia & & 0.016 & 0.086 & 1 & 0.1 & 0.1 & 1600 & 0 \\ 
+  Bantou & Tanganya & & 0.012 & 0.029 & 4 & 0.3 & 0.05 & 850 & 0 \\ 
+  Tanganya & Bafodia & & 0.016 & 0.088 & 1 & 0.05 & 0.25 & 1900 & 0 \\ 
+  Tanganya & Bantou & & 0.013 & 0.028 & 4 & 0.2 & 0.025 & 1750 & 1 \\ \hline 
+ \end{tabularx} 
+ \end{sidewaystable}
