@@ -1,5 +1,7 @@
 .DS_Store
 .ipynb_checkpoints
+.Rhistory
+.Rproj.user
 __pycache__
 Data/Rasters
 Data/Trash
@@ -8,4 +10,3 @@ Data/Trash
 /Fitted_models
 Tools.py~
 Trash
-.Rproj.user
